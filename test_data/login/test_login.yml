@@ -1,0 +1,23 @@
+common_inputs:
+    method: POST
+    path: "xxx/login"
+
+tests:
+  - case: 正确账号、密码登录
+    inputs:
+      params: {}
+      json: {"account": "{{random_phone}}", "password": "xxxxxxxxxx"}
+      file:
+      sql:
+    expectation:
+      db_data:
+      response: {'code': 12, 'msg': '手机号或密码错误'}
+
+  - case: 错误账号、密码登录
+    inputs:
+      params: {}
+      json: {"account": "18900001000", "password": "xxxxxx"}
+    expectation:
+      db_data:
+      response:
+        code: 0

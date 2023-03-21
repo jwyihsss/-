@@ -1,0 +1,35 @@
+project_name: 项目名称
+env: 测试环境
+tester_name:
+
+# 测试域名
+host:
+
+# 登录用户信息
+account:
+password:
+
+
+# jenkins相关配置
+jenkins:
+  # 本地服务
+  url: http://127.0.0.1:8080
+  # 如果有映射网址，可以填在这里
+  mapping_url:
+  # jenkins账号
+  user:
+  # jenkins密码
+  pwd:
+  # 要推送的项目名
+  project:
+
+# 钉钉消息通知相关配置
+ding_talk:
+  webhook:
+
+# 数据库相关配置
+mysql_db:
+  host:
+  user:
+  password:
+  port: 3306
