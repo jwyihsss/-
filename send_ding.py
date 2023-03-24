@@ -19,7 +19,8 @@ mapping_url = config.jenkins.mapping_url
 robot_webhook = config.ding_talk.webhook
 
 
-class JenkinsContest:
+class JenkinsContent:
+    """获取Jenkins构建信息的类"""
 
     def __init__(self):
         urllib3.disable_warnings()
@@ -29,6 +30,8 @@ class JenkinsContest:
         self.server = jenkins.Jenkins(self.jenkins_url, username=user, password=password)
 
     def jenkins_content_info(self):
+        """获取Jenkins构建相关信息"""
+
         result_job = self.server.get_jobs()
         # jobs_name = result_job[0]["name"]
         job_name = project_name
@@ -39,7 +42,8 @@ class JenkinsContest:
         return result_job, job_name, job_url, job_last_number, report_url, job_result
 
 
-class SendDingTalk(JenkinsContest):
+class SendDingTalk(JenkinsContent):
+    """发送钉钉通知的类"""
 
     def __init__(self):
         super().__init__()
@@ -61,15 +65,12 @@ class SendDingTalk(JenkinsContest):
         case_num = content['launch_retries_run']  # 总数量
         run_duration = content['launch_time_duration']
         print(self.job_result)
-        if self.job_result == 'SUCCESS':
-            job_result = '成功'
-        elif self.job_result == 'FAILURE':
-            job_result = '失败'
-        elif self.job_result == 'ABORTED':
-            job_result = '中止'
-        else:
-            job_result = '悬挂'
-
+        job_result = {
+            "SUCCESS": '成功',
+            'FAILURE': '失败',
+            'ABORTED': '中止',
+            'UNSTABLE': '悬挂'
+        }[self.job_result]
         json_path = root / 'allure-report/widgets/summary.json'
         with open(json_path) as f:
             res = json.load(f)

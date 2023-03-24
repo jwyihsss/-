@@ -17,10 +17,7 @@ class Execute:
 
     def __call__(self, *args, **kwargs):
         func = self.func_map.get(self.func_name, None)
-        if func is not None and callable(func):
-            return func()
-        else:
-            logger.error("未获取到该字段对应方法，请检查")
+        return getattr(self, str(func))() if func else logger.error("未获取到该字段对应方法，请检查")
 
     def func_list(self):
         """
@@ -29,7 +26,7 @@ class Execute:
         func_list = {}
         all_method = inspect.getmembers(self, inspect.ismethod)
         for name in all_method:
-            func_list[name[0]] = eval(f'self.{name[0]}') if '__' not in str(name[0]) else ...
+            func_list[name[0]] = name[0] if not str(name[0]).startswith('__') else ...
         return func_list
 
     def random_int(self):
@@ -43,7 +40,7 @@ class Execute:
         """
         :return: 随机生成手机号码
         """
-        return '1140124' + str(self.faker.phone_number()[7:])
+        return '1190124' + str(self.faker.phone_number()[7:])
 
     def random_id_number(self):
         """
@@ -97,12 +94,11 @@ class Execute:
     def random_num(self):
         """
 
-        :return: 随机1~10数字
+        :return: 随机1~3数字
         """
-        num = random.randint(1, 10)
+        num = random.randint(1, 3)
         return num
 
 
 if __name__ == '__main__':
-    r = Execute('random_num')()
-    print(r)
+    r = Execute('random_male_name')()

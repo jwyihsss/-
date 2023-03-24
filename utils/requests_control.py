@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 import urllib3
 import requests
+from loguru import logger
 from utils.decorator_control import Log
 from utils.get_authentication_control import Authentication
 
@@ -13,29 +14,24 @@ class RestClient:
 
     def __init__(self):
         urllib3.disable_warnings()
-        self.sesson = requests.session()  # 创建会话对象
-        self.sesson.cookies = cookie
-        self._res = None
+        self.session = requests.session()  # 创建会话对象
+        self.session.verify = False
+        self.session.cookies = cookie
 
     @Log(True)
-    def request(self, env: set, data=None, json=None, headers=None, **kwargs):
+    def request(self, env, data=None, json=None, headers=None, **kwargs):
         url, request_method = env
-        if request_method == 'get':
-            self._res = self.sesson.get(url, headers=headers, **kwargs)
-        elif request_method == 'post':
-            self._res = self.sesson.post(url, json, data, headers=headers, **kwargs)
-        elif request_method == 'options':
-            self._res = self.sesson.options(url, **kwargs)
-        elif request_method == 'head':
-            self._res = self.sesson.head(url, **kwargs)
-        elif request_method == 'put':
-            self._res = self.sesson.put(url, data, **kwargs)
-        elif request_method == 'patch':
-            data = json.dump(json) if json else ...
-            self._res = self.sesson.patch(url, data, **kwargs)
-        elif request_method == 'delete':
-            self._res = self.sesson.delete(url, **kwargs)
-        return self._res
+        res = {
+            'get': lambda: self.session.get(url, headers=headers, **kwargs),
+            'post': lambda: self.session.post(url, json, data, headers=headers, **kwargs),
+            'options': lambda: self.session.options(url, **kwargs),
+            'head': lambda: self.session.head(url, **kwargs),
+            'put': lambda: self.session.put(url, data, **kwargs),
+            'patch': lambda: self.session.patch(url, json=json.dump(json) if json else ..., **kwargs),
+            'delete': lambda: self.session.delete(url, **kwargs)
+        }.get(request_method.lower(), False)()
+
+        return res if res else logger.error('不存在的请求方式，请检查')
 
     @staticmethod
     def headers():

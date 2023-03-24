@@ -1,44 +1,46 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os
 import yaml
 from utils.path import root
 from loguru import logger
 
 
 class HandleYaml:
+    """操作yaml文件"""
 
     def __init__(self, file_path):
+        """初始化文件路径"""
+
         self._file_path = file_path
 
-    def get_yaml_data(self):
-        """读取yaml文件数据"""
+    def read_yaml(self):
+        """读取yaml文件"""
 
-        if os.path.exists(self._file_path):
-            with open(self._file_path, 'r', encoding='utf-8') as data:
-                try:
-                    res = yaml.safe_load(data)
-                except Exception as err:
-                    logger.error(f'读取yaml文件失败，请检查内容{err}')
-        else:
-            raise FileNotFoundError("文件路径不存在，请检查")
-        return res
+        try:
+            with open(self._file_path, 'r', encoding='utf-8') as f:
+                return yaml.safe_load(f) or {}
+        except FileNotFoundError:
+            logger.error("文件路径不存在，请检查")
+            raise
+
+    def _write_yaml(self, data):
+        """写入yaml文件"""
+
+        with open(self._file_path, 'w', encoding='utf-8') as f:
+            yaml.dump(data, f, allow_unicode=True)
 
     def add_cache(self, key, val):
         """写入缓存数据"""
 
-        cache_data = self.get_yaml_data() if self.get_yaml_data() else {}
-        if cache_data.get('cache') is None:
-            cache_data['cache'] = {}
-        with open(self._file_path, 'w', encoding='utf-8') as f:
-            cache_data['cache'][key] = val
-            yaml.dump(cache_data, f, allow_unicode=True)
+        data = self.read_yaml()
+        cache_data = data.get('cache', {})
+        cache_data[key] = val
+        data['cache'] = cache_data
+        self._write_yaml(data)
 
     def get_cache(self, key):
-        try:
-            return self.get_yaml_data()['cache'][key]
-        except Exception as err:
-            logger.error(f'获取缓存失败，请检查{err}')
+        data = self.read_yaml()
+        return data.get('cache', {}).get(key)
 
 
 if __name__ == '__main__':

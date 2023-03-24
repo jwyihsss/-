@@ -3,5 +3,5 @@ from utils.path import root
 from utils.models import Config
 from utils.read_yaml_control import HandleYaml
 
-config_data = HandleYaml(root / 'config.yml').get_yaml_data()
+config_data = HandleYaml(root / 'config.yml').read_yaml()
 config = Config(**config_data)

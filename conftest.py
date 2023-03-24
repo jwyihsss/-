@@ -2,40 +2,41 @@
 # -*- coding: utf-8 -*-
 import os
 import pytest
+from utils.allure_control import ReportStyle
 from utils.path import root
-from itertools import zip_longest
-from utils.database_control import MysqlDB
-from utils.fake_data_control import Execute
-from utils.requests_control import RestClient
-from utils.open_file_control import open_file
 from utils.read_yaml_control import HandleYaml
+from utils.data_handle_control import DataHandler, Config
+from utils.requests_control import RestClient
 
 
-def replace_cache_values(data):
-    """ 替换字典中所有包含"$cache" 和 "{{}}" 格式的字符串值 """
+def pytest_generate_tests(metafunc):
+    """参数化测试函数"""
 
-    cache_data = HandleYaml(root / 'test_data/cache.yml').get_yaml_data()
-    if isinstance(data, dict):
-        for key, value in data.items():
-            if isinstance(value, dict) or isinstance(value, list):
-                replace_cache_values(value)
-            elif isinstance(value, str) and '{{' in value and '}}' in value:
-                func = value[value.find('{') + 2:value.find('}')]
-                data[key] = data[key].replace('{{%s}}' % f'{func}', str(Execute(func)()))
-            elif isinstance(value, str) and '$cache' in value:
-                cache_name = value[value.find('.') + 1:]
-                data[key] = cache_data['cache'].get(cache_name, None)
-    elif isinstance(data, list):
-        for item in data:
-            if isinstance(item, dict) or isinstance(item, list):
-                replace_cache_values(item)
-            elif isinstance(item, str) and '{{' in item and '}}' in item:
-                func = item[item.find('{') + 2:item.find('}')]
-                data[data.index(item)] = data[data.index(item)].replace('{{%s}}' % f'{func}', str(Execute(func)()))
-            elif isinstance(item, str) and '$cache' in item:
-                cache_name = item[item.find('.') + 1:]
-                data[data.index(item)] = cache_data['cache'].get(cache_name, None)
-    return data
+    test_cases = []
+    markers = metafunc.definition.own_markers
+    for marker in markers:
+        if marker.name == 'datafile':
+            test_data_path = os.path.join(metafunc.config.rootdir, marker.args[0]) if marker.args else ...
+            test_data = HandleYaml(test_data_path).read_yaml()
+            for data in test_data['tests']:
+                if data['inputs'].get('file', {}):
+                    data['inputs']['file'] = {'file': (
+                        data['inputs']['file'], open(root / f"files/{data['inputs']['file']}", 'rb'),
+                        'application/json')}
+                    test_case = {
+                        'case': data.get('case', {}),
+                        'env': (str(host()) + str(test_data['common_inputs'].get('path', {})),
+                                str(test_data['common_inputs'].get('method', ''))),
+                        'inputs': data.get('inputs', {}),
+                        'expectation': data.get('expectation', {})
+                    }
+                test_cases.append(test_case)
+
+            metafunc.parametrize(
+                "env, case, inputs, expectation",
+                [(tc['env'], tc['case'], tc['inputs'], tc['expectation']) for tc in test_cases],
+                scope='function'
+            )
 
 
 @pytest.fixture(scope='function', autouse=True)
@@ -44,45 +45,12 @@ def alert_inputs(request):
 
     if 'inputs' in request.fixturenames:
         inputs = request.getfixturevalue('inputs')
-        replace_cache_values(inputs['json'])
+        DataHandler(config=Config()).replace_values(inputs['json'])
 
 
-def replace_cache_values(data):
-    """ 替换字典中所有包含"$cache" 和 "{{}}" 格式的字符串值 """
-
-    cache_data = HandleYaml(root / 'test_data/cache.yml').get_yaml_data()
-    if isinstance(data, dict):
-        for key, value in data.items():
-            if isinstance(value, dict) or isinstance(value, list):
-                replace_cache_values(value)
-            elif isinstance(value, str) and '{{' in value and '}}' in value:
-                func = value[value.find('{') + 2:value.find('}')]
-                data[key] = data[key].replace('{{%s}}' % f'{func}', Execute(func)())
-            elif isinstance(value, str) and '$cache' in value:
-                cache_name = value[value.find('.') + 1:]
-                data[key] = cache_data['cache'].get(cache_name, None)
-    elif isinstance(data, list):
-        for item in data:
-            if isinstance(item, dict) or isinstance(item, list):
-                replace_cache_values(item)
-            elif isinstance(item, str) and '{{' in item and '}}' in item:
-                func = item[item.find('{') + 2:item.find('}')]
-                data[data.index(item)] = data[data.index(item)].replace('{{%s}}' % f'{func}', Execute(func)())
-            elif isinstance(item, str) and '$cache' in item:
-                cache_name = item[item.find('.') + 1:]
-                data[data.index(item)] = cache_data['cache'].get(cache_name, None)
-    return data
-
-
-# def assert_with_attachment(assert_msg=None, result=None):
-#     with allure.step(assert_msg):
-#         try:
-#             assert result
-#         except AssertionError:
-#             allure.attach(str(result), name="断言失败", attachment_type=AttachmentType.TEXT)
-#             raise
-#         else:
-#             allure.attach(str(result), name="断言通过", attachment_type=AttachmentType.TEXT)
+@pytest.hookimpl
+def pytest_assertion_pass(item, lineno, orig, expr=None, values=None):
+    ReportStyle.allure_step_no(f'断言通过:  {orig}')
 
 
 def pytest_collection_modifyitems(items):
@@ -103,7 +71,7 @@ def headers():
 def host():
     """获取配置文件中的域名"""
 
-    res_host = HandleYaml(root / 'config.yml').get_yaml_data()['host']
+    res_host = HandleYaml(root / 'config.yml').read_yaml()['host']
     return res_host
 
 
@@ -118,7 +86,9 @@ def requests():
 def sql():
     """返回实例化数据库方法"""
 
-    yield MysqlDB()
+    from utils.database_control import MysqlDB
+    with MysqlDB() as sql:
+        yield sql
 
 
 @pytest.fixture(scope='session')

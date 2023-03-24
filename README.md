@@ -2,7 +2,7 @@
 === 
 ## 框架模式
 基于 pytest + allure + yaml + mysql + 钉钉通知 + Jenkins 实现的接口自动化框架
-* git地址: [https://github.com/tan1inhai/t2-api-autotest.git](https://github.com/tan1inhai/t2-api-autotest.git)
+* git地址: [https://gitee.com/t_l_h/t2-api-autotest.git](https://gitee.com/t_l_h/t2-api-autotest.git)
 
 ## 框架介绍
 为了抛弃臃肿庞大的测试框架，本框架将大部分代码逻辑通过conftest文件实现前置，使得编写测试用例时无需导入各种乱七八糟的模块。
@@ -37,7 +37,7 @@
 需要先配置好python、jdk、allure环境(不懂的自行百度)
 
 ```shell
-git clone https://github.com/tan1inhai/t2-api-autotest.git
+git clone https://gitee.com/t_l_h/t2-api-autotest.git
 ```
 
 #### 2、安装依赖

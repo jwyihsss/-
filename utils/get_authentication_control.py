@@ -10,8 +10,8 @@ class Authentication:
 
     def __init__(self):
         self.handle_yaml = HandleYaml(root / 'config.yml')
-        self.payload = {"account": self.handle_yaml.get_yaml_data()['account'],
-                        "password": self.handle_yaml.get_yaml_data()['password'],
+        self.payload = {"account": self.handle_yaml.read_yaml()['account'],
+                        "password": self.handle_yaml.read_yaml()['password'],
                         "isVaildCode": False}
 
     @property
