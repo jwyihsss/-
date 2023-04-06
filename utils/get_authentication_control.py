@@ -1,17 +1,15 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-from utils.path import root
+from utils import config
 from jsonpath import jsonpath
-from utils.read_yaml_control import HandleYaml
 
 
 class Authentication:
     """获取token/cookies"""
 
     def __init__(self):
-        self.handle_yaml = HandleYaml(root / 'config.yml')
-        self.payload = {"account": self.handle_yaml.read_yaml()['account'],
-                        "password": self.handle_yaml.read_yaml()['password'],
+        self.payload = {"account": config.account,
+                        "password": config.password,
                         "isVaildCode": False}
 
     @property
@@ -22,4 +20,4 @@ class Authentication:
         return res_cookies, res_token
 
 
-cookies, token = Authentication().cookie_token
+# cookies, token = Authentication().cookie_token

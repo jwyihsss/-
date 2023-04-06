@@ -3,12 +3,11 @@ env: 测试环境
 tester_name:
 
 # 测试域名
-host:
+host: https://open.xwdsp.com
 
 # 登录用户信息
 account:
 password:
-
 
 # jenkins相关配置
 jenkins:
@@ -33,3 +32,16 @@ mysql_db:
   user:
   password:
   port: 3306
+  # true为打开数据库配置,false为关闭
+  switch: false
+
+# 邮箱相关配置
+email:
+  # 邮箱服务类型
+  smtp_server: smtp.163.com
+  # 发送人邮箱
+  sender_email:
+  # 发送人密码
+  password:
+  # 接收人邮箱
+  receiver_email:

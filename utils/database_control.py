@@ -14,7 +14,9 @@ class QueryState(enum.Enum):
 class MysqlDB:
     """数据库封装"""
 
-    def __enter__(self):
+    def __init__(self):
+        """初始化数据库连接"""
+
         try:
             self.conn = pymysql.connect(
                 host=config.mysql_db.host,
@@ -26,9 +28,10 @@ class MysqlDB:
         except Exception as err:
             logger.error(f"数据库连接失败: {err}")
             raise
-        return self
 
-    def __exit__(self, exc_type, exc_val, exc_tb):
+    def __del__(self):
+        """关闭数据库连接"""
+
         try:
             self.conn.close()
         except Exception as err:
@@ -41,12 +44,7 @@ class MysqlDB:
         try:
             with self.conn.cursor() as cursor:
                 cursor.execute(sql)
-                if state == QueryState.ALL:
-                    data = cursor.fetchall()
-                elif state == QueryState.ONE:
-                    data = cursor.fetchone()
-                else:
-                    raise ValueError(f"无效的查询状态: {state}")
+                data = cursor.fetchall() if state == QueryState.ALL else cursor.fetchone() if state == QueryState.ONE else ...
             return data
         except Exception as err:
             logger.error(f"查询失败: {err}")

@@ -29,5 +29,5 @@ class ReportStyle:
         :return:
         """
         with allure.step(step):
-            pass
+            ...
 

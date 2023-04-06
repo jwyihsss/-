@@ -1,79 +1,33 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import inspect
-import random
 from faker import Faker
 from loguru import logger
 from datetime import datetime
 
+faker = Faker(locale='zh_CN')
 
-class Execute:
+
+class Mock:
     """ Mock数据 """
-
-    def __init__(self, func_name):
-        self.faker = Faker(locale='zh_CN')
+    def __init__(self, func_name=None):
+        self._faker = faker
         self.func_name = func_name
-        self.func_map = self.func_list()
 
-    def __call__(self, *args, **kwargs):
-        func = self.func_map.get(self.func_name, None)
-        return getattr(self, str(func))() if func else logger.error("未获取到该字段对应方法，请检查")
-
-    def func_list(self):
-        """
-        :return: 返回除内置方法外类中的所有其他方法
-        """
-        func_list = {}
-        all_method = inspect.getmembers(self, inspect.ismethod)
-        for name in all_method:
-            func_list[name[0]] = name[0] if not str(name[0]).startswith('__') else ...
-        return func_list
-
-    def random_int(self):
-        """
-        :return: 随机数
-        """
-        _data = random.randint(0, 5000)
-        return _data
-
-    def random_phone(self):
-        """
-        :return: 随机生成手机号码
-        """
-        return '1190124' + str(self.faker.phone_number()[7:])
-
-    def random_id_number(self):
-        """
-
-        :return: 随机生成身份证号码
-        """
-
-        id_number = self.faker.ssn()
-        return id_number
-
-    def random_female_name(self):
-        """
-
-        :return: 女生姓名
-        """
-        female_name = self.faker.name_female()
-        return female_name
-
-    def random_male_name(self):
-        """
-
-        :return: 男生姓名
-        """
-        male_name = self.faker.name_male()
-        return male_name
-
-    def random_email(self):
-        """
-
-        :return: 生成邮箱
-        """
-        email = self.faker.email()
-        return email
+    def __call__(self):
+        func_name = self.func_name[:self.func_name.find('(')]
+        args_str = self.func_name[self.func_name.find('(') + 1:self.func_name.find(')')]
+        if func_name in dir(self._faker):
+            func = getattr(self._faker, func_name)
+            params = inspect.signature(func).parameters
+            params_list = [name for name, param in params.items()]
+            if len(params_list) == 0 or len(args_str) == 0:
+                return func()
+            else:
+                return func(*eval(args_str))
+        else:
+            logger.error(f"未获取到对应方法，请检查")
+            raise RuntimeError
 
     def now_time(self):
         """
@@ -91,14 +45,11 @@ class Execute:
         now_time_stamp = datetime.now().timestamp()
         return int(now_time_stamp)
 
-    def random_num(self):
-        """
-
-        :return: 随机1~3数字
-        """
-        num = random.randint(1, 3)
-        return num
-
 
 if __name__ == '__main__':
-    r = Execute('random_male_name')()
+    r1 = Mock('phone_number()')()
+    r2 = Mock('random_int(1, 99)')()
+    r3 = Mock().now_time()
+    print(r1, r2, r3)
+    print(Mock('phone_number()')())
+

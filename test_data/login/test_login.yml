@@ -1,12 +1,12 @@
 common_inputs:
     method: POST
-    path: "xxx/login"
+    path: /login
 
 tests:
   - case: 正确账号、密码登录
     inputs:
       params: {}
-      json: {"account": "{{random_phone}}", "password": "xxxxxxxxxx"}
+      json: {"account": "{{phone_number()}}", "password": "xxxxxxxxxx"}
       file:
       sql:
     expectation:

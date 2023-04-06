@@ -1,7 +1,6 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import yaml
-from utils.path import root
 from loguru import logger
 
 
@@ -31,19 +30,9 @@ class HandleYaml:
 
     def add_cache(self, key, val):
         """写入缓存数据"""
-
         data = self.read_yaml()
-        cache_data = data.get('cache', {})
-        cache_data[key] = val
-        data['cache'] = cache_data
+        data['cache'] = {**data.get('cache', {}), key: val}
         self._write_yaml(data)
 
-    def get_cache(self, key):
-        data = self.read_yaml()
-        return data.get('cache', {}).get(key)
-
-
-if __name__ == '__main__':
-    print(HandleYaml(root / 'test_data/cache.yml').get_cache('test_courseCreate'))
 
 

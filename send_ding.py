@@ -8,7 +8,7 @@ from utils.path import root
 
 import jenkins
 import urllib3
-from utils.fake_data_control import Execute
+from utils.fake_data_control import Mock
 from dingtalkchatbot.chatbot import DingtalkChatbot
 
 url = config.jenkins.url
@@ -82,7 +82,7 @@ class SendDingTalk(JenkinsContent):
             text = f'### **{self.job_name}接口自动化通知**\n' \
                    f"**Jenkins构建结果: {job_result}**\n\n" \
                    f"**测试环境: 线上环境**\n\n" \
-                   f"**时间: {Execute('now_time')()}**\n\n" \
+                   f"**时间: {Mock('now_time')()}**\n\n" \
                    "------------\n\n" \
                    f"### **执行结果**\n\n" \
                    f"**成功率: <font color='#00dd00'>{round(int(passed_num) / int(case_num) * 100)}%</font>**\n\n" \

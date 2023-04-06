@@ -1,13 +1,13 @@
 common_inputs:
     method: POST
-    path: /import
+    path: /imports
 
 tests:
   - case: 更换照片
     inputs:
       params: {}
-      json: {"key": "{{random_phone}}", "key2": "$cache.test_login"}
-      file: "import.xlsx"
+      json: {"key": "{{phone_number()}}", "key2": "$cache.test_login"}
+      file: "imports.xlsx"
       sql:
     expectation:
       response: {"code": 0}
@@ -15,8 +15,8 @@ tests:
   - case: 更换照片2
     inputs:
       params: {}
-      json: {"key": ["{{random_num}}"], "key2": ["$cache.test_login"]}
-      file: "import.xlsx"
+      json: {"key": ["{{random_int()}}"], "key2": ["$cache.test_login"]}
+      file: "imports.xlsx"
       sql:
     expectation:
       response: {"code": 0}

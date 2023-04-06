@@ -6,7 +6,10 @@ from loguru import logger
 from utils.decorator_control import Log
 from utils.get_authentication_control import Authentication
 
-cookie, token = Authentication().cookie_token
+# cookie, token = Authentication().cookie_token
+session = requests.session()
+session.verify = False
+# session.cookies = cookie
 
 
 class RestClient:
@@ -14,9 +17,7 @@ class RestClient:
 
     def __init__(self):
         urllib3.disable_warnings()
-        self.session = requests.session()  # 创建会话对象
-        self.session.verify = False
-        self.session.cookies = cookie
+        self.session = session  # 创建会话对象
 
     @Log(True)
     def request(self, env, data=None, json=None, headers=None, **kwargs):
@@ -37,8 +38,8 @@ class RestClient:
     def headers():
         """全局headers"""
         headers = {
-            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36',
-            'token': token
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
+            # 'token': token
         }
         return headers
 

@@ -1,10 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-import os
+# @Time : 2023/3/24 13:08
+# @Author : 谈林海
 import pytest
-from utils.allure_control import ReportStyle
+from pathlib import Path
+
+from utils import config
 from utils.path import root
+from utils.log_control import logger
+from utils.database_control import MysqlDB
 from utils.read_yaml_control import HandleYaml
+from utils.allure_control import ReportStyle
 from utils.data_handle_control import DataHandler, Config
 from utils.requests_control import RestClient
 
@@ -16,22 +22,22 @@ def pytest_generate_tests(metafunc):
     markers = metafunc.definition.own_markers
     for marker in markers:
         if marker.name == 'datafile':
-            test_data_path = os.path.join(metafunc.config.rootdir, marker.args[0]) if marker.args else ...
+            test_data_path = Path(metafunc.config.rootdir) / marker.args[0] if marker.args else logger.error(
+                'yaml测试文件路径拼接失败，请检查')
             test_data = HandleYaml(test_data_path).read_yaml()
             for data in test_data['tests']:
                 if data['inputs'].get('file', {}):
                     data['inputs']['file'] = {'file': (
                         data['inputs']['file'], open(root / f"files/{data['inputs']['file']}", 'rb'),
                         'application/json')}
-                    test_case = {
-                        'case': data.get('case', {}),
-                        'env': (str(host()) + str(test_data['common_inputs'].get('path', {})),
-                                str(test_data['common_inputs'].get('method', ''))),
-                        'inputs': data.get('inputs', {}),
-                        'expectation': data.get('expectation', {})
-                    }
+                test_case = {
+                    'case': data.get('case', {}),
+                    'env': (str(config.host) + str(test_data['common_inputs'].get('path', {})),
+                            str(test_data['common_inputs'].get('method', ''))),
+                    'inputs': data.get('inputs', {}),
+                    'expectation': data.get('expectation', {})
+                }
                 test_cases.append(test_case)
-
             metafunc.parametrize(
                 "env, case, inputs, expectation",
                 [(tc['env'], tc['case'], tc['inputs'], tc['expectation']) for tc in test_cases],
@@ -50,49 +56,35 @@ def alert_inputs(request):
 
 @pytest.hookimpl
 def pytest_assertion_pass(item, lineno, orig, expr=None, values=None):
+    """测试报告显示断言内省"""
+
     ReportStyle.allure_step_no(f'断言通过:  {orig}')
 
 
 def pytest_collection_modifyitems(items):
-    """测试用例收集完成时，将收集到的item的name和nodeid的中文显示"""
+    """处理收集的测试用例"""
 
     for item in items:
         item.name = item.name.encode("utf-8").decode("unicode_escape")
         item._nodeid = item.nodeid.encode("utf-8").decode("unicode_escape")
 
-
-@pytest.fixture()
-def headers():
-    """通用请求头"""
-
-    yield RestClient().headers()
+        _marks = Path(item.fspath).resolve().parts[-2]  # 测试用例对应模块
+        if item.get_closest_marker(name=f'{_marks}') is None:
+            item.add_marker(eval(f"pytest.mark.{_marks}"))
 
 
-def host():
-    """获取配置文件中的域名"""
+@pytest.fixture(autouse=True)
+def collection():
+    class Core:
+        def __init__(self):
+            self.requests = RestClient()
+            self.headers = RestClient.headers()
+            self.cache = HandleYaml(root / 'test_data/cache.yml')
+            self.mysql = MysqlDB() if config.mysql_db.switch else logger.warning('当前数据库配置: 关闭')
 
-    res_host = HandleYaml(root / 'config.yml').read_yaml()['host']
-    return res_host
-
-
-@pytest.fixture()
-def requests():
-    """返回实例化请求方法"""
-
-    yield RestClient()
+    yield Core()
 
 
 @pytest.fixture()
-def sql():
-    """返回实例化数据库方法"""
-
-    from utils.database_control import MysqlDB
-    with MysqlDB() as sql:
-        yield sql
-
-
-@pytest.fixture(scope='session')
-def cache():
-    """返回一个字典，用作数据共享"""
-
-    yield {}
+def core(collection):
+    yield collection
