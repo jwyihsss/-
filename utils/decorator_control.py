@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import json
-from loguru import logger
+from utils.log_control import logger
 from utils.allure_control import ReportStyle
 
 

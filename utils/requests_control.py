@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import urllib3
 import requests
-from loguru import logger
+from utils.log_control import logger
 from jsonpath import jsonpath
 
 from utils.decorator_control import Log
@@ -26,7 +26,7 @@ class Authentication:
             res_cookies, res_token = res.cookies, jsonpath(res.json(), '$..token')[0]
             return res_cookies, res_token
         except Exception as err:
-            logger.error(f'获取认证信息失败，请检查: {err}')
+            logger.warning(f'未获取到登录认证信息，请检查: {err}')
             return Cookies, {}  # 如果cookie没有获取成功，则根据全局配置域名生成一个备用cookie
 
 

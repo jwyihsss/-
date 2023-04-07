@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import inspect
 from faker import Faker
-from loguru import logger
+from utils.log_control import logger
 from datetime import datetime
 
 faker = Faker(locale='zh_CN')

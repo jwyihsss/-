@@ -3,7 +3,7 @@
 import enum
 import pymysql
 from utils import config
-from loguru import logger
+from utils.log_control import logger
 
 
 class QueryState(enum.Enum):

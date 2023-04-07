@@ -5,13 +5,13 @@
     "name" : "天气模块",
     "children" : [ {
       "name" : "天气查询接口",
-      "uid" : "bf9211de0de2ac48",
+      "uid" : "21ac4393de9546ca",
       "parentUid" : "5eb95b7614527884cdc65b63293dc287",
       "status" : "passed",
       "time" : {
-        "start" : 1680776871038,
-        "stop" : 1680776873428,
-        "duration" : 2390
+        "start" : 1680853004341,
+        "stop" : 1680853004516,
+        "duration" : 175
       },
       "flaky" : false,
       "newFailed" : false,

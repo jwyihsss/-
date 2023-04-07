@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 import yaml
-from loguru import logger
+from utils.log_control import logger
 
 
 class HandleYaml:

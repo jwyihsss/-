@@ -1,12 +1,12 @@
 {
-  "uid" : "bf9211de0de2ac48",
+  "uid" : "21ac4393de9546ca",
   "name" : "天气查询接口",
   "fullName" : "test_cases.tianqi.test_tianqi#test_tianqi",
   "historyId" : "d1af798efa19c84fa39d069bf7e78851",
   "time" : {
-    "start" : 1680776871038,
-    "stop" : 1680776873428,
-    "duration" : 2390
+    "start" : 1680853004341,
+    "stop" : 1680853004516,
+    "duration" : 175
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,24 +14,9 @@
   "beforeStages" : [ {
     "name" : "alert_inputs",
     "time" : {
-      "start" : 1680776871037,
-      "stop" : 1680776871037,
-      "duration" : 0
-    },
-    "status" : "passed",
-    "steps" : [ ],
-    "attachments" : [ ],
-    "parameters" : [ ],
-    "stepsCount" : 0,
-    "attachmentsCount" : 0,
-    "shouldDisplayMessage" : false,
-    "hasContent" : false
-  }, {
-    "name" : "collection",
-    "time" : {
-      "start" : 1680776871037,
-      "stop" : 1680776871037,
-      "duration" : 0
+      "start" : 1680853004340,
+      "stop" : 1680853004341,
+      "duration" : 1
     },
     "status" : "passed",
     "steps" : [ ],
@@ -44,9 +29,24 @@
   }, {
     "name" : "_session_faker",
     "time" : {
-      "start" : 1680776870994,
-      "stop" : 1680776871036,
-      "duration" : 42
+      "start" : 1680853004296,
+      "stop" : 1680853004340,
+      "duration" : 44
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "collection",
+    "time" : {
+      "start" : 1680853004341,
+      "stop" : 1680853004341,
+      "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
@@ -59,8 +59,8 @@
   }, {
     "name" : "core",
     "time" : {
-      "start" : 1680776871037,
-      "stop" : 1680776871037,
+      "start" : 1680853004341,
+      "stop" : 1680853004341,
       "duration" : 0
     },
     "status" : "passed",
@@ -77,9 +77,9 @@
     "steps" : [ {
       "name" : "请求地址: https://open.xwdsp.com/phegda/advrest",
       "time" : {
-        "start" : 1680776873426,
-        "stop" : 1680776873426,
-        "duration" : 0
+        "start" : 1680853004513,
+        "stop" : 1680853004514,
+        "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
@@ -92,8 +92,8 @@
     }, {
       "name" : "请求方法: POST",
       "time" : {
-        "start" : 1680776873426,
-        "stop" : 1680776873426,
+        "start" : 1680853004514,
+        "stop" : 1680853004514,
         "duration" : 0
       },
       "status" : "passed",
@@ -107,16 +107,16 @@
     }, {
       "name" : "请求头",
       "time" : {
-        "start" : 1680776873426,
-        "stop" : 1680776873427,
-        "duration" : 1
+        "start" : 1680853004514,
+        "stop" : 1680853004514,
+        "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "1174f43b6fe91b4c",
+        "uid" : "f9028d1b83edcd26",
         "name" : "请求头",
-        "source" : "1174f43b6fe91b4c.json",
+        "source" : "f9028d1b83edcd26.json",
         "type" : "application/json",
         "size" : 141
       } ],
@@ -128,16 +128,16 @@
     }, {
       "name" : "请求数据",
       "time" : {
-        "start" : 1680776873427,
-        "stop" : 1680776873428,
+        "start" : 1680853004514,
+        "stop" : 1680853004515,
         "duration" : 1
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "6e5ba06333c7e0da",
+        "uid" : "e5326fb082d45724",
         "name" : "请求数据",
-        "source" : "6e5ba06333c7e0da.json",
+        "source" : "e5326fb082d45724.json",
         "type" : "application/json",
         "size" : 1282
       } ],
@@ -149,8 +149,8 @@
     }, {
       "name" : "接口响应码: 200",
       "time" : {
-        "start" : 1680776873428,
-        "stop" : 1680776873428,
+        "start" : 1680853004515,
+        "stop" : 1680853004515,
         "duration" : 0
       },
       "status" : "passed",
@@ -162,10 +162,10 @@
       "shouldDisplayMessage" : false,
       "hasContent" : false
     }, {
-      "name" : "响应耗时(ms): 1284",
+      "name" : "响应耗时(ms): 88",
       "time" : {
-        "start" : 1680776873428,
-        "stop" : 1680776873428,
+        "start" : 1680853004515,
+        "stop" : 1680853004515,
         "duration" : 0
       },
       "status" : "passed",
@@ -179,18 +179,18 @@
     }, {
       "name" : "响应数据",
       "time" : {
-        "start" : 1680776873428,
-        "stop" : 1680776873428,
+        "start" : 1680853004515,
+        "stop" : 1680853004515,
         "duration" : 0
       },
       "status" : "passed",
       "steps" : [ ],
       "attachments" : [ {
-        "uid" : "f0091c7cf141f45f",
+        "uid" : "60d166ec8942bbea",
         "name" : "响应数据",
-        "source" : "f0091c7cf141f45f.json",
+        "source" : "60d166ec8942bbea.json",
         "type" : "application/json",
-        "size" : 156
+        "size" : 2631
       } ],
       "parameters" : [ ],
       "stepsCount" : 0,
@@ -200,8 +200,8 @@
     }, {
       "name" : "断言通过:  res['success'] == expectation['response']",
       "time" : {
-        "start" : 1680776873428,
-        "stop" : 1680776873428,
+        "start" : 1680853004515,
+        "stop" : 1680853004515,
         "duration" : 0
       },
       "status" : "passed",
@@ -223,8 +223,8 @@
   "afterStages" : [ {
     "name" : "collection::0",
     "time" : {
-      "start" : 1680776873431,
-      "stop" : 1680776873431,
+      "start" : 1680853004517,
+      "stop" : 1680853004517,
       "duration" : 0
     },
     "status" : "passed",
@@ -238,8 +238,8 @@
   }, {
     "name" : "core::0",
     "time" : {
-      "start" : 1680776873430,
-      "stop" : 1680776873430,
+      "start" : 1680853004517,
+      "stop" : 1680853004517,
       "duration" : 0
     },
     "status" : "passed",
@@ -271,7 +271,7 @@
     "value" : "tanlinhaideMacBook-Pro.local"
   }, {
     "name" : "thread",
-    "value" : "53881-MainThread"
+    "value" : "28855-MainThread"
   }, {
     "name" : "framework",
     "value" : "pytest"
@@ -307,6 +307,6 @@
     "categories" : [ ],
     "tags" : [ "datafile('test_data/tianqi/test_tianqi.yml')", "tianqi" ]
   },
-  "source" : "bf9211de0de2ac48.json",
+  "source" : "21ac4393de9546ca.json",
   "parameterValues" : [ "'查询上海天气'", "('https://open.xwdsp.com/phegda/advrest', 'POST')", "{'db_data': None, 'response': True}", "{'params': {}, 'json': {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '5', 'styleId': [1004]}], 'requestId': '16805156922345810'}, 'file': None, 'sql': None}" ]
 }
