@@ -13,16 +13,19 @@ class Authentication:
     """获取token/cookies"""
 
     def __init__(self):
+        # 读取全局配置中的账号信息
         self.payload = {"account": config.account,
-                        "password": config.password,
-                        "isVaildCode": False}
+                        "password": config.password
+                        }
 
     @property
     def cookie_token(self):
-        import requests
-        res = requests.post('https://tianqiapi/login', data=self.payload)
-        res_cookies, res_token = res.cookies, jsonpath(res.json(), '$..token')[0]
-        return res_cookies, res_token
+        try:
+            res = requests.post('https://tianqiai/login', data=self.payload)
+            res_cookies, res_token = res.cookies, jsonpath(res.json(), '$..token')[0]
+            return res_cookies, res_token
+        except Exception as err:
+            logger.error(f'获取认证信息失败，请检查: {err}')
 
 
 # cookie, token = Authentication().cookie_token
