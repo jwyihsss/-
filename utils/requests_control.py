@@ -7,6 +7,7 @@ from jsonpath import jsonpath
 
 from utils.decorator_control import Log
 from utils import config
+from utils.create_cookie_control import Cookies
 
 
 class Authentication:
@@ -26,12 +27,12 @@ class Authentication:
             return res_cookies, res_token
         except Exception as err:
             logger.error(f'获取认证信息失败，请检查: {err}')
+            return Cookies, {}  # 如果cookie没有获取成功，则根据全局配置域名生成一个备用cookie
 
 
-# cookie, token = Authentication().cookie_token
 session = requests.session()
 session.verify = False
-# session.cookies = cookie
+session.cookies, token = Authentication().cookie_token
 
 
 class RestClient:
