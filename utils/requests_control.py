@@ -3,8 +3,27 @@
 import urllib3
 import requests
 from loguru import logger
+from jsonpath import jsonpath
+
 from utils.decorator_control import Log
-from utils.get_authentication_control import Authentication
+from utils import config
+
+
+class Authentication:
+    """获取token/cookies"""
+
+    def __init__(self):
+        self.payload = {"account": config.account,
+                        "password": config.password,
+                        "isVaildCode": False}
+
+    @property
+    def cookie_token(self):
+        import requests
+        res = requests.post('https://tianqiapi/login', data=self.payload)
+        res_cookies, res_token = res.cookies, jsonpath(res.json(), '$..token')[0]
+        return res_cookies, res_token
+
 
 # cookie, token = Authentication().cookie_token
 session = requests.session()

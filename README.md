@@ -100,6 +100,10 @@ exit  # 退出虚拟环境
 
 创建好了yaml测试数据，就可以创建测试用例文件了
 ### 创建测试用例文件
+
+备注：登录获取认证在utils.requests_control.py，用于存放token及cookie会话
+
+
 ![img.png](files/testcase.png)
 
 同样的，在test_cases下的login目录中创建yaml文件，目录层级与test_data保持一致
