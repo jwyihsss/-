@@ -11,6 +11,7 @@ from utils.get_md5_control import Md5
 
 def create_cookie():
     """生成cookie"""
+
     cookie_jar = cj.CookieJar()
     cookie = cj.Cookie(
         version=0,
