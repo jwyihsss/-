@@ -43,19 +43,19 @@ class RestClient:
         self.session = session  # 创建会话对象
 
     @Log(True)
-    def request(self, env, data=None, json=None, headers=None, **kwargs):
+    def request(self, env, **kwargs):
         url, request_method = env
         res = {
-            'get': lambda: self.session.get(url, headers=headers, **kwargs),
-            'post': lambda: self.session.post(url, json, data, headers=headers, **kwargs),
+            'get': lambda: self.session.get(url, **kwargs),
+            'post': lambda: self.session.post(url, **kwargs),
             'options': lambda: self.session.options(url, **kwargs),
             'head': lambda: self.session.head(url, **kwargs),
-            'put': lambda: self.session.put(url, data, **kwargs),
-            'patch': lambda: self.session.patch(url, json=json.dump(json) if json else ..., **kwargs),
+            'put': lambda: self.session.put(url, **kwargs),
+            'patch': lambda: self.session.patch(url, **kwargs),
             'delete': lambda: self.session.delete(url, **kwargs)
         }.get(request_method.lower(), False)()
 
-        return res
+        return res or logger.error('不存在的请求方式，请检查')
 
     @staticmethod
     def headers():
