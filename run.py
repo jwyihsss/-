@@ -7,16 +7,18 @@ import traceback
 
 from utils.mail_control import MailSender
 from utils.log_control import logger
+from utils.create_case_control import TestCaseAutoCreate
 
 
 @click.command()
 @click.option('--mark', '-m', default='', help='传入被标记的case套件, 例: -m login')
 def run(mark):
-    try:
-        logger.info("""
+    logger.info("""
 
-                   开始执行项目...
-                   """)
+               开始执行项目...
+               """)
+    TestCaseAutoCreate().generate_test_case()
+    try:
         pytest.main(['test_cases', f'-m={mark}', '--clean-alluredir', '--alluredir=allure-results'])
         os.system("allure generate -c -o allure-report")
     except Exception:

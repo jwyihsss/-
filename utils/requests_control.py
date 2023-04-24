@@ -55,7 +55,7 @@ class RestClient:
             'delete': lambda: self.session.delete(url, **kwargs)
         }.get(request_method.lower(), False)()
 
-        return res or logger.error('不存在的请求方式，请检查')
+        return res
 
     @staticmethod
     def headers():

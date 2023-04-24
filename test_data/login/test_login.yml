@@ -9,15 +9,18 @@ tests:
       json: {"account": "{{phone_number()}}", "password": "xxxxxxxxxx"}
       file:
       sql:
+      assert_key: success
+      assert_way: unequal
     expectation:
-      db_data:
-      response: {'code': 12, 'msg': '手机号或密码错误'}
+      response: true
 
   - case: 错误账号、密码登录
     inputs:
       params: {}
       json: {"account": "18900001000", "password": "xxxxxx"}
+      file:
+      sql:
+      assert_key: success
+      assert_way: unequal
     expectation:
-      db_data:
-      response:
-        code: 0
+      response: true

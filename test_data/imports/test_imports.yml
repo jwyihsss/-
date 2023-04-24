@@ -9,8 +9,10 @@ tests:
       json: {"key": "{{phone_number()}}", "key2": "$cache.test_login"}
       file: "imports.xlsx"
       sql:
+      assert_key: success
+      assert_way: unequal
     expectation:
-      response: {"code": 0}
+      response: true
 
   - case: 更换照片2
     inputs:
@@ -18,6 +20,8 @@ tests:
       json: {"key": ["{{random_int()}}"], "key2": ["$cache.test_login"]}
       file: "imports.xlsx"
       sql:
+      assert_key: success
+      assert_way: unequal
     expectation:
-      response: {"code": 0}
+      response: true
 

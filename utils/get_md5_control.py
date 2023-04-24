@@ -20,4 +20,5 @@ class Md5:
 
         with open(file_path, 'rb') as f:
             file_md5 = hashlib.md5(f.read()).hexdigest()
+
         return file_md5

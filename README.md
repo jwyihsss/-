@@ -1,5 +1,7 @@
 **t2-api-autotest 接口自动化测试框架**
 === 
+## 这个框架目前正在尝试开发自动生成用例功能。。。暂时还不完善（自动生成用例实现的还比较简单，有编程基础的可以看着使用。当然也不会影响到现有的模块的使用）
+
 ## 框架模式
 基于 pytest + allure + yaml + mysql + 钉钉通知 + Jenkins 实现的接口自动化框架
 * git地址: [https://github.com/1inhai/t2-api-autotest.git](https://github.com/1inhai/t2-api-autotest.git)
