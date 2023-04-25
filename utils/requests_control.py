@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# @Time : 2023/4/24 15:59
+# @Author : 谈林海
 import urllib3
 from urllib3.util.retry import Retry
 import requests
