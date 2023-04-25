@@ -2,17 +2,15 @@
 # -*- coding: utf-8 -*-
 # @Time : 2023/4/24 11:12
 # @Author : 谈林海
-import json
 from pathlib import Path
 from utils.path import root
-from utils.log_control import logger
 from utils.fake_data_control import Mock
 from utils.clean_file_control import CleanFile
 from utils.read_yaml_control import HandleYaml
 
 
-class TestCaseAutoCreate:
-    """自动创建测试用例"""
+class CaseHandler:
+    """用例相关数据处理"""
 
     def __init__(self, file_path=root / 'test_data'):
         """初始化目录路径"""
@@ -58,6 +56,49 @@ class TestCaseAutoCreate:
         """生成测试用例名称"""
 
         return [case_path.stem for case_path in self.get_data_path[1]]
+
+    def generate_test_case(self):
+        """生成测试用例文件"""
+
+        data_dict = {k: v for k, v in zip(self.get_data_path[1], self.get_yaml_data)}
+        for file_path, case_detail in data_dict.items():
+            file_name = str(file_path).split('/')[-1]
+            for data in case_detail.get('tests'):
+                params = data['inputs'].get('params')
+                jsons = data['inputs'].get('json')
+                sql = data['inputs'].get('sql')
+            file_path.mkdir(parents=True, exist_ok=True)  # 先创建目录
+            case_path = file_path / f'test_{file_name}.py'
+            feature = str(file_name).split('_')[-1]
+            with case_path.open(mode='w', encoding='utf-8') as f:
+                f.write(self.case_content(feature, file_name, params, jsons, sql))  # 覆盖写入python文件
+
+    def case_content(self, feature, datafile, params, jsons, sql):
+        """生成测试用例内容"""
+
+        content = f"""#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+# @Time : {Mock().now_time()}
+import allure
+import pytest
+from utils.json_control import get_json
+from utils.assert_control import Assert
+
+
+@allure.feature('{feature}')
+@pytest.mark.datafile('test_data/{feature}/{datafile}.yml')
+def test_tianqi(core, env, case, inputs, expectation):
+    res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], headers=core.headers).json()
+    assert Assert(get_json(res, inputs['assert_key']), expectation['response']).ass(inputs['assert_way']) is True"""
+
+        return content
+
+
+class TestCaseAutoCreate(CaseHandler):
+    """自动生成测试用例"""
+
+    def __init__(self):
+        super().__init__()
 
     def generate_test_case(self):
         """生成测试用例文件"""
