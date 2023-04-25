@@ -9,7 +9,7 @@ class Assert:
         self._excp = excp
         self._resp = resp
 
-    def ass(self, way='equal'):
+    def ast(self, way='equal'):
         assert_dict = {
             'equal': lambda: self._excp == self._resp,
             'in': lambda: self._excp in self._resp,
@@ -19,5 +19,5 @@ class Assert:
 
 
 if __name__ == '__main__':
-    r = Assert(123, 13).ass('equal')
+    r = Assert(123, 13).ast('equal')
     print(r)
