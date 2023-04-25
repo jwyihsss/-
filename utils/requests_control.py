@@ -10,8 +10,7 @@ from requests.exceptions import RetryError, Timeout, RequestException
 
 from utils import config
 from utils.json_control import JsonHandler
-from utils.log_control import logger
-from utils.decorator_control import Log
+from utils.log_control import logger, Log
 from utils.create_cookie_control import Cookies
 
 
