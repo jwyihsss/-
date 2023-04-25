@@ -5,9 +5,9 @@ from urllib3.util.retry import Retry
 import requests
 from requests.adapters import HTTPAdapter
 from requests.exceptions import RetryError, Timeout, RequestException
-from jsonpath import jsonpath
 
 from utils import config
+from utils.json_control import JsonHandler
 from utils.log_control import logger
 from utils.decorator_control import Log
 from utils.create_cookie_control import Cookies
@@ -26,7 +26,8 @@ class Authentication:
     def cookie_token(self):
         try:
             res = requests.post('https://tianqiai/login', data=self.payload)
-            res_cookies, res_token = res.cookies, jsonpath(res.json(), '$..token')[0]
+            js = JsonHandler(res.json())
+            res_cookies, res_token = res.cookies, js.find_one('$..token')
             return res_cookies, res_token
         except Exception as err:
             logger.warning(f'未获取到登录认证信息，请检查: {err}')
