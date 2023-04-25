@@ -9,7 +9,7 @@ import pytest
 @allure.title('登录接口')
 @pytest.mark.login
 @allure.feature('login')
-@pytest.mark.datafile('test_data/login/login.yml')
+@pytest.mark.datafile('test_data/login/test_login.yml')
 def test_tianqi(core, env, case, inputs, expectation):
     res = core.requests.request(env, data=inputs['params'], headers=core.headers).json()
     core.cache.add_cache('test_login', res['key'])

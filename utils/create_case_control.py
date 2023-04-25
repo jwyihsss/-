@@ -67,14 +67,12 @@ class TestCaseAutoCreate(CaseHandler):
 
         data_dict = {k: v for k, v in zip(self.get_data_path[1], self.get_yaml_data)}
         for file_path, case_detail in data_dict.items():
-            file_name = str(file_path).split('/')[-1]
             for data in case_detail.get('tests'):
                 params, jsons, sql = data['inputs'].get('params'), data['inputs'].get('json'), data['inputs'].get('sql')
             FileUtils.create_dir(file_path)  # 创建目录
-            case_path = file_path / f'test_{file_name}.py'
-            feature = str(file_name).split('_')[-1]
+            case_path = file_path / f'test_{file_path.stem}.py'
             FileUtils.write_file(case_path,
-                                 content=self.case_content(feature, file_name, params, jsons, sql))  # 写入python文件
+                                 content=self.case_content(file_path.stem, f'test_{file_path.stem}', params, jsons, sql))  # 写入python文件
 
     def case_content(self, feature, datafile, params, jsons, sql):
         """生成测试用例内容"""
