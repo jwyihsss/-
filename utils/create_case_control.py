@@ -65,18 +65,15 @@ class TestCaseAutoCreate:
         data_dict = {k: v for k, v in zip(self.get_data_path[1], self.get_yaml_data)}
         for file_path, case_detail in data_dict.items():
             file_name = str(file_path).split('/')[-1]
-            if file_path.exists():
-                logger.info(f'{file_path}目录已存在, 跳过创建')
             for data in case_detail.get('tests'):
                 params = data['inputs'].get('params')
                 jsons = data['inputs'].get('json')
                 sql = data['inputs'].get('sql')
-            else:
-                file_path.mkdir(parents=True, exist_ok=True)  # 先创建目录
-                case_path = file_path / f'test_{file_name}.py'
-                feature = str(file_name).split('_')[-1]
-                with case_path.open(mode='w', encoding='utf-8') as f:
-                    f.write(self.case_content(feature, file_name, params, jsons, sql))  # 覆盖写入python文件
+            file_path.mkdir(parents=True, exist_ok=True)  # 先创建目录
+            case_path = file_path / f'test_{file_name}.py'
+            feature = str(file_name).split('_')[-1]
+            with case_path.open(mode='w', encoding='utf-8') as f:
+                f.write(self.case_content(feature, file_name, params, jsons, sql))  # 覆盖写入python文件
 
     def case_content(self, feature, datafile, params, jsons, sql):
         """生成测试用例内容"""
