@@ -2,11 +2,13 @@
 # -*- coding: utf-8 -*-
 # @Time : 2023/4/24 11:12
 # @Author : 谈林海
+import json
 from pathlib import Path
 from utils.path import root
 from utils.log_control import logger
 from utils.fake_data_control import Mock
 from utils.clean_file_control import CleanFile
+from utils.read_yaml_control import HandleYaml
 
 
 class TestCaseAutoCreate:
@@ -22,12 +24,21 @@ class TestCaseAutoCreate:
     def get_data_path(self):
         """获取测试数据路径及转换为测试用例路径"""
 
-        root_dit = Path(self._file_path)
-        data_paths = [_path for _path in root_dit.rglob('*.yml') if
+        root_dir = Path(self._file_path)
+        data_paths = [_path for _path in root_dir.rglob('*.yml') if
                       _path.is_file() and _path.name != 'cache.yml']
-        case_paths = [Path(str(_path).replace('test_data', 'test_cases')) for _path in root_dit.rglob('*.yml') if
+        case_paths = [Path(str(_path).replace('test_data', 'test_cases')).parent for _path in root_dir.rglob('*.yml') if
                       _path.is_file() and _path.name != 'cache.yml']
         return data_paths, case_paths
+
+    @property
+    def get_yaml_data(self):
+        """获取测试文件对应测试数据"""
+
+        _data_paths = self.get_data_path[0]
+        data_list = [HandleYaml(_path).read_yaml() for _path in _data_paths]
+        # data_dict = {k: v for k, v in zip(_data_paths, data_list)}
+        return data_list
 
     def get_case_model(self, case_path):
         """获取测试数据所属模块"""
@@ -51,23 +62,25 @@ class TestCaseAutoCreate:
     def generate_test_case(self):
         """生成测试用例文件"""
 
-        file_names = self.generate_case_name
-        dir_path = self.generate_case_model
-        case_list = {k: v for k, v in zip(dir_path, file_names)}
-
-        logger.info("正在自动生成测试用例...")
-        for file_path, file_name in case_list.items():
+        data_dict = {k: v for k, v in zip(self.get_data_path[1], self.get_yaml_data)}
+        for file_path, case_detail in data_dict.items():
+            file_name = str(file_path).split('/')[-1]
             if file_path.exists():
                 logger.info(f'{file_path}目录已存在, 跳过创建')
+            for data in case_detail.get('tests'):
+                params = data['inputs'].get('params')
+                jsons = data['inputs'].get('json')
+                sql = data['inputs'].get('sql')
             else:
                 file_path.mkdir(parents=True, exist_ok=True)  # 先创建目录
-                case_path = file_path / f'{file_name}.py'
+                case_path = file_path / f'test_{file_name}.py'
                 feature = str(file_name).split('_')[-1]
                 with case_path.open(mode='w', encoding='utf-8') as f:
-                    f.write(self.case_content(feature, file_name))  # 覆盖写入python文件
-        logger.info("用例生成成功，现在开始执行测试...")
+                    f.write(self.case_content(feature, file_name, params, jsons, sql))  # 覆盖写入python文件
 
-    def case_content(self, feature, datafile):
+    def case_content(self, feature, datafile, params, jsons, sql):
+        """生成测试用例内容"""
+
         content = f"""#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time : {Mock().now_time()}
@@ -80,7 +93,7 @@ from utils.assert_control import Assert
 @allure.feature('{feature}')
 @pytest.mark.datafile('test_data/{feature}/{datafile}.yml')
 def test_tianqi(core, env, case, inputs, expectation):
-    res = core.requests.request(env, data=inputs['json'], headers=core.headers).json()
+    res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], headers=core.headers).json()
     assert Assert(get_json(res, inputs['assert_key']), expectation['response']).ass(inputs['assert_way']) is True"""
 
         return content
