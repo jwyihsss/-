@@ -1,0 +1,56 @@
+2023-04-25 17:29:54.009 | WARNING  | utils.requests_control:cookie_token:33 - 未获取到登录认证信息，请检查: <urllib3.connection.HTTPSConnection object at 0x102b59ee0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+2023-04-25 17:29:54.051 | WARNING  | conftest:__init__:83 - 当前数据库配置: 关闭
+2023-04-25 17:29:54.207 | INFO     | utils.decorator_control:wrapper:34 - 
+请求地址: https://open.xwdsp.com/phegda/advrest
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '2', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'data': {'ad': [], 'bidId': '8c1d457d95f71fa9f1547042d03061ca', 'requestId': '16805156922345810'}, 'success': True}
+响应耗时(ms): 87.0
+接口响应码: 200
+
+2023-04-25 17:30:05.796 | WARNING  | utils.requests_control:cookie_token:33 - 未获取到登录认证信息，请检查: <urllib3.connection.HTTPSConnection object at 0x10329ad60>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+2023-04-25 17:30:05.834 | WARNING  | conftest:__init__:83 - 当前数据库配置: 关闭
+2023-04-25 17:30:05.996 | INFO     | utils.decorator_control:wrapper:34 - 
+请求地址: https://open.xwdsp.com/phegda/advrest
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '4', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'data': {'ad': [], 'bidId': '3026a750a5f76ad63563cfc8bf3061ca', 'requestId': '16805156922345810'}, 'success': True}
+响应耗时(ms): 79.0
+接口响应码: 200
+
+2023-04-25 17:30:25.987 | WARNING  | utils.requests_control:cookie_token:33 - 未获取到登录认证信息，请检查: <urllib3.connection.HTTPSConnection object at 0x1057d7cd0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+2023-04-25 17:30:26.026 | WARNING  | conftest:__init__:83 - 当前数据库配置: 关闭
+2023-04-25 17:30:26.118 | INFO     | utils.decorator_control:wrapper:34 - 
+请求地址: https://open.xwdsp.com/phegda/advrest
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '1', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'msg': 'bad request ...', 'success': False}
+响应耗时(ms): 89.0
+接口响应码: 400
+
+2023-04-25 17:30:33.682 | WARNING  | utils.requests_control:cookie_token:33 - 未获取到登录认证信息，请检查: <urllib3.connection.HTTPSConnection object at 0x105672dc0>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known
+2023-04-25 17:30:33.720 | WARNING  | conftest:__init__:83 - 当前数据库配置: 关闭
+2023-04-25 17:30:33.912 | INFO     | utils.decorator_control:wrapper:24 - 请求返回结果为text类型
+2023-04-25 17:30:33.913 | INFO     | utils.decorator_control:wrapper:34 - 
+请求地址: https://open.xwdsp.com/imports
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'key': '18194963690', 'key2': None}
+响应数据: 404
+响应耗时(ms): 88.0
+接口响应码: 404
+
+2023-04-25 17:30:33.970 | WARNING  | conftest:__init__:83 - 当前数据库配置: 关闭
+2023-04-25 17:30:34.054 | INFO     | utils.decorator_control:wrapper:24 - 请求返回结果为text类型
+2023-04-25 17:30:34.054 | INFO     | utils.decorator_control:wrapper:34 - 
+请求地址: https://open.xwdsp.com/imports
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'key': ['404'], 'key2': [None]}
+响应数据: 404
+响应耗时(ms): 81.0
+接口响应码: 404
+

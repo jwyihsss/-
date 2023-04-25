@@ -36,4 +36,4 @@ class HandleYaml:
 
 
 if __name__ == '__main__':
-    HandleYaml('/Users/tanlinhai/PythonProjects/t2-api-autotest/test_data/tianqi/test_tianqi.yml').read_yaml()
+    HandleYaml('/Users/tanlinhai/PythonProjects/t2-api-autotest/test_data/tianqi/tianqi.yml').read_yaml()

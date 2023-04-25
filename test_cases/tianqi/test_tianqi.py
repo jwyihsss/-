@@ -7,7 +7,7 @@ import pytest
 
 @allure.feature('天气模块')
 @allure.title('天气查询接口')
-@pytest.mark.datafile('test_data/tianqi/test_tianqi.yml')
+@pytest.mark.datafile('test_data/tianqi/tianqi.yml')
 def test_tianqi(core, env, case, inputs, expectation):
     # core.requests: 返回请求方法对象
     # core.headers: 返回全局请求头

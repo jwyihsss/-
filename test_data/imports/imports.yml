@@ -9,7 +9,7 @@ tests:
       json: {"key": "{{phone_number()}}", "key2": "$cache.test_login"}
       file: "imports.xlsx"
       sql:
-      assert_key: success
+      assert_key: $..success
       assert_way: unequal
     expectation:
       response: true
@@ -20,7 +20,7 @@ tests:
       json: {"key": ["{{random_int()}}"], "key2": ["$cache.test_login"]}
       file: "imports.xlsx"
       sql:
-      assert_key: success
+      assert_key: $..success
       assert_way: unequal
     expectation:
       response: true

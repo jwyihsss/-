@@ -77,22 +77,17 @@ class FileUtils:
         Path(path).mkdir(parents=True, exist_ok=exist_ok)
 
     @staticmethod
-    def remove(path: Union[str, Path], ignore_errors=True) -> None:
+    def remove(path: Union[str, Path]) -> None:
         """
         删除一个文件或目录，可以选择是否忽略不存在的文件
         :param path: 文件/目录路径
-        :param ignore_errors: 是否忽略不存在的文件
         :return: None
         """
-        try:
-            path = Path(path)
-            if FileUtils.is_file(path):
-                os.remove(str(path))
-            elif FileUtils.is_dir(path):
-                os.rmdir(str(path))
-        except OSError:
-            if not ignore_errors:
-                raise
+        if not os.path.exists(path):
+            os.mkdir(path)
+        else:
+            shutil.rmtree(path)
+            os.mkdir(path)
 
     @staticmethod
     def move(src: Union[str, Path], dst: Union[str, Path], overwrite=True) -> None:
@@ -212,16 +207,14 @@ class FileUtils:
             f.write("\n".join(lines))
 
     @staticmethod
-    def glob_files(pattern: Union[str, Path]) -> List[Path]:
+    def glob_files(root_dir: Union[str, Path], pattern: str) -> List[Path]:
         """
         获取符合条件的所有文件
+        :param root_dir: 目录路径
         :param pattern: 匹配模式，可以使用 * 通配符
         :return: List[Path]
         """
-        path = Path(pattern)
-        if not path.is_absolute():
-            path = Path.cwd() / path
-        return list(Path.glob(path))
+        return [_path for _path in Path(root_dir).rglob(pattern) if _path.is_file()]
 
     @staticmethod
     def get_size(path: Union[str, Path], human_readable=True) -> Union[int, str]:
@@ -247,8 +240,8 @@ class FileUtils:
         suffixes = ["B", "KB", "MB", "GB", "TB"]
         suffix_index = 0
         while size > 1024 and suffix_index < 4:
-            suffix_index += 1  # increment the index of the suffix
-            size = size / 1024.0  # apply the division
+            suffix_index += 1
+            size = size / 1024.0
         return "%.*f%s" % (precision, size, suffixes[suffix_index])
 
     @staticmethod
@@ -271,3 +264,4 @@ class FileUtils:
         """
         path = Path(path)
         return path.name, path.suffix, FileUtils.get_size(path)
+

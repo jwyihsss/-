@@ -9,7 +9,7 @@ tests:
       json: {"account": "{{phone_number()}}", "password": "xxxxxxxxxx"}
       file:
       sql:
-      assert_key: success
+      assert_key: $..success
       assert_way: unequal
     expectation:
       response: true
@@ -20,7 +20,7 @@ tests:
       json: {"account": "18900001000", "password": "xxxxxx"}
       file:
       sql:
-      assert_key: success
+      assert_key: $..success
       assert_way: unequal
     expectation:
       response: true

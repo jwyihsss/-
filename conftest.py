@@ -79,7 +79,7 @@ def collection():
         def __init__(self):
             self.requests = RestClient()
             self.headers = RestClient.headers()
-            self.cache = HandleYaml(root / 'test_data/cache.yml')
+            self.cache = HandleYaml(root / 'test_data/cache.yaml')
             self.mysql = MysqlDB() if config.mysql_db.switch else logger.warning('当前数据库配置: 关闭')
 
     yield Core()

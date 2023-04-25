@@ -5,7 +5,7 @@
 from pathlib import Path
 from utils.path import root
 from utils.fake_data_control import Mock
-from utils.clean_file_control import CleanFile
+from utils.pathlib_control import FileUtils
 from utils.read_yaml_control import HandleYaml
 
 
@@ -16,17 +16,16 @@ class CaseHandler:
         """初始化目录路径"""
 
         self._file_path = file_path
-        CleanFile(root / 'test_cases')()
+        FileUtils.remove(root / 'test_cases')
 
     @property
     def get_data_path(self):
         """获取测试数据路径及转换为测试用例路径"""
 
         root_dir = Path(self._file_path)
-        data_paths = [_path for _path in root_dir.rglob('*.yml') if
-                      _path.is_file() and _path.name != 'cache.yml']
+        data_paths = FileUtils.glob_files(root / 'test_data', '*.yml')
         case_paths = [Path(str(_path).replace('test_data', 'test_cases')).parent for _path in root_dir.rglob('*.yml') if
-                      _path.is_file() and _path.name != 'cache.yml']
+                      _path.is_file() and _path.name != 'cache.yaml']
         return data_paths, case_paths
 
     @property
@@ -35,7 +34,6 @@ class CaseHandler:
 
         _data_paths = self.get_data_path[0]
         data_list = [HandleYaml(_path).read_yaml() for _path in _data_paths]
-        # data_dict = {k: v for k, v in zip(_data_paths, data_list)}
         return data_list
 
     def get_case_model(self, case_path):
@@ -88,7 +86,7 @@ class TestCaseAutoCreate(CaseHandler):
 # @Time : {Mock().now_time()}
 import allure
 import pytest
-from utils.json_control import get_json
+from utils.json_control import JsonHandler
 from utils.assert_control import Assert
 
 
@@ -96,7 +94,7 @@ from utils.assert_control import Assert
 @pytest.mark.datafile('test_data/{feature}/{datafile}.yml')
 def test_tianqi(core, env, case, inputs, expectation):
     res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], headers=core.headers).json()
-    assert Assert(get_json(res, inputs['assert_key']), expectation['response']).ass(inputs['assert_way']) is True"""
+    assert Assert(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']).ass(inputs['assert_way']) is True"""
 
         return content
 

@@ -12,7 +12,7 @@ from utils.read_yaml_control import HandleYaml
 class Config(BaseModel):
     """定义配置类"""
 
-    cache_path: Union[str, Path] = root / 'test_data/cache.yml'
+    cache_path: Union[str, Path] = root / 'test_data/cache.yaml'
 
 
 class DataHandler:
