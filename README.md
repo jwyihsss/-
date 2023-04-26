@@ -96,8 +96,8 @@ exit  # 退出虚拟环境
 * common_inputs: 请求方法，请求路径（只需要写域名后的路径即可）
 * case: 用例名
 * inputs: 用例输入
-* params: 请求为get类型时填写
-* json: 请求为post类型时填写
+* params: 请求数据格式为表单类型时填写
+* json: 请求数据格式为json类型时填写
 * file: 请求上传的文件名，文件需要放在files目录下
 * sql: sql语句
 * assert_key: 自动生成用例时用到的断言key（使用jsonpath语法）
