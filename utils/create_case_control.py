@@ -4,6 +4,8 @@
 # @Author : 谈林海
 from pathlib import Path
 from typing import List, Dict, Any, Tuple
+
+from utils.log_control import logger
 from utils.path import root
 from utils.fake_data_control import Mock
 from utils.pathlib_control import FileUtils
@@ -17,7 +19,6 @@ class CaseHandler:
         """初始化目录路径"""
 
         self._file_path = file_path
-        FileUtils.remove(root / 'test_cases')
 
     @property
     def get_data_path(self) -> Tuple[List[Path], List[Path]]:
@@ -72,11 +73,16 @@ class TestCaseAutoCreate(CaseHandler):
         for file_path, case_detail in data_dict.items():
             for data in case_detail.get('tests'):
                 params, jsons, sql = data['inputs'].get('params'), data['inputs'].get('json'), data['inputs'].get('sql')
-            FileUtils.create_dir(file_path)  # 创建目录
+            logger.info(f'{file_path}目录已存在, 跳过创建') if FileUtils.is_exist(file_path) else FileUtils.create_dir(file_path)  # 创建目录
             case_path = file_path / f'test_{file_path.stem}.py'
-            FileUtils.write_file(case_path,
-                                 content=self.case_content(file_path.stem, f'test_{file_path.stem}', params, jsons,
-                                                           sql))  # 写入python文件
+            if not FileUtils.is_exist(case_path):
+                FileUtils.write_file(case_path, content=self.case_content(
+                    file_path.stem,
+                    f'test_{file_path.stem}',
+                    params,
+                    jsons,
+                    sql
+                ))  # 写入python文件
 
     def case_content(self, feature, datafile, params, jsons, sql):
         """生成测试用例内容"""

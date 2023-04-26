@@ -1,25 +1,26 @@
 **t2-api-autotest 接口自动化测试框架**
 === 
-## 这个框架目前正在尝试开发自动生成用例功能，暂时还不完善（实现的还比较简单，有编程基础的可以看着使用。不会影响到原框架的使用体验。）
-
 ## 框架模式
 基于 pytest + allure + yaml + mysql + 钉钉通知 + Jenkins 实现的接口自动化框架
 * git地址: [https://github.com/1inhai/t2-api-autotest.git](https://github.com/1inhai/t2-api-autotest.git)
 
 ## 框架介绍
 为了抛弃臃肿庞大的测试框架，本框架将大部分测试用例操作前置，使得编写测试用例时无需导入各种乱七八糟的模块。
+原计划是开发比较健全的自动生成用例功能，但是那样就又不得不去给yaml文件添加大量的字段来处理逻辑，而我开发这个框架的目的就是
+为了让代码及数据简洁明了，所以最后取舍了一下，决定让这个框架具备自动生成基础测试用例的功能，同时也可以根据业务不同的需求去手动修改测试用例。
 
 ## 框架功能
 * yaml管理测试数据，实现测试数据分离
+* 支持自动生成测试用例，无需手动编写测试用例
 * 支持不同接口间的数据依赖
 * 支持数据库的增、删、改、查
 * 支持yaml文件中的动态参数自动替换
-* 支持测试完成后发送钉钉消息通知
-* 支持测试异常发送通知到邮箱
+* 支持测试完成后发送钉钉消息通知（其他平台后续也可以支持）
+* 支持测试程序异常发送通知到邮箱
 * 可轻易集成jenkins
 
 
-## 目录结构
+## 整体目录结构
 ```
     ├── files                存放接口上传的文件
     ├── test_cases           存放测试用例
@@ -34,9 +35,9 @@
     ├── Pipfile              虚拟环境依赖文件
     └── logs                 日志文件         
 ```
-### 使用教程
+## 使用教程
 
-#### 1、Git 拉取项目
+#### 1、Gitee 拉取项目
 
 需要先配置好python、jdk、allure环境
 
@@ -74,19 +75,21 @@ exit  # 退出虚拟环境
 
 ```
 
-## 配置项目的通用配置
-存放全局的一些配置，按需填写
 
+## 开始自动化测试
+正式开始之前，需要先配置好全局配置文件config.yml
 ![img.png](files/testconfig.png)
 
 
+### 编写测试用例
 
-## 编写测试用例
-
-### 创建yaml测试文件
-![img.png](files/testdata.png)
+#### 第一步：创建yml测试文件(必须是.yml格式)
+![img.png](files/testcase1.png)
 
 在test_data目录下的import目录中创建yaml文件，注：必须是二级目录下创建，通常业务也会划分模块。
+
+示例：
+![img.png](files/case1.png)
 
 字段说明:
 
@@ -97,18 +100,32 @@ exit  # 退出虚拟环境
 * json: 请求为post类型时填写
 * file: 请求上传的文件名，文件需要放在files目录下
 * sql: sql语句
+* assert_key: 自动生成用例时用到的断言key
+* assert_way: 自动生成用例时用到的断言方式
 * expectation: 用例输出
-* response: 接口返回数据体
+* response: 期望的接口返回值
 
-创建好了yaml测试数据，就可以创建测试用例文件了
-### 创建测试用例文件
+创建好了yaml测试数据，接下来就是创建测试用例文件
+### 第二步：创建测试用例文件
 
-备注：登录获取认证在utils.requests_control.py，用于存放token及cookie会话
+注：登录获取认证在utils.requests_control.py，用于存放token及cookie会话
 
+
+
+#### 先说第一种方式：自动生成测试用例
+运行run.py文件时会根据yml文件自动生成用例（也可以手动调用utils.create_case_control里的方法生成）
+
+生成的用例位置及内容如下：
+![img.png](files/case2.png)
+如果只需要校验接口返回码或是一些返回字段的值，那么这个用例可以直接使用，
+但是实际业务场景中通常情况比较复杂，就需要在生成的用例上手动再修改代码逻辑
+（不过这样至少省去了一些重复的创建文件工作不是吗？）
+
+
+#### 再说第二种方式：手动编写/修改测试用例
+同样的，需要在test_cases下的二级目录中创建yml文件，目录层级与test_data保持一致
 
 ![img.png](files/testcase.png)
-
-同样的，在test_cases下的login目录中创建yaml文件，目录层级与test_data保持一致
 
 字段说明:
 
@@ -116,7 +133,7 @@ exit  # 退出虚拟环境
 
 * allure.title: 用例名称
 
-* pytest.mark.imports 用imports标记这条用例，后续可以执行指定标记的用例（也可以不填写，会自动打上该测试用例所在模块的mark标记，例如此用例在import模块下，那会自动添加@pytest.mark.import标记）
+* pytest.mark.upload 用upload标记这条用例，后续可以执行指定标记的用例（也可以不填写，会自动打上该测试用例所在模块的mark标记，例如此用例在import模块下，那会自动添加@pytest.mark.import标记）
 
 * pytest.mark.datafile: 需要使用的yaml测试数据（需要从test_data目录开始写，千万不能写错）
 
@@ -142,6 +159,8 @@ exit  # 退出虚拟环境
   
   #### yaml数据替换：
   ![img.png](files/mockyaml.png)
+  支持任何嵌套格式的替换。
+
     
 * expectation: 用例对应yaml文件中expectation内容，使用时可以直接用字典值方式获取
 
@@ -149,14 +168,19 @@ exit  # 退出虚拟环境
 
 #### 添加缓存数据:
 
-  调用cache.add_cache()方法把数据添加到test_data目录下的cache.yml文件中
+  调用cache.add_cache()方法把数据添加到test_data目录下的cache.yml文件中。
+  
+  有两个参数，第一个参数是存储的key值，第二个参数是存储的value值。
   
 ![img.png](files/testcache.png)
+
+存储在cache.yml文件中的数据如下：
+![img.png](files/cacheyaml.png)
 
 
 #### 使用缓存数据:
 
-  约定在添加缓存数据时，使用添加缓存数据的用例名称作为缓存的key值，后续用例需要使用该key值时，只需要在yaml文件中使用"$cache.xxxx"来替换缓存数据，注意必须要用该格式填写，其中xxxx部分为
+  在添加缓存数据时，最好是使用添加缓存数据的用例名称作为缓存的key值，后续用例需要使用该key值时，只需要在yaml文件中使用"$cache.xxxx"来替换缓存数据，注意必须要用该格式填写，其中xxxx部分为
   添加缓存数据的key。例如：上图中我在test_login.py用例中添加了key为test_login的缓存数据，那我在test_import用例的yaml文件中就可以按如图所示方法使用（需要用pytest.mark.run(order=1)装饰器保证添加缓存的用例执行必须在使用缓存的用例前）
   
 ![img.png](files/testcache2.png)
@@ -176,13 +200,11 @@ python send_ding.py  # 发送测试结果到钉钉通知,如果jenkins和config.
 ```
 
 ### 运行测试用例看下效果
-用例文件：
-![img.png](files/testcase2.png)
 
-控制台：
+控制台展示：
 ![img.png](files/testresult.png)
 
-日志文件：
+日志文件展示：
 ![img.png](files/testlog.png)
 
 最后会生成详细的测试报告：
