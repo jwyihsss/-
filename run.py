@@ -17,7 +17,7 @@ def run(mark):
 
                开始执行项目...
                """)
-    # TestCaseAutoCreate().generate_test_case()
+    TestCaseAutoCreate().generate_test_case()  # 自动生成用例，可注释
     try:
         pytest.main(['test_cases', f'-m={mark}', '--clean-alluredir', '--alluredir=allure-results'])
         os.system("allure generate -c -o allure-report")
