@@ -13,21 +13,32 @@ class Mock:
     def __init__(self, func_name=None):
         self._faker = faker
         self.func_name = func_name
+        self.func_map = self.func_list()
 
-    def __call__(self):
-        func_name = self.func_name[:self.func_name.find('(')]
-        args_str = self.func_name[self.func_name.find('(') + 1:self.func_name.find(')')]
-        if func_name in dir(self._faker):
-            func = getattr(self._faker, func_name)
-            params = inspect.signature(func).parameters
-            params_list = [name for name, param in params.items()]
-            if len(params_list) == 0 or len(args_str) == 0:
-                return func()
-            else:
-                return func(*eval(args_str))
+    def __call__(self, *args, **kwargs):
+        if self.func_map.get(self.func_name, False):
+            return getattr(self, str(self.func_map.get(self.func_name)))()
         else:
-            logger.error(f"未获取到对应方法，请检查")
-            raise KeyError
+            func_name = self.func_name[:self.func_name.find('(')]
+            args_str = self.func_name[self.func_name.find('(') + 1:self.func_name.find(')')]
+            if func_name in dir(self._faker):
+                func = getattr(self._faker, func_name)
+                params = inspect.signature(func).parameters
+                params_list = [name for name, param in params.items()]
+                if len(params_list) == 0 or len(args_str) == 0:
+                    return func()
+                else:
+                    return func(*eval(args_str))
+            else:
+                logger.error(f"未获取到对应方法，请检查")
+
+    def func_list(self):
+        """
+        :return: 返回除内置方法外类中的所有其他方法
+        """
+        all_methods = inspect.getmembers(self, inspect.ismethod)
+        func_list = {name: (name if not str(name).startswith('__') else '...') for name, method in all_methods}
+        return func_list
 
     def now_time(self):
         """
@@ -47,9 +58,9 @@ class Mock:
 
 
 if __name__ == '__main__':
-    r1 = Mock('phone_number()')()
+    r1 = Mock('random_int')()
     r2 = Mock('random_int(1, 99)')()
     r3 = Mock().now_time()
-    print(r1, r2, r3)
+    print(r1)
     print(Mock('phone_number()')())
 
