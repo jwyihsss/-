@@ -100,8 +100,8 @@ exit  # 退出虚拟环境
 * json: 请求为post类型时填写
 * file: 请求上传的文件名，文件需要放在files目录下
 * sql: sql语句
-* assert_key: 自动生成用例时用到的断言key
-* assert_way: 自动生成用例时用到的断言方式
+* assert_key: 自动生成用例时用到的断言key（使用jsonpath语法）
+* assert_way: 自动生成用例时用到的断言方式（可以查看utils.assert_control中对应的断言方法）
 * expectation: 用例输出
 * response: 期望的接口返回值
 
