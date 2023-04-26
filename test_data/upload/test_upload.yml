@@ -1,13 +1,13 @@
 common_inputs:
     method: POST
-    path: /imports
+    path: /upload
 
 tests:
   - case: 更换照片
     inputs:
       params: {}
       json: {"key": "{{phone_number()}}", "key2": "$cache.test_login"}
-      file: "imports.xlsx"
+      file: "upload.xlsx"
       sql:
       assert_key: $..success
       assert_way: unequal
@@ -18,7 +18,7 @@ tests:
     inputs:
       params: {}
       json: {"key": ["{{random_int()}}"], "key2": ["$cache.test_login"]}
-      file: "imports.xlsx"
+      file: "upload.xlsx"
       sql:
       assert_key: $..success
       assert_way: unequal

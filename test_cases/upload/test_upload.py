@@ -8,8 +8,8 @@ import pytest
 @allure.feature('XXX模块')
 @allure.title('XXX接口')
 @pytest.mark.imports
-@pytest.mark.datafile('test_data/imports/test_imports.yml')
-def test_imports(core, env, case, inputs, expectation):
+@pytest.mark.datafile('test_data/upload/test_upload.yml')
+def test_upload(core, env, case, inputs, expectation):
     # core.requests: 返回请求方法对象
     # core.headers: 返回全局请求头
     # core.sql: 返回查询方法对象
