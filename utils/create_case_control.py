@@ -72,7 +72,7 @@ class TestCaseAutoCreate(CaseHandler):
         data_dict = {k: v for k, v in zip(self.get_data_path[1], self.get_yaml_data)}
         for file_path, case_detail in data_dict.items():
             for data in case_detail.get('tests'):
-                params, jsons, sql = data['inputs'].get('params'), data['inputs'].get('json'), data['inputs'].get('sql')
+                params, files = data['inputs'].get('params'), data['inputs'].get('file')
             logger.info(f'{file_path}目录已存在, 跳过创建') if FileUtils.is_exist(file_path) else FileUtils.create_dir(file_path)  # 创建目录
             case_path = file_path / f'test_{file_path.stem}.py'
             if not FileUtils.is_exist(case_path):
@@ -80,13 +80,15 @@ class TestCaseAutoCreate(CaseHandler):
                     file_path.stem,
                     f'test_{file_path.stem}',
                     params,
-                    jsons,
-                    sql
+                    files
                 ))  # 写入python文件
 
-    def case_content(self, feature, datafile, params, jsons, sql):
+    def case_content(self, feature, datafile, params, files):
         """生成测试用例内容"""
-
+        if files:
+            file = "files=input['file'], "
+        else:
+            file = ""
         content = f"""#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time : {Mock().now_time()}
@@ -99,7 +101,7 @@ from utils.assert_control import Assert
 @allure.feature('{feature}')
 @pytest.mark.datafile('test_data/{feature}/{datafile}.yml')
 def test_tianqi(core, env, case, inputs, expectation):
-    res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], headers=core.headers).json()
+    res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], {file}headers=core.headers).json()
     assert Assert(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']).ast(inputs['assert_way']) is True"""
 
         return content
