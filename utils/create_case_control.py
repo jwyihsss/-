@@ -54,13 +54,14 @@ class TestCaseAutoCreate(CaseHandler):
 
         data_dict = {k: v for k, v in zip(self.get_data_path, self.get_yaml_data)}
         for file_path, case_detail in data_dict.items():
+            case_path = Path(str(file_path).replace('test_data', 'test_cases')).parent
             for data in case_detail.get('tests'):
                 params, files = data['inputs'].get('params'), data['inputs'].get('file')
-            FileUtils.create_dir(file_path) if not FileUtils.is_exist(file_path) else ...  # 创建目录
-            case_path = Path(str(file_path).replace('test_data', 'test_cases')).parent / f'{file_path.stem}.py'
-            if not FileUtils.is_exist(case_path):
-                FileUtils.write_file(case_path, content=self.case_content(
-                    file_path.parent.stem,
+            FileUtils.create_dir(case_path) if not FileUtils.is_exist(case_path) else ...  # 创建目录
+            test_case_path = case_path / f'{file_path.stem}.py'
+            if not FileUtils.is_exist(test_case_path):
+                FileUtils.write_file(test_case_path, content=self.case_content(
+                    case_path.stem,
                     f'{file_path.stem}',
                     params,
                     files
