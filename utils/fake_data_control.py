@@ -27,7 +27,7 @@ class Mock:
                 return func(*eval(args_str))
         else:
             logger.error(f"未获取到对应方法，请检查")
-            raise RuntimeError
+            raise KeyError
 
     def now_time(self):
         """
