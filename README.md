@@ -113,7 +113,8 @@ exit  # 退出虚拟环境
 
 
 #### 先说第一种方式：自动生成测试用例
-运行run.py文件时会根据yml文件自动生成用例（也可以手动调用utils.create_case_control里的方法生成）
+运行run.py文件时会根据yml文件自动生成用例（也可以手动调用utils.create_case_control里的方法生成），如果yml对应的测试用例py文件已经存在是不会创建的，
+这里只会创建不存在的测试用例文件。
 
 生成的用例位置及内容如下：
 ![img.png](files/case2.png)
