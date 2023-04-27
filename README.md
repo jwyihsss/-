@@ -81,15 +81,13 @@ exit  # 退出虚拟环境
 ![img.png](files/testconfig.png)
 
 
-### 编写测试用例
+### 编写自动化用例
 
 #### 第一步：创建yml测试文件(必须是.yml格式)
 ![img.png](files/testcase1.png)
 
 在test_data目录下的import目录中创建yaml文件，注：必须是二级目录下创建，通常业务也会划分模块。
 
-示例：
-![img.png](files/case1.png)
 
 字段说明:
 
@@ -105,11 +103,10 @@ exit  # 退出虚拟环境
 * expectation: 用例输出
 * response: 期望的接口返回值
 
-创建好了yaml测试数据，接下来就是创建测试用例文件
+
 ### 第二步：创建测试用例文件
 
 注：登录获取认证在utils.requests_control.py，用于存放token及cookie会话
-
 
 
 #### 先说第一种方式：自动生成测试用例
