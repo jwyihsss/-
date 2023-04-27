@@ -4,6 +4,7 @@ import enum
 import pymysql
 from utils import config
 from utils.log_control import logger
+from utils.singleton_control import SingletonPattern
 
 
 class QueryState(enum.Enum):
@@ -11,6 +12,7 @@ class QueryState(enum.Enum):
     ONE = "one"
 
 
+@SingletonPattern
 class MysqlDB:
     """数据库封装"""
 

@@ -12,6 +12,7 @@ from utils import config
 from utils.json_control import JsonHandler
 from utils.log_control import logger, Log
 from utils.create_cookie_control import Cookies
+from utils.singleton_control import SingletonPattern
 
 
 class Authentication:
@@ -40,6 +41,7 @@ session.verify = False
 session.cookies, token = Authentication().cookie_token
 
 
+@SingletonPattern
 class RestClient:
     """封装api请求类"""
 
