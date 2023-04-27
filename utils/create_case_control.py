@@ -81,7 +81,7 @@ from utils.assert_control import Assert
 
 @allure.feature('{feature}')
 @pytest.mark.datafile('test_data/{feature}/{datafile}.yml')
-def test_tianqi(core, env, case, inputs, expectation):
+def {datafile}(core, env, case, inputs, expectation):
     res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], {file}headers=core.headers).json()
     assert Assert(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']).ast(inputs['assert_way']) is True"""
 
