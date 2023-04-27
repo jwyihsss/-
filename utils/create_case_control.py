@@ -36,12 +36,6 @@ class CaseHandler:
         data_list = [HandleYaml(_path).read_yaml() for _path in _data_paths]
         return data_list
 
-    def get_case_model(self, case_path: Path) -> Path:
-        """获取测试数据所属模块"""
-
-        case_paths = Path(case_path).parents[0]
-        return case_paths
-
 
 class TestCaseAutoCreate(CaseHandler):
     """自动生成测试用例"""
