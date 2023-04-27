@@ -12,7 +12,6 @@ from utils import config
 from utils.json_control import JsonHandler
 from utils.log_control import logger, Log
 from utils.create_cookie_control import Cookies
-from utils.singleton_control import SingletonPattern
 
 
 class Authentication:
@@ -36,12 +35,6 @@ class Authentication:
             return Cookies, {}  # 如果cookie没有获取成功，则根据全局配置域名生成一个备用cookie
 
 
-session = requests.session()
-session.verify = False
-session.cookies, token = Authentication().cookie_token
-
-
-@SingletonPattern
 class RestClient:
     """封装api请求类"""
 
@@ -56,7 +49,9 @@ class RestClient:
         urllib3.disable_warnings()
         self.timeout = timeout  # 超时时间
         self.proxies = proxies or {}  # 设置代理
-        self.session = session  # 创建会话对象
+        self.session = requests.session()  # 创建会话对象
+        self.session.verify = False
+        self.session.cookies, self.token, self.uid = Authentication().cookie_token
         self.session.proxies.update(self.proxies)
 
         retry_strategy = Retry(
@@ -94,10 +89,8 @@ class RestClient:
         """全局headers"""
         headers = {
             'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'
-            # 'token': token
+            # 'token': self.token
         }
         return headers
 
 
-if __name__ == '__main__':
-    pass
