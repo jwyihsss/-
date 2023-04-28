@@ -50,6 +50,7 @@ class RestClient:
         self.timeout = timeout  # 超时时间
         self.proxies = proxies or {}  # 设置代理
         self.session = requests.session()  # 创建会话对象
+        self.session.Timeout = Timeout(timeout)  # 设置超时时间
         self.session.verify = False
         self.session.cookies, self.token, self.uid = Authentication().cookie_token
         self.session.proxies.update(self.proxies)
