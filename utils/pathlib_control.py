@@ -23,9 +23,9 @@ class FileUtils:
         allparts = []
         path = Path(path)
         while True:
-            parts = path.parts
+            parts = path.parts  # 将路径按照正斜杠 / 或反斜杠 \ 分隔成各层级
             allparts[:0] = parts
-            if path.drive or not path.parent:
+            if not path.parent or not path.drive:  # 判断父级目录是否为空或者有盘符
                 break
             path = path.parent
         return allparts

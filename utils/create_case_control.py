@@ -25,7 +25,8 @@ class CaseHandler:
 
         root_dir = Path(self._file_path)
         # 获取所有 yml 格式的测试数据文件路径
-        data_paths = [Path(_path) for _path in root_dir.rglob('*.yml') if _path.is_file() and _path.name != 'cache.yaml']
+        # data_paths = [Path(_path) for _path in root_dir.rglob('*.yml') if _path.is_file() and _path.name != 'cache.yaml']
+        data_paths = FileUtils.glob_files(root_dir, '*.yml')
         return data_paths
 
     @property
