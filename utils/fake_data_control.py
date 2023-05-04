@@ -16,7 +16,7 @@ class Mock:
         self.func_map = self.func_list()
 
     def __call__(self, *args, **kwargs):
-        if self.func_map.get(self.func_name, False):
+        if self.func_map.get(self.func_name):
             return getattr(self, str(self.func_map.get(self.func_name)))()
         else:
             func_name = self.func_name[:self.func_name.find('(')]

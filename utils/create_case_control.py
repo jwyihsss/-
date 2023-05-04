@@ -47,20 +47,18 @@ class TestCaseAutoCreate(CaseHandler):
     def generate_test_case(self) -> None:
         """生成测试用例文件"""
 
-        data_dict = {k: v for k, v in zip(self.get_data_path, self.get_yaml_data)}
-        for file_path, case_detail in data_dict.items():
+        for file_path, case_detail in zip(self.get_data_path, self.get_yaml_data):
             case_path = Path(str(file_path).replace('test_data', 'test_cases')).parent
+
             for data in case_detail.get('tests'):
                 params, files = data['inputs'].get('params'), data['inputs'].get('file')
             FileUtils.create_dir(case_path) if not FileUtils.is_exist(case_path) else ...  # 创建目录
             test_case_path = case_path / f'{file_path.stem}.py'
+
             if not FileUtils.is_exist(test_case_path):
-                FileUtils.write_file(test_case_path, content=self.case_content(
-                    case_path.stem,
-                    f'{file_path.stem}',
-                    params,
-                    files
-                ))  # 写入python文件
+                FileUtils.write_file(test_case_path,
+                                     content=self.case_content(case_path.stem, f'{file_path.stem}', params,
+                                                               files))  # 写入python文件
 
     def case_content(self, feature, datafile, params, files):
         """生成测试用例内容"""
