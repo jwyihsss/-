@@ -56,9 +56,7 @@ class TestCaseAutoCreate(CaseHandler):
             test_case_path = case_path / f'{file_path.stem}.py'
 
             if not FileUtils.is_exist(test_case_path):
-                FileUtils.write_file(test_case_path,
-                                     content=self.case_content(case_path.stem, f'{file_path.stem}', params,
-                                                               files))  # 写入python文件
+                FileUtils.write_file(test_case_path, content=self.case_content(case_path.stem, f'{file_path.stem}', params, files))  # 写入python文件
 
     def case_content(self, feature, datafile, params, files):
         """生成测试用例内容"""
