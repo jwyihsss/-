@@ -50,7 +50,7 @@ class TestCaseAutoCreate(CaseHandler):
         for file_path, case_detail in zip(self.get_data_path, self.get_yaml_data):
             case_path = Path(str(file_path).replace('test_data', 'test_cases')).parent
 
-            # 遍历测试数据
+            # 处理测试数据
             for data in case_detail.get('tests'):
                 params, files, assert_way = data['inputs'].get('params'), data['inputs'].get('file'), data['inputs'].get('assert_way')
                 assert_context = {
@@ -58,8 +58,8 @@ class TestCaseAutoCreate(CaseHandler):
                     'unequal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
                     'in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
                     'not_in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
-                    'true': "(JsonHandler(res).find_one(inputs['assert_key']) is True)",
-                    'false': "(JsonHandler(res).find_one(inputs['assert_key']) is False)",
+                    'true': "(JsonHandler(res).find_one(inputs['assert_key']))",
+                    'false': "(JsonHandler(res).find_one(inputs['assert_key']))",
                     'none': "(JsonHandler(res).find_one(inputs['assert_key']) is None)",
                     'not_none': "(JsonHandler(res).find_one(inputs['assert_key']) is not None)"
                 }.get(assert_way)
@@ -89,7 +89,7 @@ from utils.assert_control import Assert
 def {datafile}(core, env, case, inputs, expectation):
     res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], {file}headers=core.headers).json()
     with allure.step('接口相应断言'):
-        assert Assert().asserts(inputs['assert_way']){assert_context} is True"""
+        assert Assert()(inputs['assert_way']){assert_context}"""
 
         return content
 

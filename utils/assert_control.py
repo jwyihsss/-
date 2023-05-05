@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time : 2023/4/24 15:59
 # @Author : 谈林海
+from utils.log_control import logger
 from utils.singleton_control import SingletonPattern
 
 
@@ -9,10 +10,12 @@ from utils.singleton_control import SingletonPattern
 class Assert:
     """断言类"""
 
-    def __init__(self, error_msg='assert error'):
+    def __init__(self, error_msg='断言失败'):
         self.error_msg = error_msg
 
-    def asserts(self, way='equal'):
+    def __call__(self, *args, **kwargs):
+        """断言方法"""
+
         assert_dict = {
             'equal': lambda excp, resp: self.equal(excp, resp),
             'unequal': lambda excp, resp: self.not_equal(excp, resp),
@@ -22,8 +25,12 @@ class Assert:
             'false': lambda assertion: self.is_false(assertion),
             'none': lambda excp: self.is_none(excp),
             'not_none': lambda excp: self.is_not_none(excp)
-        }.get(way)
-        return assert_dict
+        }
+        try:
+            return assert_dict[args[0]]
+        except KeyError:
+            logger.error('断言方法不存在')
+            raise
 
     def is_true(self, assertion):
         """断言为真"""
