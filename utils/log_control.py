@@ -13,16 +13,16 @@ log_path = root / 'logs'
 
 
 class Loggings:
-    """重写日志操作方法"""
+    """日志操作方法"""
 
-    def __new__(cls, *args, **kwargs):
+    def __call__(self, *args, **kwargs):
         loggers = loguru.logger
         loggers.add(f"{log_path}/log_{time.strftime('%Y_%m_%d')}.log", rotation="12:00", encoding="utf-8",
                     enqueue=True, retention="10 days")
         return loggers
 
 
-logger = Loggings()
+logger = Loggings()()
 
 
 class Log:

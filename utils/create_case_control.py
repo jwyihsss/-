@@ -6,7 +6,6 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 from utils.path import root
-from utils.log_control import logger
 from utils.fake_data_control import Mock
 from utils.pathlib_control import FileUtils
 from utils.read_yaml_control import HandleYaml
