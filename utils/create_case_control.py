@@ -6,6 +6,7 @@ from pathlib import Path
 from typing import List, Dict, Any
 
 from utils.path import root
+from utils.log_control import logger
 from utils.fake_data_control import Mock
 from utils.pathlib_control import FileUtils
 from utils.read_yaml_control import HandleYaml
@@ -24,8 +25,6 @@ class CaseHandler:
         """获取测试数据路径"""
 
         root_dir = Path(self._file_path)
-        # 获取所有 yml 格式的测试数据文件路径
-        # data_paths = [Path(_path) for _path in root_dir.rglob('*.yml') if _path.is_file() and _path.name != 'cache.yaml']
         data_paths = FileUtils.glob_files(root_dir, '*.yml')
         return data_paths
 
@@ -47,18 +46,33 @@ class TestCaseAutoCreate(CaseHandler):
     def generate_test_case(self) -> None:
         """生成测试用例文件"""
 
+        # 遍历测试数据文件
         for file_path, case_detail in zip(self.get_data_path, self.get_yaml_data):
             case_path = Path(str(file_path).replace('test_data', 'test_cases')).parent
 
+            # 遍历测试数据
             for data in case_detail.get('tests'):
-                params, files = data['inputs'].get('params'), data['inputs'].get('file')
-            FileUtils.create_dir(case_path) if not FileUtils.is_exist(case_path) else ...  # 创建目录
+                params, files, assert_way = data['inputs'].get('params'), data['inputs'].get('file'), data['inputs'].get('assert_way')
+                assert_context = {
+                    'equal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
+                    'unequal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
+                    'in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
+                    'not_in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
+                    'true': "(JsonHandler(res).find_one(inputs['assert_key']) is True)",
+                    'false': "(JsonHandler(res).find_one(inputs['assert_key']) is False)",
+                    'none': "(JsonHandler(res).find_one(inputs['assert_key']) is None)",
+                    'not_none': "(JsonHandler(res).find_one(inputs['assert_key']) is not None)"
+                }.get(assert_way)
+
+            # 创建目录
+            FileUtils.create_dir(case_path) if not FileUtils.is_exist(case_path) else ...
             test_case_path = case_path / f'{file_path.stem}.py'
 
+            # 写入python文件
             if not FileUtils.is_exist(test_case_path):
-                FileUtils.write_file(test_case_path, content=self.case_content(case_path.stem, f'{file_path.stem}', params, files))  # 写入python文件
+                FileUtils.write_file(test_case_path, content=self.case_content(case_path.stem, f'{file_path.stem}', params, files, assert_context))
 
-    def case_content(self, feature, datafile, params, files):
+    def case_content(self, feature, datafile, params, files, assert_context):
         """生成测试用例内容"""
         file = "files=input['file'], " if files else ""
         content = f"""#!/usr/bin/env python
@@ -74,7 +88,8 @@ from utils.assert_control import Assert
 @pytest.mark.datafile('test_data/{feature}/{datafile}.yml')
 def {datafile}(core, env, case, inputs, expectation):
     res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], {file}headers=core.headers).json()
-    assert Assert(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']).ast(inputs['assert_way']) is True"""
+    with allure.step('接口相应断言'):
+        assert Assert().asserts(inputs['assert_way']){assert_context} is True"""
 
         return content
 

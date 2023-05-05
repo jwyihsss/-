@@ -103,6 +103,18 @@ exit  # 退出虚拟环境
 * expectation: 用例输出
 * response: 期望的接口返回值
 
+#### 说一下其中的assert_key，共有以下几种:
+    assert_dict = {
+                'equal': lambda excp, resp: self.equal(excp, resp), # 判断相等
+                'unequal': lambda excp, resp: self.not_equal(excp, resp), # 判断不相等
+                'in': lambda excp, resp: self.is_in(excp, resp), # 判断是否包含
+                'not_in': lambda excp, resp: self.is_not_in(excp, resp), # 判断是否不包含
+                'true': lambda assertion: self.is_true(assertion), # 判断是否为真
+                'false': lambda assertion: self.is_false(assertion), # 判断是否为假
+                'none': lambda excp: self.is_none(excp), # 判断是否为None
+                'not_none': lambda excp: self.is_not_none(excp) # 判断是否不为None
+            }
+
 
 #### 第二步：创建测试用例文件
 
