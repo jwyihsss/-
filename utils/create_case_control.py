@@ -87,7 +87,7 @@ from utils.assert_control import Assert
 @pytest.mark.datafile('test_data/{feature}/{datafile}.yml')
 def {datafile}(core, env, case, inputs, expectation):
     res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], {file}headers=core.headers).json()
-    with allure.step('接口相应断言'):
+    with allure.step('接口响应断言'):
         assert Assert()(inputs['assert_way']){assert_context}"""
 
         return content
