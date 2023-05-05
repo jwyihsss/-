@@ -72,8 +72,3 @@ class Assert:
             raise AssertionError(self.error_msg)
         else:
             raise AssertionError()
-
-
-if __name__ == '__main__':
-    r = Assert().asserts('equal')(1, 1)
-    print(r)

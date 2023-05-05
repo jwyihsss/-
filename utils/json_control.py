@@ -42,7 +42,3 @@ class JsonHandler:
         """
         result = self.find_first(*exprs)
         return result if result is not None else default
-
-
-if __name__ == '__main__':
-    pass

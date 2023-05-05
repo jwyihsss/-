@@ -67,6 +67,3 @@ class DataHandler:
                         data[data.index(item)].replace('{{%s}}' % f'{func}', str(Mock(func[func.find('.') + 1:])())))
         return data
 
-
-if __name__ == '__main__':
-    pass
