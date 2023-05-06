@@ -66,11 +66,9 @@ def pytest_assertrepr_compare(config, op, left, right):
     except Exception:
         left_name, right_name = left, right
     pytest_output = assertrepr_compare(config, op, left, right)
-    logger.debug(f"{left_name} is {left}")
-    logger.debug(f"{right_name} is {right}")
-    with allure.step(f"断言{left_name}{op}{right_name}"):
-        ReportStyle.allure_step_no(f'断言左侧: {left_name}')
-        ReportStyle.allure_step_no(f'断言右侧: {right_name}')
+    logger.debug(f"left is {left}")
+    logger.debug(f"right is {right}")
+    ReportStyle.allure_step_no(f"断言: {left_name}{op}{right_name}")
     return pytest_output
 
 
