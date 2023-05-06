@@ -2,8 +2,11 @@
 # -*- coding: utf-8 -*-
 # @Time : 2023/3/24 13:08
 # @Author : 谈林海
+import allure
 import pytest
+import inspect
 from pathlib import Path
+from _pytest.assertion.util import assertrepr_compare
 
 from utils import config
 from utils.path import root
@@ -54,11 +57,21 @@ def alert_inputs(request):
         DataHandler(config=Config()).replace_values(inputs['json'])
 
 
-@pytest.hookimpl
-def pytest_assertion_pass(item, lineno, orig, expr=None, values=None):
-    """测试报告显示断言内省"""
+def pytest_assertrepr_compare(config, op, left, right):
+    """处理断言失败"""
 
-    ReportStyle.allure_step_no(f'断言通过:  {orig}')
+    try:
+        left_name, right_name = inspect.stack()[7].code_context[0].lstrip().lstrip(
+            'assert').rstrip('\n').split(op)
+    except Exception:
+        left_name, right_name = left, right
+    pytest_output = assertrepr_compare(config, op, left, right)
+    logger.debug(f"{left_name} is {left}")
+    logger.debug(f"{right_name} is {right}")
+    with allure.step(f"断言{left_name}{op}{right_name}"):
+        ReportStyle.allure_step(left, left_name)
+        ReportStyle.allure_step(right, right_name)
+    return pytest_output
 
 
 def pytest_collection_modifyitems(items):
@@ -88,3 +101,5 @@ def collection():
 @pytest.fixture()
 def core(collection):
     yield collection
+
+
