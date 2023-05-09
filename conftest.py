@@ -72,13 +72,6 @@ def pytest_assertrepr_compare(config, op, left, right):
     return pytest_output
 
 
-@pytest.hookimpl
-def pytest_assertion_pass(item, lineno, orig, expr=None, values=None):
-    """测试报告显示断言内省"""
-
-    ReportStyle.allure_step_no(f'断言通过:  {orig}')
-
-
 def pytest_collection_modifyitems(items):
     """处理收集的测试用例"""
 
