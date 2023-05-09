@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time : 2023/3/24 13:08
 # @Author : 谈林海
+import json
 import allure
 import pytest
 import inspect
@@ -13,7 +14,6 @@ from utils.path import root
 from utils.log_control import logger
 from utils.database_control import MysqlDB
 from utils.read_yaml_control import HandleYaml
-from utils.allure_control import ReportStyle
 from utils.data_handle_control import DataHandler, Config
 from utils.requests_control import RestClient
 
@@ -58,7 +58,10 @@ def alert_inputs(request):
 
 
 def pytest_assertrepr_compare(config, op, left, right):
-    """处理断言失败"""
+    """
+    return explanation for comparisons in failing assert expressions.断言失败时执行
+    pytest_assertion_pass必须显示时间
+    """
 
     try:
         left_name, right_name = inspect.stack()[7].code_context[0].lstrip().lstrip(
@@ -66,9 +69,13 @@ def pytest_assertrepr_compare(config, op, left, right):
     except Exception:
         left_name, right_name = left, right
     pytest_output = assertrepr_compare(config, op, left, right)
-    logger.debug(f"left is {left}")
-    logger.debug(f"right is {right}")
-    ReportStyle.allure_step_no(f"断言: {left_name}{op}{right_name}")
+    logger.debug("{0} is {1}".format(left_name, left))
+    logger.debug("{0} is {1}".format(right_name, right))
+    with allure.step("断言{}{}{}".format(left_name, op, right_name)):
+        allure.attach(json.dumps(left, indent=2,
+                                 ensure_ascii=False), left_name)
+        allure.attach(json.dumps(right, indent=2,
+                                 ensure_ascii=False), right_name)
     return pytest_output
 
 
