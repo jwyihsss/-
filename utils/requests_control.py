@@ -52,7 +52,7 @@ class RestClient:
         self.session = requests.session()  # 创建会话对象
         self.session.Timeout = Timeout(timeout)  # 设置超时时间
         self.session.verify = False
-        self.session.cookies, self.token, self.uid = Authentication().cookie_token
+        self.session.cookies, self.token = Authentication().cookie_token
         self.session.proxies.update(self.proxies)
 
         retry_strategy = Retry(
