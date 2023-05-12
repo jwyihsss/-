@@ -17,7 +17,7 @@ class Loggings:
 
     def __new__(cls, *args, **kwargs):
         loggers = loguru.logger
-        loggers.add(f"{log_path}/log_{time.strftime('%Y_%m_%d')}.log", rotation="12:00", encoding="utf-8",
+        loggers.add(f"{log_path}/log_{time.strftime('%Y_%m_%d')}.log", rotation='1 day', encoding="utf-8",
                     enqueue=True, retention="10 days")
         return loggers
 

@@ -60,8 +60,8 @@ def pytest_assertrepr_compare(config, op, left, right):
 
     left_name, right_name = left, right
     pytest_output = assertrepr_compare(config, op, left, right)
-    logger.debug(f"{left_name} is {left}")
-    logger.debug(f"{right_name} is {right}")
+    # logger.debug(f"{left_name} is {left}")
+    # logger.debug(f"{right_name} is {right}")
     with allure.step(f"断言: {left_name} {op} {right_name}"):
         allure.attach(f"{left_name}", "输入结果")
         allure.attach(f"{op}", "判断条件")
