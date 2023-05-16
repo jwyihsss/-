@@ -7,7 +7,7 @@ from utils import *
 
 import jenkins
 import urllib3
-from utils.mock_data.fake_data_control import Mock
+from utils.fake_data.fake_data_control import Mock
 from dingtalkchatbot.chatbot import DingtalkChatbot
 
 url = config.jenkins.url

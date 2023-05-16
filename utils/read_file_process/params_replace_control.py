@@ -5,7 +5,7 @@ from pydantic import BaseModel
 from typing import Any, Dict, Union
 
 from utils import root
-from utils.mock_data.fake_data_control import Mock
+from utils.fake_data.fake_data_control import Mock
 from utils.read_file_process.read_yaml_control import HandleYaml
 
 
