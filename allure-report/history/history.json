@@ -1,0 +1,101 @@
+{
+  "45017f218af2cc32028423e3cf6d6559" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "7e391cbee378b277",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "time" : {
+        "start" : 1684210188864,
+        "stop" : 1684210188942,
+        "duration" : 78
+      }
+    } ]
+  },
+  "d1af798efa19c84fa39d069bf7e78851" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "b2a62fc76d0d5f98",
+      "status" : "passed",
+      "time" : {
+        "start" : 1684210188982,
+        "stop" : 1684210189068,
+        "duration" : 86
+      }
+    } ]
+  },
+  "b59e4ce69adad5cfed19159ac62df6d2" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "dfe945ef3453429d",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "time" : {
+        "start" : 1684210189211,
+        "stop" : 1684210189296,
+        "duration" : 85
+      }
+    } ]
+  },
+  "7e688e732384109d53a71dc072b0ebd8" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "302b17d3fab84afd",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "time" : {
+        "start" : 1684210189092,
+        "stop" : 1684210189172,
+        "duration" : 80
+      }
+    } ]
+  },
+  "a8a7cef51f571c424a0d0d7c9f421ce7" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "c4ea2c32fd70402",
+      "status" : "broken",
+      "statusDetails" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "time" : {
+        "start" : 1684210188662,
+        "stop" : 1684210188810,
+        "duration" : 148
+      }
+    } ]
+  }
+}

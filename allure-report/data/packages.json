@@ -1,0 +1,86 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "test_cases",
+    "children" : [ {
+      "name" : "login.test_login",
+      "children" : [ {
+        "name" : "登录接口",
+        "uid" : "c4ea2c32fd70402",
+        "parentUid" : "59c2481e382b0284929242d09b5a3d87",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684210188662,
+          "stop" : 1684210188810,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'正确账号、密码登录'", "('https://open.xwdsp.com/login', 'POST')", "{'response': True}", "{'params': {}, 'json': {'account': '18193196790', 'password': 'xxxxxxxxxx'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      }, {
+        "name" : "登录接口",
+        "uid" : "7e391cbee378b277",
+        "parentUid" : "59c2481e382b0284929242d09b5a3d87",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684210188864,
+          "stop" : 1684210188942,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'错误账号、密码登录'", "('https://open.xwdsp.com/login', 'POST')", "{'response': True}", "{'params': {}, 'json': {'account': '18900001000', 'password': 'xxxxxx'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      } ],
+      "uid" : "login.test_login"
+    }, {
+      "name" : "tianqi.test_tianqi",
+      "children" : [ {
+        "name" : "天气查询接口",
+        "uid" : "b2a62fc76d0d5f98",
+        "parentUid" : "0c7bf72578fc8766ff524114b0efa249",
+        "status" : "passed",
+        "time" : {
+          "start" : 1684210188982,
+          "stop" : 1684210189068,
+          "duration" : 86
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'查询上海天气'", "('https://open.xwdsp.com/phegda/advrest', 'POST')", "{'response': False}", "{'params': {}, 'json': {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '3', 'styleId': [1004]}], 'requestId': '16805156922345810'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      } ],
+      "uid" : "tianqi.test_tianqi"
+    }, {
+      "name" : "upload.test_upload",
+      "children" : [ {
+        "name" : "XXX接口",
+        "uid" : "302b17d3fab84afd",
+        "parentUid" : "2c508824289cbddb0e02a4e12020eab1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684210189092,
+          "stop" : 1684210189172,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'更换照片'", "('https://open.xwdsp.com/upload', 'POST')", "{'response': True}", "{'params': {}, 'json': {'key': '13992950320', 'key2': None}, 'file': {'file': ('upload.xlsx', <_io.BufferedReader name='/Users/tanlinhai/t2-api-autotest/files/upload.xlsx'>, 'application/json')}, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      }, {
+        "name" : "XXX接口",
+        "uid" : "dfe945ef3453429d",
+        "parentUid" : "2c508824289cbddb0e02a4e12020eab1",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684210189211,
+          "stop" : 1684210189296,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'更换照片2'", "('https://open.xwdsp.com/upload', 'POST')", "{'response': True}", "{'params': {}, 'json': {'key': ['158'], 'key2': [None]}, 'file': {'file': ('upload.xlsx', <_io.BufferedReader name='/Users/tanlinhai/t2-api-autotest/files/upload.xlsx'>, 'application/json')}, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      } ],
+      "uid" : "upload.test_upload"
+    } ],
+    "uid" : "2f5e813f34afdf02067fd6c5958321ba"
+  } ]
+}

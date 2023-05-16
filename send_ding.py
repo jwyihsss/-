@@ -3,12 +3,11 @@
 import json
 import time
 import datetime
-from utils import config
-from utils.path import root
+from utils import *
 
 import jenkins
 import urllib3
-from utils.fake_data_control import Mock
+from utils.mock_data.fake_data_control import Mock
 from dingtalkchatbot.chatbot import DingtalkChatbot
 
 url = config.jenkins.url

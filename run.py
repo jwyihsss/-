@@ -5,9 +5,9 @@ import pytest
 import click
 import traceback
 
-from utils.mail_control import MailSender
-from utils.log_control import logger
-from utils.create_case_control import TestCaseAutoCreate
+from utils.commons.mail_control import MailSender
+from utils import logger
+from utils.case_process.create_case_control import TestCaseAutoCreate
 
 
 @click.command()

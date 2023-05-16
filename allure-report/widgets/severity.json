@@ -1,0 +1,51 @@
+[ {
+  "uid" : "302b17d3fab84afd",
+  "name" : "XXX接口",
+  "time" : {
+    "start" : 1684210189092,
+    "stop" : 1684210189172,
+    "duration" : 80
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "dfe945ef3453429d",
+  "name" : "XXX接口",
+  "time" : {
+    "start" : 1684210189211,
+    "stop" : 1684210189296,
+    "duration" : 85
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "c4ea2c32fd70402",
+  "name" : "登录接口",
+  "time" : {
+    "start" : 1684210188662,
+    "stop" : 1684210188810,
+    "duration" : 148
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "7e391cbee378b277",
+  "name" : "登录接口",
+  "time" : {
+    "start" : 1684210188864,
+    "stop" : 1684210188942,
+    "duration" : 78
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "b2a62fc76d0d5f98",
+  "name" : "天气查询接口",
+  "time" : {
+    "start" : 1684210188982,
+    "stop" : 1684210189068,
+    "duration" : 86
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

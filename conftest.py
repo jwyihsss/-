@@ -4,16 +4,13 @@
 # @Author : 谈林海
 import allure
 import pytest
-from pathlib import Path
 from _pytest.assertion.util import assertrepr_compare
 
-from utils import config
-from utils.path import root
-from utils.log_control import logger
-from utils.database_control import MysqlDB
-from utils.read_yaml_control import HandleYaml
-from utils.data_handle_control import DataHandler, Config
-from utils.requests_control import RestClient
+from utils import *
+from utils.database_process.database_control import MysqlDB
+from utils.read_file_process.read_yaml_control import HandleYaml
+from utils.read_file_process.params_replace_control import DataHandler, Config
+from utils.requests_process.requests_control import RestClient
 
 
 def pytest_generate_tests(metafunc):

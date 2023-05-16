@@ -1,0 +1,65 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "children" : [ {
+        "name" : "登录接口",
+        "uid" : "c4ea2c32fd70402",
+        "parentUid" : "0deff55915d4c9ebc746eac29285817c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684210188662,
+          "stop" : 1684210188810,
+          "duration" : 148
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'正确账号、密码登录'", "('https://open.xwdsp.com/login', 'POST')", "{'response': True}", "{'params': {}, 'json': {'account': '18193196790', 'password': 'xxxxxxxxxx'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      }, {
+        "name" : "登录接口",
+        "uid" : "7e391cbee378b277",
+        "parentUid" : "0deff55915d4c9ebc746eac29285817c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684210188864,
+          "stop" : 1684210188942,
+          "duration" : 78
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'错误账号、密码登录'", "('https://open.xwdsp.com/login', 'POST')", "{'response': True}", "{'params': {}, 'json': {'account': '18900001000', 'password': 'xxxxxx'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      }, {
+        "name" : "XXX接口",
+        "uid" : "302b17d3fab84afd",
+        "parentUid" : "0deff55915d4c9ebc746eac29285817c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684210189092,
+          "stop" : 1684210189172,
+          "duration" : 80
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'更换照片'", "('https://open.xwdsp.com/upload', 'POST')", "{'response': True}", "{'params': {}, 'json': {'key': '13992950320', 'key2': None}, 'file': {'file': ('upload.xlsx', <_io.BufferedReader name='/Users/tanlinhai/t2-api-autotest/files/upload.xlsx'>, 'application/json')}, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      }, {
+        "name" : "XXX接口",
+        "uid" : "dfe945ef3453429d",
+        "parentUid" : "0deff55915d4c9ebc746eac29285817c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1684210189211,
+          "stop" : 1684210189296,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'更换照片2'", "('https://open.xwdsp.com/upload', 'POST')", "{'response': True}", "{'params': {}, 'json': {'key': ['158'], 'key2': [None]}, 'file': {'file': ('upload.xlsx', <_io.BufferedReader name='/Users/tanlinhai/t2-api-autotest/files/upload.xlsx'>, 'application/json')}, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      } ],
+      "uid" : "0deff55915d4c9ebc746eac29285817c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}
