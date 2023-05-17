@@ -53,10 +53,10 @@ class TestCaseAutoCreate(CaseHandler):
             for data in case_detail.get('tests'):
                 params, files, assert_way = data['inputs'].get('params'), data['inputs'].get('file'), data['inputs'].get('assert_way')
                 assert_context = {
-                    'equal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
-                    'unequal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
-                    'in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
-                    'not_in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response'])",
+                    'equal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']) is True",
+                    'unequal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']) is True",
+                    'in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']) is True",
+                    'not_in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']) is True",
                     'true': "(JsonHandler(res).find_one(inputs['assert_key']))",
                     'false': "(JsonHandler(res).find_one(inputs['assert_key']))",
                     'none': "(JsonHandler(res).find_one(inputs['assert_key']) is None)",
