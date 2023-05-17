@@ -79,8 +79,8 @@ class TestCaseAutoCreate(CaseHandler):
 # @Time : {Mock().now_time()}
 import allure
 import pytest
-from utils.json_control import JsonHandler
-from utils.assert_control import Assert
+from utils.read_file_process.json_control import JsonHandler
+from utils.case_process.assert_control import Assert
 
 
 @allure.feature('{feature}')

@@ -96,7 +96,7 @@ class RestClient:
             ReportStyle.allure_step_no(f"接口响应码: {res.status_code}")
             ReportStyle.allure_step_no(f"响应耗时(ms): {round(res.elapsed.total_seconds() * 1000)}")
             ReportStyle.allure_step("响应数据", resp)
-            return res
+            return res.status_code if isinstance(resp, int) else res
         return wrapper
 
     @res_log
