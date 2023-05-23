@@ -4,6 +4,8 @@
 # @Author : 谈林海
 from pathlib import Path
 from typing import List, Dict, Any
+import asyncio
+import aiofiles
 
 from utils import root
 from utils.fake_data.fake_data_control import Mock
@@ -42,7 +44,7 @@ class TestCaseAutoCreate(CaseHandler):
     def __init__(self):
         super().__init__()
 
-    def generate_test_case(self) -> None:
+    async def generate_test_case(self) -> None:
         """生成测试用例文件"""
 
         # 遍历测试数据文件
@@ -69,7 +71,17 @@ class TestCaseAutoCreate(CaseHandler):
 
             # 写入python文件
             if not FileUtils.is_exist(test_case_path):
-                FileUtils.write_file(test_case_path, content=self.case_content(case_path.stem, f'{file_path.stem}', params, files, assert_context))
+                async with aiofiles.open(test_case_path, mode='w', encoding="utf8") as file:
+                    await file.write(self.case_content(
+                        feature=case_path.stem,
+                        datafile=f'{file_path.stem}',
+                        params=params,
+                        files=files,
+                        assert_context=assert_context))
+
+    @staticmethod
+    def create_case():
+        asyncio.run(TestCaseAutoCreate().generate_test_case())
 
     def case_content(self, feature, datafile, params, files, assert_context):
         """生成测试用例内容"""
@@ -94,4 +106,4 @@ def {datafile}(core, env, case, inputs, expectation):
 
 
 if __name__ == '__main__':
-    TestCaseAutoCreate().generate_test_case()
+    TestCaseAutoCreate.create_case()
