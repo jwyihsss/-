@@ -9,7 +9,7 @@ from _pytest.assertion.util import assertrepr_compare
 from utils import *
 from utils.database_process.database_control import MysqlDB
 from utils.read_file_process.read_yaml_control import HandleYaml
-from utils.read_file_process.params_replace_control import DataHandler, Config
+from utils.data_process.params_replace_control import DataHandler, Config
 from utils.requests_process.requests_control import RestClient
 
 
@@ -49,7 +49,10 @@ def alert_inputs(request):
 
     if 'inputs' in request.fixturenames:
         inputs = request.getfixturevalue('inputs')
-        DataHandler(config=Config()).replace_values(inputs['json'])
+        if inputs.get('json'):
+            DataHandler(config=Config()).replace_values(inputs['json'])
+        else:
+            DataHandler(config=Config()).replace_values(inputs['params'])
 
 
 def pytest_assertrepr_compare(config, op, left, right):

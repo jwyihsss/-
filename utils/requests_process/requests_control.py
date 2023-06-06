@@ -11,11 +11,13 @@ from requests.exceptions import RetryError, Timeout, RequestException
 from functools import wraps
 
 from utils import *
-from utils.read_file_process.json_control import JsonHandler
+from utils.data_process.json_control import JsonHandler
 from utils.requests_process.create_cookie_control import Cookies
 from utils.commons.allure_control import ReportStyle
+from utils.commons.singleton_control import singleton
 
 
+@singleton
 class Authentication:
     """获取token/cookies"""
 
@@ -37,6 +39,7 @@ class Authentication:
             return Cookies, {}  # 如果cookie没有获取成功，则根据全局配置域名生成一个备用cookie
 
 
+@singleton
 class RestClient:
     """封装api请求类"""
 

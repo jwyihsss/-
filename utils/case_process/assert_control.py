@@ -3,10 +3,10 @@
 # @Time : 2023/4/24 15:59
 # @Author : 谈林海
 from utils import logger
-from utils.commons.singleton_control import SingletonPattern
+from utils.commons.singleton_control import singleton
 
 
-@SingletonPattern
+@singleton
 class Assert:
     """断言类"""
 

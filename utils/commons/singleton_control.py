@@ -2,16 +2,18 @@
 # -*- coding: utf-8 -*-
 # @Time : 2023/4/27 09:51
 # @Author : 谈林海
+from functools import lru_cache
 
 
-class SingletonPattern:
+def singleton(cls):
     """单例模式装饰器"""
+    instances = {}
 
-    def __init__(self, cls):
-        self.cls = cls
-        self._instance = None
+    @lru_cache(maxsize=None)
+    def get_instance(*args, **kwargs):
+        key = (cls, args, tuple(sorted(kwargs.items())))
+        if key not in instances:
+            instances[key] = cls(*args, **kwargs)
+        return instances[key]
 
-    def __call__(self, *args, **kwargs):
-        if not self._instance:
-            self._instance = self.cls(*args, **kwargs)
-        return self._instance
+    return get_instance
