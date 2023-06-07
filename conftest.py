@@ -49,10 +49,8 @@ def alert_inputs(request):
 
     if 'inputs' in request.fixturenames:
         inputs = request.getfixturevalue('inputs')
-        if inputs.get('json'):
-            DataHandler(config=Config()).replace_values(inputs['json'])
-        else:
-            DataHandler(config=Config()).replace_values(inputs['params'])
+        DataHandler(config=Config()).replace_values(inputs['json']) if inputs.get('json') else DataHandler(
+            config=Config()).replace_values(inputs['params'])
 
 
 def pytest_assertrepr_compare(config, op, left, right):

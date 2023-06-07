@@ -103,8 +103,11 @@ class RestClient:
         return wrapper
 
     @res_log
-    def request(self, env, **kwargs):
-        url, request_method = env
+    def request(self, *args, **kwargs):
+        try:
+            url, request_method, _ = args[0]
+        except ValueError:
+            url, request_method = args[0]
         res = {
             'get': lambda: self.session.get(url, **kwargs),
             'post': lambda: self.session.post(url, **kwargs),
