@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 from typing import Union
-from pydantic import BaseModel
+from pydantic import BaseModel, validator
 from typing import Text
 
 
@@ -54,5 +54,11 @@ class Config(BaseModel):
     ding_talk: "DingTalk"
     mysql_db: "MySqlDB"
     email: "Email"
+
+    @validator('host')
+    def name_not_empty(cls, v):
+        if isinstance(v, str) and len(v.strip()) == 0:
+            raise ValueError("测试域名不能为空")
+        return v
 
 
