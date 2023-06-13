@@ -46,8 +46,11 @@ class MysqlDB:
         try:
             with self.conn.cursor() as cursor:
                 cursor.execute(sql)
-                data = cursor.fetchall() if state == QueryState.ALL else cursor.fetchone() if state == QueryState.ONE else ...
-            return data
+                data = {
+                    QueryState.ALL: cursor.fetchall(),
+                    QueryState.ONE: cursor.fetchone()
+                }[state]
+                return data
         except Exception as err:
             logger.error(f"查询失败: {err}")
             raise
