@@ -85,7 +85,7 @@ class TestCaseAutoCreate(CaseHandler):
 
     def case_content(self, feature, datafile, params, files, assert_context):
         """生成测试用例内容"""
-        file = "files=input['file'], " if files else ""
+        file = "files=inputs['file'], " if files else ""
         content = f"""#!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time : {Mock().now_time()}
