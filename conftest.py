@@ -76,7 +76,8 @@ def pytest_collection_modifyitems(items):
 
         _marks = Path(item.fspath).resolve().parts[-2]  # 测试用例对应模块
         if item.get_closest_marker(name=f'{_marks}') is None:
-            item.add_marker(eval(f"pytest.mark.{_marks}"))
+            setattr(pytest.mark, 'marks', _marks)
+            item.add_marker(getattr(pytest.mark, 'marks'))
 
 
 @pytest.fixture(autouse=True)
