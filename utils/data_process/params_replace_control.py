@@ -31,39 +31,37 @@ class DataHandler:
 
         if isinstance(data, dict):
             for key, value in data.items():
-                if isinstance(value, (dict, list)):
-                    self.replace_values(value)
-                elif isinstance(value,
-                                str) and '{{' in value and '}}' in value and 'int.' not in value and 'str.' not in value:
-                    func = value[value.find('{') + 2:value.find('}')]
-                    data[key] = data[key].replace('{{%s}}' % f'{func}', str(Mock(func)()))
-                elif isinstance(value, str) and '$cache.' in value:
-                    cache_name = value[value.find('.') + 1:]
-                    data[key] = self.cache_data.get(cache_name, None)
-                elif isinstance(value, str) and 'int.' in value:
-                    func = value[value.find('{') + 2:value.find('}')]
-                    data[key] = int(data[key].replace('{{%s}}' % f'{func}', str(Mock(func[func.find('.') + 1:])())))
-                elif isinstance(value, str) and 'str.' in value:
-                    func = value[value.find('{') + 2:value.find('}')]
-                    data[key] = str(data[key].replace('{{%s}}' % f'{func}', str(Mock(func[func.find('.') + 1:])())))
+                data[key] = self._replace_value(value)
         elif isinstance(data, list):
-            for item in data:
-                if isinstance(item, (dict, list)):
-                    self.replace_values(item)
-                elif isinstance(item,
-                                str) and '{{' in item and '}}' in item and 'str.' not in item and 'int.' not in item:
-                    func = item[item.find('{') + 2:item.find('}')]
-                    data[data.index(item)] = data[data.index(item)].replace('{{%s}}' % f'{func}', str(Mock(func)()))
-                elif isinstance(item, str) and '$cache.' in item:
-                    cache_name = item[item.find('.') + 1:]
-                    data[data.index(item)] = self.cache_data.get(cache_name, None)
-                elif isinstance(item, str) and 'int.' in item:
-                    func = item[item.find('{') + 2:item.find('}')]
-                    data[data.index(item)] = int(
-                        data[data.index(item)].replace('{{%s}}' % f'{func}', str(Mock(func[func.find('.') + 1:])())))
-                elif isinstance(item, str) and 'str.' in item:
-                    func = item[item.find('{') + 2:item.find('}')]
-                    data[data.index(item)] = str(
-                        data[data.index(item)].replace('{{%s}}' % f'{func}', str(Mock(func[func.find('.') + 1:])())))
+            for index, item in enumerate(data):
+                data[index] = self._replace_value(item)
         return data
+
+    def _replace_value(self, value):
+        """替换指定格式的字符串值"""
+
+        if isinstance(value, (dict, list)):
+            return self.replace_values(value)
+        elif isinstance(value, str):
+            return self._replace_str_value(value)
+        else:
+            return value
+
+    def _replace_str_value(self, value):
+        """替换字符串中的特定格式"""
+
+        if '{{' in value and '}}' in value and 'int.' not in value and 'str.' not in value:
+            func = value[value.find('{') + 2:value.find('}')]
+            return value.replace('{{%s}}' % f'{func}', str(Mock(func)()))
+        elif '$cache.' in value:
+            cache_name = value[value.find('.') + 1:]
+            return self.cache_data.get(cache_name, None)
+        elif 'int.' in value:
+            func = value[value.find('{') + 2:value.find('}')]
+            return int(value.replace('{{%s}}' % f'{func}', str(Mock(func[func.find('.') + 1:])())))
+        elif 'str.' in value:
+            func = value[value.find('{') + 2:value.find('}')]
+            return str(value.replace('{{%s}}' % f'{func}', str(Mock(func[func.find('.') + 1:])())))
+        else:
+            return value
 
