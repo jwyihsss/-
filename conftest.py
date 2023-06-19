@@ -80,6 +80,11 @@ def pytest_collection_modifyitems(items):
             item.add_marker(getattr(pytest.mark, 'marks'))
 
 
+db_config = all([v for k, v in dict(config.mysql_db).items()])
+if not db_config:
+    logger.warning('当前配置库未配置或配置有误')
+
+
 @pytest.fixture(autouse=True)
 def collection():
     class Core:
@@ -87,7 +92,7 @@ def collection():
             self.requests = RestClient()
             self.headers = RestClient().headers()
             self.cache = HandleYaml(root / 'test_data/cache.yaml')
-            self.mysql = MysqlDB() if config.mysql_db.switch else logger.warning('当前数据库配置: 关闭')
+            self.mysql = MysqlDB() if db_config else ...
 
     yield Core()
 

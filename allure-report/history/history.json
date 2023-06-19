@@ -9,13 +9,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "7e391cbee378b277",
+      "uid" : "62a1d19161094424",
       "status" : "broken",
-      "statusDetails" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "statusDetails" : "AttributeError: 'int' object has no attribute 'json'",
       "time" : {
-        "start" : 1684210188864,
-        "stop" : 1684210188942,
-        "duration" : 78
+        "start" : 1687145757292,
+        "stop" : 1687145757322,
+        "duration" : 30
       }
     } ]
   },
@@ -29,12 +29,12 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "b2a62fc76d0d5f98",
+      "uid" : "3bcc019d9fa81258",
       "status" : "passed",
       "time" : {
-        "start" : 1684210188982,
-        "stop" : 1684210189068,
-        "duration" : 86
+        "start" : 1687145757325,
+        "stop" : 1687145757370,
+        "duration" : 45
       }
     } ]
   },
@@ -48,13 +48,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "dfe945ef3453429d",
+      "uid" : "7fdef0bcc446cf05",
       "status" : "broken",
-      "statusDetails" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "statusDetails" : "AttributeError: 'int' object has no attribute 'json'",
       "time" : {
-        "start" : 1684210189211,
-        "stop" : 1684210189296,
-        "duration" : 85
+        "start" : 1687145757462,
+        "stop" : 1687145757491,
+        "duration" : 29
       }
     } ]
   },
@@ -68,13 +68,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "302b17d3fab84afd",
+      "uid" : "d65694b72b9b78c9",
       "status" : "broken",
-      "statusDetails" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "statusDetails" : "AttributeError: 'int' object has no attribute 'json'",
       "time" : {
-        "start" : 1684210189092,
-        "stop" : 1684210189172,
-        "duration" : 80
+        "start" : 1687145757373,
+        "stop" : 1687145757458,
+        "duration" : 85
       }
     } ]
   },
@@ -88,13 +88,13 @@
       "total" : 1
     },
     "items" : [ {
-      "uid" : "c4ea2c32fd70402",
+      "uid" : "163f1be66dd17c82",
       "status" : "broken",
-      "statusDetails" : "requests.exceptions.JSONDecodeError: Expecting value: line 1 column 1 (char 0)",
+      "statusDetails" : "AttributeError: 'int' object has no attribute 'json'",
       "time" : {
-        "start" : 1684210188662,
-        "stop" : 1684210188810,
-        "duration" : 148
+        "start" : 1687145757145,
+        "stop" : 1687145757272,
+        "duration" : 127
       }
     } ]
   }

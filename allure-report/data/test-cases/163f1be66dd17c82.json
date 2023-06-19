@@ -1,0 +1,308 @@
+{
+  "uid" : "163f1be66dd17c82",
+  "name" : "登录接口",
+  "fullName" : "test_cases.login.test_login#test_tianqi",
+  "historyId" : "a8a7cef51f571c424a0d0d7c9f421ce7",
+  "time" : {
+    "start" : 1687145757145,
+    "stop" : 1687145757272,
+    "duration" : 127
+  },
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'int' object has no attribute 'json'",
+  "statusTrace" : "core = <conftest.collection.<locals>.Core object at 0x1053776d0>\nenv = ('https://open.xwdsp.com/login', 'POST'), case = '正确账号、密码登录'\ninputs = {'assert_key': '$..success', 'assert_way': 'unequal', 'file': None, 'json': {'account': '18170269541', 'password': 'xxxxxxxxxx'}, ...}\nexpectation = {'response': True}\n\n    @allure.feature('登录模块')\n    @allure.title('登录接口')\n    @pytest.mark.login\n    @allure.feature('login')\n    @pytest.mark.datafile('test_data/login/test_login.yml')\n    def test_tianqi(core, env, case, inputs, expectation):\n>       res = core.requests.request(env, data=inputs['params'], headers=core.headers).json()\nE       AttributeError: 'int' object has no attribute 'json'\n\ntest_cases/login/test_login.py:14: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1687145757070,
+      "stop" : 1687145757094,
+      "duration" : 24
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "collection",
+    "time" : {
+      "start" : 1687145757095,
+      "stop" : 1687145757145,
+      "duration" : 50
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "alert_inputs",
+    "time" : {
+      "start" : 1687145757094,
+      "stop" : 1687145757095,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "core",
+    "time" : {
+      "start" : 1687145757145,
+      "stop" : 1687145757145,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'int' object has no attribute 'json'",
+    "statusTrace" : "core = <conftest.collection.<locals>.Core object at 0x1053776d0>\nenv = ('https://open.xwdsp.com/login', 'POST'), case = '正确账号、密码登录'\ninputs = {'assert_key': '$..success', 'assert_way': 'unequal', 'file': None, 'json': {'account': '18170269541', 'password': 'xxxxxxxxxx'}, ...}\nexpectation = {'response': True}\n\n    @allure.feature('登录模块')\n    @allure.title('登录接口')\n    @pytest.mark.login\n    @allure.feature('login')\n    @pytest.mark.datafile('test_data/login/test_login.yml')\n    def test_tianqi(core, env, case, inputs, expectation):\n>       res = core.requests.request(env, data=inputs['params'], headers=core.headers).json()\nE       AttributeError: 'int' object has no attribute 'json'\n\ntest_cases/login/test_login.py:14: AttributeError",
+    "steps" : [ {
+      "name" : "请求地址: https://open.xwdsp.com/login",
+      "time" : {
+        "start" : 1687145757271,
+        "stop" : 1687145757271,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "请求方法: POST",
+      "time" : {
+        "start" : 1687145757271,
+        "stop" : 1687145757271,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1687145757271,
+        "stop" : 1687145757272,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "e624a77ab053a397",
+        "name" : "请求头",
+        "source" : "e624a77ab053a397.json",
+        "type" : "application/json",
+        "size" : 141
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1687145757272,
+        "stop" : 1687145757272,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5dcf5cf15dfa7599",
+        "name" : "请求数据",
+        "source" : "5dcf5cf15dfa7599.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    }, {
+      "name" : "接口响应码: 404",
+      "time" : {
+        "start" : 1687145757272,
+        "stop" : 1687145757272,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "响应耗时(ms): 78",
+      "time" : {
+        "start" : 1687145757272,
+        "stop" : 1687145757272,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    }, {
+      "name" : "响应数据",
+      "time" : {
+        "start" : 1687145757272,
+        "stop" : 1687145757272,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "514abdb4b24f7ea5",
+        "name" : "响应数据",
+        "source" : "514abdb4b24f7ea5.json",
+        "type" : "application/json",
+        "size" : 3
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false,
+      "hasContent" : true
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true
+  },
+  "afterStages" : [ {
+    "name" : "collection::0",
+    "time" : {
+      "start" : 1687145757291,
+      "stop" : 1687145757291,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  }, {
+    "name" : "core::0",
+    "time" : {
+      "start" : 1687145757290,
+      "stop" : 1687145757290,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "login"
+  }, {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "tag",
+    "value" : "datafile('test_data/login/test_login.yml')"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_cases.login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "tanlinhaideMacBook-Pro.local"
+  }, {
+    "name" : "thread",
+    "value" : "81302-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.login.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'正确账号、密码登录'"
+  }, {
+    "name" : "env",
+    "value" : "('https://open.xwdsp.com/login', 'POST')"
+  }, {
+    "name" : "expectation",
+    "value" : "{'response': True}"
+  }, {
+    "name" : "inputs",
+    "value" : "{'params': {}, 'json': {'account': '18170269541', 'password': 'xxxxxxxxxx'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "datafile('test_data/login/test_login.yml')", "login" ]
+  },
+  "source" : "163f1be66dd17c82.json",
+  "parameterValues" : [ "'正确账号、密码登录'", "('https://open.xwdsp.com/login', 'POST')", "{'response': True}", "{'params': {}, 'json': {'account': '18170269541', 'password': 'xxxxxxxxxx'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+}
