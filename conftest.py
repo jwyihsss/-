@@ -53,6 +53,20 @@ def alert_inputs(request):
             config=Config()).replace_values(inputs['params'])
 
 
+@pytest.fixture(scope='function', autouse=True)
+def alert_common_inputs(request):
+    """替换common_inputs中请求地址的参数化数据"""
+    if 'env' in request.fixturenames:
+        caches = HandleYaml(root / 'test_data/cache.yaml').read_yaml().get('cache', {})
+        env = request.getfixturevalue('env')
+        url = env[0]
+        if "{" in url and "}" in url:
+            if matchs := re.search(r"\{(.+?)\}", url):
+                replace_context = matchs.group(1)
+                url = url.replace(url[url.find("{"):env[0].find("}") + 1], str(caches.get(replace_context[replace_context.find('.') + 1:])))
+                env[0] = url
+
+
 def pytest_assertrepr_compare(config, op, left, right):
     """处理断言内省"""
 
