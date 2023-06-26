@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # @Time : 2023/3/24 13:08
 # @Author : 谈林海
+import re
 import allure
 import pytest
 from _pytest.assertion.util import assertrepr_compare
