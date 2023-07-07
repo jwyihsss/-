@@ -1,6 +1,0 @@
-"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Mon Jun 19 11:35:57 CST 2023","Mon Jun 19 11:35:57 CST 2023","30","test_cases.login","test_login","","","","登录接口",""
-"broken","Mon Jun 19 11:35:57 CST 2023","Mon Jun 19 11:35:57 CST 2023","127","test_cases.login","test_login","","","","登录接口",""
-"broken","Mon Jun 19 11:35:57 CST 2023","Mon Jun 19 11:35:57 CST 2023","85","test_cases.upload","test_upload","","","","XXX接口",""
-"passed","Mon Jun 19 11:35:57 CST 2023","Mon Jun 19 11:35:57 CST 2023","45","test_cases.tianqi","test_tianqi","","","","天气查询接口",""
-"broken","Mon Jun 19 11:35:57 CST 2023","Mon Jun 19 11:35:57 CST 2023","29","test_cases.upload","test_upload","","","","XXX接口",""
