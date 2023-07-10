@@ -12,6 +12,18 @@ from utils.fake_data.fake_data_control import Mock
 from utils.commons.pathlib_control import FileUtils
 from utils.read_file_process.read_yaml_control import HandleYaml
 
+# 断言映射
+assert_context = {
+    'equal': "assert core.js(res).find_one(inputs['assert_key']) == expectation['response']",
+    'unequal': "assert core.js(res).find_one(inputs['assert_key']) != expectation['response']",
+    'in': "assert core.js(res).find_one(inputs['assert_key']) in expectation['response']",
+    'not_in': "assert core.js(res).find_one(inputs['assert_key']) not in expectation['response']",
+    'true': "assert core.js(res).find_one(inputs['assert_key'])) is True",
+    'false': "assert core.js(res).find_one(inputs['assert_key'])) is False",
+    'none': "assert core.js(res).find_one(inputs['assert_key']) is None",
+    'not_none': "assert core.js(res).find_one(inputs['assert_key']) is not None"
+}
+
 
 class CaseHandler:
     """用例相关数据处理"""
@@ -53,21 +65,12 @@ class TestCaseAutoCreate(CaseHandler):
 
             # 处理测试数据
             for data in case_detail.get('tests'):
-                params, files, assert_way = data['inputs'].get('params'), data['inputs'].get('file'), data['inputs'].get('assert_way')
-                assert_context = {
-                    'equal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']) is True",
-                    'unequal': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']) is True",
-                    'in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']) is True",
-                    'not_in': "(JsonHandler(res).find_one(inputs['assert_key']), expectation['response']) is True",
-                    'true': "(JsonHandler(res).find_one(inputs['assert_key']))",
-                    'false': "(JsonHandler(res).find_one(inputs['assert_key']))",
-                    'none': "(JsonHandler(res).find_one(inputs['assert_key']) is None)",
-                    'not_none': "(JsonHandler(res).find_one(inputs['assert_key']) is not None)"
-                }.get(assert_way)
+                params, files, ast_way = data['inputs'].get('params'), data['inputs'].get('file'), data['inputs'].get('assert_way')
 
             # 创建目录
             FileUtils.create_dir(case_path) if not FileUtils.is_exist(case_path) else ...
             test_case_path = case_path / f'{file_path.stem}.py'
+            assert_way = assert_context.get(ast_way)  # 获取断言语句
 
             # 写入python文件
             if not FileUtils.is_exist(test_case_path):
@@ -77,13 +80,13 @@ class TestCaseAutoCreate(CaseHandler):
                         datafile=f'{file_path.stem}',
                         params=params,
                         files=files,
-                        assert_context=assert_context))
+                        ast_context=assert_way))
 
     @staticmethod
     def create_case():
         asyncio.run(TestCaseAutoCreate().generate_test_case())
 
-    def case_content(self, feature, datafile, params, files, assert_context):
+    def case_content(self, feature, datafile, params, files, ast_context):
         """生成测试用例内容"""
         file = "files=inputs['file'], " if files else ""
         content = f"""#!/usr/bin/env python
@@ -91,8 +94,6 @@ class TestCaseAutoCreate(CaseHandler):
 # @Time : {Mock().now_time()}
 import allure
 import pytest
-from utils.data_process.json_control import JsonHandler
-from utils.case_process.assert_control import Assert
 
 
 @allure.feature('{feature}')
@@ -100,7 +101,7 @@ from utils.case_process.assert_control import Assert
 def {datafile}(core, env, case, inputs, expectation):
     res = core.requests.request(env, {'data' if params else 'json'}=inputs[{"'params'" if params else "'json'"}], {file}headers=core.headers).json()
     with allure.step('接口响应断言'):
-        assert Assert()(inputs['assert_way']){assert_context}"""
+        {ast_context}"""
 
         return content
 
