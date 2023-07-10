@@ -108,16 +108,7 @@ class RestClient:
             url, request_method, _ = args[0]
         except ValueError:
             url, request_method = args[0]
-        res = {
-            'get': lambda: self.session.get(url, **kwargs),
-            'post': lambda: self.session.post(url, **kwargs),
-            'options': lambda: self.session.options(url, **kwargs),
-            'head': lambda: self.session.head(url, **kwargs),
-            'put': lambda: self.session.put(url, **kwargs),
-            'patch': lambda: self.session.patch(url, **kwargs),
-            'delete': lambda: self.session.delete(url, **kwargs)
-        }.get(request_method.lower(), False)()
-
+        res = getattr(self.session, request_method.lower())(url, **kwargs)
         try:
             return res
         except (RequestException, Timeout, RetryError) as err:
