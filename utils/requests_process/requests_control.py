@@ -3,34 +3,28 @@
 # @Time : 2023/4/24 15:59
 # @Author : 谈林海
 import json
-import urllib3
-from urllib3.util.retry import Retry
-import requests
-from requests.adapters import HTTPAdapter
-from requests.exceptions import RetryError, Timeout, RequestException
 from functools import wraps
 
+import httpx
 from utils import *
-from utils.data_process.json_control import JsonHandler
-from utils.requests_process.create_cookie_control import Cookies
 from utils.commons.allure_control import ReportStyle
 from utils.commons.singleton_control import singleton
+from utils.data_process.json_control import JsonHandler
+from utils.requests_process.create_cookie_control import Cookies
+
+payload = {"account": config.account,
+           "password": config.password
+           }
 
 
 @singleton
 class Authentication:
     """获取token/cookies"""
 
-    def __init__(self):
-        # 读取全局配置中的账号信息
-        self.payload = {"account": config.account,
-                        "password": config.password
-                        }
-
-    @property
-    def cookie_token(self):
+    @staticmethod
+    def cookie_token():
         try:
-            res = requests.post('https://tianqiai/login', data=self.payload)
+            res = httpx.post('https://tianqiai/login', data=payload)
             js = JsonHandler(res.json())
             res_cookies, res_token = res.cookies, js.find_one('$..token')
             return res_cookies, res_token
@@ -41,35 +35,13 @@ class Authentication:
 
 @singleton
 class RestClient:
-    """封装api请求类"""
+    """
+    基于 httpx 封装的同步请求类
+    """
 
-    def __init__(self,
-                 timeout=10,
-                 retry=3,
-                 backoff_factor=0.3,
-                 proxies=None
-                 ):
-        # 初始化函数，设置请求超时时间、重试次数、backoff因子（指定失败后下一次重试时间间隔的增长因子）、代理等参数
-        # 这四个参数都是默认设置的，用户可以根据需要进行更改
-        urllib3.disable_warnings()
-        self.timeout = timeout  # 超时时间
-        self.proxies = proxies or {}  # 设置代理
-        self.session = requests.session()  # 创建会话对象
-        self.session.Timeout = Timeout(timeout)  # 设置超时时间
-        self.session.verify = False
-        self.session.cookies, self.token = Authentication().cookie_token
-        self.session.proxies.update(self.proxies)
-
-        retry_strategy = Retry(
-            total=retry,
-            backoff_factor=backoff_factor,
-            status_forcelist=[429, 500, 502, 503, 504],
-        )
-
-        adapter = HTTPAdapter(max_retries=retry_strategy)
-        self.session.mount("https://", adapter)
-        self.session.mount("http://", adapter)
-        # 设置重试策略并将其与会话对象关联，以便每次请求失败时自动重试
+    def __init__(self):
+        self.cookies, self.token = Authentication.cookie_token()
+        self.client = httpx.Client(cookies=self.cookies, timeout=30, verify=False)
 
     def res_log(func):
         @wraps(func)
@@ -100,6 +72,7 @@ class RestClient:
             ReportStyle.allure_step_no(f"响应耗时(ms): {round(res.elapsed.total_seconds() * 1000)}")
             ReportStyle.allure_step("响应数据", resp)
             return res.status_code if isinstance(resp, int) else res
+
         return wrapper
 
     @res_log
@@ -108,10 +81,12 @@ class RestClient:
             url, request_method, _ = args[0]
         except ValueError:
             url, request_method = args[0]
-        res = getattr(self.session, request_method.lower())(url, **kwargs)
+        # 发起请求
+        res = self.client.request(request_method, url, **kwargs)
+        # 接口请求结果
         try:
             return res
-        except (RequestException, Timeout, RetryError) as err:
+        except Exception as err:
             logger.error(f'请求失败: {err}')
             return None
 
@@ -125,4 +100,3 @@ class RestClient:
         return headers
 
     res_log = staticmethod(res_log)
-
