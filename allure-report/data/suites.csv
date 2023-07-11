@@ -1,0 +1,2 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jul 11 15:24:31 CST 2023","Tue Jul 11 15:24:32 CST 2023","336","test_cases.tianqi","test_tianqi","","","","天气查询接口",""

@@ -1,0 +1,11 @@
+[ {
+  "uid" : "5dade482e7fe5d6",
+  "name" : "天气查询接口",
+  "time" : {
+    "start" : 1689060271873,
+    "stop" : 1689060272209,
+    "duration" : 336
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]
