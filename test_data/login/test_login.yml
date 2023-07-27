@@ -1,26 +1,32 @@
 common_inputs:
-    method: POST
+    method: PUT
     path: /login
 
 tests:
   - case: 正确账号、密码登录
     inputs:
       params: {}
-      json: {"account": "{{phone_number()}}", "password": "xxxxxxxxxx"}
+      data: {"admin_name":"jie","password":"e10adc3949ba59abbe56e057f20f883e"}
+      headers:
+        Content-Type: application/json;charset=UTF-8
       file:
       sql:
       assert_key: $..success
       assert_way: unequal
-    expectation:
-      response: true
+    expectation: {
+          "code": 200,
+          "data": "4017b2449073417b9d5318a5e8743a16"
+        }
 
   - case: 错误账号、密码登录
     inputs:
       params: {}
-      json: {"account": "18900001000", "password": "xxxxxx"}
+      data: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+      headers:
+        Content-Type: application/json;charset=UTF-8
       file:
       sql:
       assert_key: $..success
       assert_way: unequal
     expectation:
-      response: true
+          {'code': 100002, 'msg': '账号或密码错误'}
