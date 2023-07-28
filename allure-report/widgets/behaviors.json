@@ -1,13 +1,46 @@
 {
-  "total" : 1,
+  "total" : 4,
   "items" : [ {
-    "uid" : "5eb95b7614527884cdc65b63293dc287",
-    "name" : "天气模块",
+    "uid" : "6958045a481574bf02bb11ef07a7047b",
+    "name" : "登录模块",
     "statistic" : {
-      "failed" : 0,
+      "failed" : 1,
       "broken" : 0,
       "skipped" : 0,
       "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "6b74c42bd09fef0af9d6be3f5241dc88",
+    "name" : "login",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 2
+    }
+  }, {
+    "uid" : "e632eaf8e90341e450d2c84fcb4299ff",
+    "name" : "任务配置模块",
+    "statistic" : {
+      "failed" : 1,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    }
+  }, {
+    "uid" : "5c637a1f3c817658ce0532f72196e3cd",
+    "name" : "商城模块",
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
       "unknown" : 0,
       "total" : 1
     }

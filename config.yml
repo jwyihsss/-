@@ -8,16 +8,16 @@ host: http://dev-bms.k7.cn
 admin_name: jie
 password: e10adc3949ba59abbe56e057f20f883e
 
-# jenkins相关配置
+ #jenkins相关配置
 jenkins:
   # 本地服务
-  url: http://127.0.0.1:8080
+  url: http://yellow-jenkins.kaiqitech.com/
   # 如果有映射网址，可以填在这里
   mapping_url:
   # jenkins账号
-  user:
+  user: jie.jiang
   # jenkins密码
-  pwd:
+  pwd: jiang123456
   # 要推送的项目名
   project:
 

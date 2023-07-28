@@ -136,7 +136,6 @@ exit  # 退出虚拟环境
 同样的，需要在test_cases下的二级目录中创建yml文件，目录层级与test_data保持一致
 
 ![img.png](files/testcase.png)
-
 字段说明:
 
 * allure.feature: 模块名称

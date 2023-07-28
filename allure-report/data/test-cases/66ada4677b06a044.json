@@ -1,0 +1,353 @@
+{
+  "uid" : "66ada4677b06a044",
+  "name" : "任务关联查询接口",
+  "fullName" : "test_cases.quest_app.test_quest_app#test_quest_app",
+  "historyId" : "236ae2620bfdeb7f155cd6c9e4b6a21f",
+  "time" : {
+    "start" : 1690529285010,
+    "stop" : 1690529285047,
+    "duration" : 37
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert {'error': 'Http Status 81005',\\n 'message': '',\\n 'status': 81005,\\n 'timestamp': '2023-07-28 15:28:04'} == {'code': 200,\\n 'data': {'current': 3,\\n          'hit_count': False,\\n          'optimize_count_sql': True,\\n          'pages': 1,\\n          'records': [{'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 48,\\n                       'quest_name': '胜利五局郑州麻将金蛋游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\\n                      {'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 47,\\n                       'quest_name': '完成一局双升游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\\n                      {'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 46,\\n                       'quest_name': '胜利一局郑州麻将金蛋游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\\n          'search_count': True,\\n          'size': 3,\\n          'total': 3}}\n  Left contains 4 more items:\n  {'error': 'Http Status 81005',\n   'message': '',\n   'status': 81005,\n   'timestamp': '2023-07-28 15:28:04'}\n  Right contains 2 more items:\n  {'code': 200,\n   'data': {'current': 3,\n            'hit_count': False,\n            'optimize_count_sql': True,\n            'pages': 1,\n            'records': [{'app_id': 60035,\n                         'app_name': '果冻怪兽',\n                         'app_quest_category_id': 3,\n                         'begin_time': '2023-07-28 00:00:00',\n                         'category_name': '普通任务2',\n                         'game_id': 615,\n                         'game_name': '果冻怪兽',\n                         'quest_id': 48,\n                         'quest_name': '胜利五局郑州麻将金蛋游戏',\n                         'sort': 0,\n                         'status': 1,\n                         'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\n                        {'app_id': 60035,\n                         'app_name': '果冻怪兽',\n                         'app_quest_category_id': 3,\n                         'begin_time': '2023-07-28 00:00:00',\n                         'category_name': '普通任务2',\n                         'game_id': 615,\n                         'game_name': '果冻怪兽',\n                         'quest_id': 47,\n                         'quest_name': '完成一局双升游戏',\n                         'sort': 0,\n                         'status': 1,\n                         'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\n                        {'app_id': 60035,\n                         'app_name': '果冻怪兽',\n                         'app_quest_category_id': 3,\n                         'begin_time': '2023-07-28 00:00:00',\n                         'category_name': '普通任务2',\n                         'game_id': 615,\n                         'game_name': '果冻怪兽',\n                         'quest_id': 46,\n                         'quest_name': '胜利一局郑州麻将金蛋游戏',\n                         'sort': 0,\n                         'status': 1,\n                         'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\n            'search_count': True,\n            'size': 3,\n            'total': 3}}\n  Full diff:\n    {\n  +  'error': 'Http Status 81005',\n  +  'message': '',\n  +  'status': 81005,\n  +  'timestamp': '2023-07-28 15:28:04',\n  -  'code': 200,\n  -  'data': {'current': 3,\n  -           'hit_count': False,\n  -           'optimize_count_sql': True,\n  -           'pages': 1,\n  -           'records': [{'app_id': 60035,\n  -                        'app_name': '果冻怪兽',\n  -                        'app_quest_category_id': 3,\n  -                        'begin_time': '2023-07-28 00:00:00',\n  -                        'category_name': '普通任务2',\n  -                        'game_id': 615,\n  -                        'game_name': '果冻怪兽',\n  -                        'quest_id': 48,\n  -                        'quest_name': '胜利五局郑州麻将金蛋游戏',\n  -                        'sort': 0,\n  -                        'status': 1,\n  -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\n  -                       {'app_id': 60035,\n  -                        'app_name': '果冻怪兽',\n  -                        'app_quest_category_id': 3,\n  -                        'begin_time': '2023-07-28 00:00:00',\n  -                        'category_name': '普通任务2',\n  -                        'game_id': 615,\n  -                        'game_name': '果冻怪兽',\n  -                        'quest_id': 47,\n  -                        'quest_name': '完成一局双升游戏',\n  -                        'sort': 0,\n  -                        'status': 1,\n  -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\n  -                       {'app_id': 60035,\n  -                        'app_name': '果冻怪兽',\n  -                        'app_quest_category_id': 3,\n  -                        'begin_time': '2023-07-28 00:00:00',\n  -                        'category_name': '普通任务2',\n  -                        'game_id': 615,\n  -                        'game_name': '果冻怪兽',\n  -                        'quest_id': 46,\n  -                        'quest_name': '胜利一局郑州麻将金蛋游戏',\n  -                        'sort': 0,\n  -                        'status': 1,\n  -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\n  -           'search_count': True,\n  -           'size': 3,\n  -           'total': 3},\n    }",
+  "statusTrace" : "core = <conftest.collection.<locals>.Core object at 0x000002423117E1D0>\nenv = ('http://dev-bms.k7.cn/quest/app', 'GET'), case = '应用关联列表'\ninputs = {'assert_key': '$..success', 'assert_way': 'equal', 'file': None, 'headers': {'Content-Type': 'application/json;charset=UTF-8,', 'action': 'relation'}, ...}\nexpectation = {'code': 200, 'data': {'current': 3, 'hit_count': False, 'optimize_count_sql': True, 'pages': 1, ...}}\n\n    @allure.feature('任务配置模块')\n    @allure.title('任务关联查询接口')\n    @pytest.mark.datafile('test_data/quest_app/test_quest_app.yml')\n    def test_quest_app(core, env, case, inputs, expectation):\n        filepath=r'C:\\Users\\Administrator\\PycharmProjects\\t2-api-autotest\\test_cases\\login\\token.yaml'\n        with open(filepath,'r',encoding='utf-8') as f:\n            token=yaml.safe_load(f)[\"x-k7-token\"]\n        timestamp = int(time.time() * 1000)\n        core.headers['x-k7-timestamp'] = str(timestamp)\n        core.headers['Content-Type'] = 'application/json;charset=UTF-8'\n        core.headers['x-k7-token']=token\n        core.headers['action'] = 'relation'\n        # core.requests: 返回请求方法对象\n        # core.headers: 返回全局请求头\n        # core.sql: 返回查询方法\n        # core.cache: 返回缓存处理方法对象\n        res = core.requests.request(env, params=inputs['params'], headers=core.headers).json()\n        print(res)\n>       assert res == expectation\nE       AssertionError: assert {'error': 'Http Status 81005',\\n 'message': '',\\n 'status': 81005,\\n 'timestamp': '2023-07-28 15:28:04'} == {'code': 200,\\n 'data': {'current': 3,\\n          'hit_count': False,\\n          'optimize_count_sql': True,\\n          'pages': 1,\\n          'records': [{'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 48,\\n                       'quest_name': '胜利五局郑州麻将金蛋游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\\n                      {'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 47,\\n                       'quest_name': '完成一局双升游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\\n                      {'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 46,\\n                       'quest_name': '胜利一局郑州麻将金蛋游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\\n          'search_count': True,\\n          'size': 3,\\n          'total': 3}}\nE         Left contains 4 more items:\nE         {'error': 'Http Status 81005',\nE          'message': '',\nE          'status': 81005,\nE          'timestamp': '2023-07-28 15:28:04'}\nE         Right contains 2 more items:\nE         {'code': 200,\nE          'data': {'current': 3,\nE                   'hit_count': False,\nE                   'optimize_count_sql': True,\nE                   'pages': 1,\nE                   'records': [{'app_id': 60035,\nE                                'app_name': '果冻怪兽',\nE                                'app_quest_category_id': 3,\nE                                'begin_time': '2023-07-28 00:00:00',\nE                                'category_name': '普通任务2',\nE                                'game_id': 615,\nE                                'game_name': '果冻怪兽',\nE                                'quest_id': 48,\nE                                'quest_name': '胜利五局郑州麻将金蛋游戏',\nE                                'sort': 0,\nE                                'status': 1,\nE                                'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\nE                               {'app_id': 60035,\nE                                'app_name': '果冻怪兽',\nE                                'app_quest_category_id': 3,\nE                                'begin_time': '2023-07-28 00:00:00',\nE                                'category_name': '普通任务2',\nE                                'game_id': 615,\nE                                'game_name': '果冻怪兽',\nE                                'quest_id': 47,\nE                                'quest_name': '完成一局双升游戏',\nE                                'sort': 0,\nE                                'status': 1,\nE                                'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\nE                               {'app_id': 60035,\nE                                'app_name': '果冻怪兽',\nE                                'app_quest_category_id': 3,\nE                                'begin_time': '2023-07-28 00:00:00',\nE                                'category_name': '普通任务2',\nE                                'game_id': 615,\nE                                'game_name': '果冻怪兽',\nE                                'quest_id': 46,\nE                                'quest_name': '胜利一局郑州麻将金蛋游戏',\nE                                'sort': 0,\nE                                'status': 1,\nE                                'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\nE                   'search_count': True,\nE                   'size': 3,\nE                   'total': 3}}\nE         Full diff:\nE           {\nE         +  'error': 'Http Status 81005',\nE         +  'message': '',\nE         +  'status': 81005,\nE         +  'timestamp': '2023-07-28 15:28:04',\nE         -  'code': 200,\nE         -  'data': {'current': 3,\nE         -           'hit_count': False,\nE         -           'optimize_count_sql': True,\nE         -           'pages': 1,\nE         -           'records': [{'app_id': 60035,\nE         -                        'app_name': '果冻怪兽',\nE         -                        'app_quest_category_id': 3,\nE         -                        'begin_time': '2023-07-28 00:00:00',\nE         -                        'category_name': '普通任务2',\nE         -                        'game_id': 615,\nE         -                        'game_name': '果冻怪兽',\nE         -                        'quest_id': 48,\nE         -                        'quest_name': '胜利五局郑州麻将金蛋游戏',\nE         -                        'sort': 0,\nE         -                        'status': 1,\nE         -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\nE         -                       {'app_id': 60035,\nE         -                        'app_name': '果冻怪兽',\nE         -                        'app_quest_category_id': 3,\nE         -                        'begin_time': '2023-07-28 00:00:00',\nE         -                        'category_name': '普通任务2',\nE         -                        'game_id': 615,\nE         -                        'game_name': '果冻怪兽',\nE         -                        'quest_id': 47,\nE         -                        'quest_name': '完成一局双升游戏',\nE         -                        'sort': 0,\nE         -                        'status': 1,\nE         -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\nE         -                       {'app_id': 60035,\nE         -                        'app_name': '果冻怪兽',\nE         -                        'app_quest_category_id': 3,\nE         -                        'begin_time': '2023-07-28 00:00:00',\nE         -                        'category_name': '普通任务2',\nE         -                        'game_id': 615,\nE         -                        'game_name': '果冻怪兽',\nE         -                        'quest_id': 46,\nE         -                        'quest_name': '胜利一局郑州麻将金蛋游戏',\nE         -                        'sort': 0,\nE         -                        'status': 1,\nE         -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\nE         -           'search_count': True,\nE         -           'size': 3,\nE         -           'total': 3},\nE           }\n\ntest_cases\\quest_app\\test_quest_app.py:32: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1690529281935,
+      "stop" : 1690529282066,
+      "duration" : 131
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "alert_common_inputs",
+    "time" : {
+      "start" : 1690529285007,
+      "stop" : 1690529285008,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "alert_inputs",
+    "time" : {
+      "start" : 1690529285008,
+      "stop" : 1690529285009,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "collection",
+    "time" : {
+      "start" : 1690529285009,
+      "stop" : 1690529285010,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "core",
+    "time" : {
+      "start" : 1690529285010,
+      "stop" : 1690529285010,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert {'error': 'Http Status 81005',\\n 'message': '',\\n 'status': 81005,\\n 'timestamp': '2023-07-28 15:28:04'} == {'code': 200,\\n 'data': {'current': 3,\\n          'hit_count': False,\\n          'optimize_count_sql': True,\\n          'pages': 1,\\n          'records': [{'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 48,\\n                       'quest_name': '胜利五局郑州麻将金蛋游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\\n                      {'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 47,\\n                       'quest_name': '完成一局双升游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\\n                      {'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 46,\\n                       'quest_name': '胜利一局郑州麻将金蛋游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\\n          'search_count': True,\\n          'size': 3,\\n          'total': 3}}\n  Left contains 4 more items:\n  {'error': 'Http Status 81005',\n   'message': '',\n   'status': 81005,\n   'timestamp': '2023-07-28 15:28:04'}\n  Right contains 2 more items:\n  {'code': 200,\n   'data': {'current': 3,\n            'hit_count': False,\n            'optimize_count_sql': True,\n            'pages': 1,\n            'records': [{'app_id': 60035,\n                         'app_name': '果冻怪兽',\n                         'app_quest_category_id': 3,\n                         'begin_time': '2023-07-28 00:00:00',\n                         'category_name': '普通任务2',\n                         'game_id': 615,\n                         'game_name': '果冻怪兽',\n                         'quest_id': 48,\n                         'quest_name': '胜利五局郑州麻将金蛋游戏',\n                         'sort': 0,\n                         'status': 1,\n                         'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\n                        {'app_id': 60035,\n                         'app_name': '果冻怪兽',\n                         'app_quest_category_id': 3,\n                         'begin_time': '2023-07-28 00:00:00',\n                         'category_name': '普通任务2',\n                         'game_id': 615,\n                         'game_name': '果冻怪兽',\n                         'quest_id': 47,\n                         'quest_name': '完成一局双升游戏',\n                         'sort': 0,\n                         'status': 1,\n                         'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\n                        {'app_id': 60035,\n                         'app_name': '果冻怪兽',\n                         'app_quest_category_id': 3,\n                         'begin_time': '2023-07-28 00:00:00',\n                         'category_name': '普通任务2',\n                         'game_id': 615,\n                         'game_name': '果冻怪兽',\n                         'quest_id': 46,\n                         'quest_name': '胜利一局郑州麻将金蛋游戏',\n                         'sort': 0,\n                         'status': 1,\n                         'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\n            'search_count': True,\n            'size': 3,\n            'total': 3}}\n  Full diff:\n    {\n  +  'error': 'Http Status 81005',\n  +  'message': '',\n  +  'status': 81005,\n  +  'timestamp': '2023-07-28 15:28:04',\n  -  'code': 200,\n  -  'data': {'current': 3,\n  -           'hit_count': False,\n  -           'optimize_count_sql': True,\n  -           'pages': 1,\n  -           'records': [{'app_id': 60035,\n  -                        'app_name': '果冻怪兽',\n  -                        'app_quest_category_id': 3,\n  -                        'begin_time': '2023-07-28 00:00:00',\n  -                        'category_name': '普通任务2',\n  -                        'game_id': 615,\n  -                        'game_name': '果冻怪兽',\n  -                        'quest_id': 48,\n  -                        'quest_name': '胜利五局郑州麻将金蛋游戏',\n  -                        'sort': 0,\n  -                        'status': 1,\n  -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\n  -                       {'app_id': 60035,\n  -                        'app_name': '果冻怪兽',\n  -                        'app_quest_category_id': 3,\n  -                        'begin_time': '2023-07-28 00:00:00',\n  -                        'category_name': '普通任务2',\n  -                        'game_id': 615,\n  -                        'game_name': '果冻怪兽',\n  -                        'quest_id': 47,\n  -                        'quest_name': '完成一局双升游戏',\n  -                        'sort': 0,\n  -                        'status': 1,\n  -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\n  -                       {'app_id': 60035,\n  -                        'app_name': '果冻怪兽',\n  -                        'app_quest_category_id': 3,\n  -                        'begin_time': '2023-07-28 00:00:00',\n  -                        'category_name': '普通任务2',\n  -                        'game_id': 615,\n  -                        'game_name': '果冻怪兽',\n  -                        'quest_id': 46,\n  -                        'quest_name': '胜利一局郑州麻将金蛋游戏',\n  -                        'sort': 0,\n  -                        'status': 1,\n  -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\n  -           'search_count': True,\n  -           'size': 3,\n  -           'total': 3},\n    }",
+    "statusTrace" : "core = <conftest.collection.<locals>.Core object at 0x000002423117E1D0>\nenv = ('http://dev-bms.k7.cn/quest/app', 'GET'), case = '应用关联列表'\ninputs = {'assert_key': '$..success', 'assert_way': 'equal', 'file': None, 'headers': {'Content-Type': 'application/json;charset=UTF-8,', 'action': 'relation'}, ...}\nexpectation = {'code': 200, 'data': {'current': 3, 'hit_count': False, 'optimize_count_sql': True, 'pages': 1, ...}}\n\n    @allure.feature('任务配置模块')\n    @allure.title('任务关联查询接口')\n    @pytest.mark.datafile('test_data/quest_app/test_quest_app.yml')\n    def test_quest_app(core, env, case, inputs, expectation):\n        filepath=r'C:\\Users\\Administrator\\PycharmProjects\\t2-api-autotest\\test_cases\\login\\token.yaml'\n        with open(filepath,'r',encoding='utf-8') as f:\n            token=yaml.safe_load(f)[\"x-k7-token\"]\n        timestamp = int(time.time() * 1000)\n        core.headers['x-k7-timestamp'] = str(timestamp)\n        core.headers['Content-Type'] = 'application/json;charset=UTF-8'\n        core.headers['x-k7-token']=token\n        core.headers['action'] = 'relation'\n        # core.requests: 返回请求方法对象\n        # core.headers: 返回全局请求头\n        # core.sql: 返回查询方法\n        # core.cache: 返回缓存处理方法对象\n        res = core.requests.request(env, params=inputs['params'], headers=core.headers).json()\n        print(res)\n>       assert res == expectation\nE       AssertionError: assert {'error': 'Http Status 81005',\\n 'message': '',\\n 'status': 81005,\\n 'timestamp': '2023-07-28 15:28:04'} == {'code': 200,\\n 'data': {'current': 3,\\n          'hit_count': False,\\n          'optimize_count_sql': True,\\n          'pages': 1,\\n          'records': [{'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 48,\\n                       'quest_name': '胜利五局郑州麻将金蛋游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\\n                      {'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 47,\\n                       'quest_name': '完成一局双升游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\\n                      {'app_id': 60035,\\n                       'app_name': '果冻怪兽',\\n                       'app_quest_category_id': 3,\\n                       'begin_time': '2023-07-28 00:00:00',\\n                       'category_name': '普通任务2',\\n                       'game_id': 615,\\n                       'game_name': '果冻怪兽',\\n                       'quest_id': 46,\\n                       'quest_name': '胜利一局郑州麻将金蛋游戏',\\n                       'sort': 0,\\n                       'status': 1,\\n                       'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\\n          'search_count': True,\\n          'size': 3,\\n          'total': 3}}\nE         Left contains 4 more items:\nE         {'error': 'Http Status 81005',\nE          'message': '',\nE          'status': 81005,\nE          'timestamp': '2023-07-28 15:28:04'}\nE         Right contains 2 more items:\nE         {'code': 200,\nE          'data': {'current': 3,\nE                   'hit_count': False,\nE                   'optimize_count_sql': True,\nE                   'pages': 1,\nE                   'records': [{'app_id': 60035,\nE                                'app_name': '果冻怪兽',\nE                                'app_quest_category_id': 3,\nE                                'begin_time': '2023-07-28 00:00:00',\nE                                'category_name': '普通任务2',\nE                                'game_id': 615,\nE                                'game_name': '果冻怪兽',\nE                                'quest_id': 48,\nE                                'quest_name': '胜利五局郑州麻将金蛋游戏',\nE                                'sort': 0,\nE                                'status': 1,\nE                                'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\nE                               {'app_id': 60035,\nE                                'app_name': '果冻怪兽',\nE                                'app_quest_category_id': 3,\nE                                'begin_time': '2023-07-28 00:00:00',\nE                                'category_name': '普通任务2',\nE                                'game_id': 615,\nE                                'game_name': '果冻怪兽',\nE                                'quest_id': 47,\nE                                'quest_name': '完成一局双升游戏',\nE                                'sort': 0,\nE                                'status': 1,\nE                                'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\nE                               {'app_id': 60035,\nE                                'app_name': '果冻怪兽',\nE                                'app_quest_category_id': 3,\nE                                'begin_time': '2023-07-28 00:00:00',\nE                                'category_name': '普通任务2',\nE                                'game_id': 615,\nE                                'game_name': '果冻怪兽',\nE                                'quest_id': 46,\nE                                'quest_name': '胜利一局郑州麻将金蛋游戏',\nE                                'sort': 0,\nE                                'status': 1,\nE                                'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\nE                   'search_count': True,\nE                   'size': 3,\nE                   'total': 3}}\nE         Full diff:\nE           {\nE         +  'error': 'Http Status 81005',\nE         +  'message': '',\nE         +  'status': 81005,\nE         +  'timestamp': '2023-07-28 15:28:04',\nE         -  'code': 200,\nE         -  'data': {'current': 3,\nE         -           'hit_count': False,\nE         -           'optimize_count_sql': True,\nE         -           'pages': 1,\nE         -           'records': [{'app_id': 60035,\nE         -                        'app_name': '果冻怪兽',\nE         -                        'app_quest_category_id': 3,\nE         -                        'begin_time': '2023-07-28 00:00:00',\nE         -                        'category_name': '普通任务2',\nE         -                        'game_id': 615,\nE         -                        'game_name': '果冻怪兽',\nE         -                        'quest_id': 48,\nE         -                        'quest_name': '胜利五局郑州麻将金蛋游戏',\nE         -                        'sort': 0,\nE         -                        'status': 1,\nE         -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\nE         -                       {'app_id': 60035,\nE         -                        'app_name': '果冻怪兽',\nE         -                        'app_quest_category_id': 3,\nE         -                        'begin_time': '2023-07-28 00:00:00',\nE         -                        'category_name': '普通任务2',\nE         -                        'game_id': 615,\nE         -                        'game_name': '果冻怪兽',\nE         -                        'quest_id': 47,\nE         -                        'quest_name': '完成一局双升游戏',\nE         -                        'sort': 0,\nE         -                        'status': 1,\nE         -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'},\nE         -                       {'app_id': 60035,\nE         -                        'app_name': '果冻怪兽',\nE         -                        'app_quest_category_id': 3,\nE         -                        'begin_time': '2023-07-28 00:00:00',\nE         -                        'category_name': '普通任务2',\nE         -                        'game_id': 615,\nE         -                        'game_name': '果冻怪兽',\nE         -                        'quest_id': 46,\nE         -                        'quest_name': '胜利一局郑州麻将金蛋游戏',\nE         -                        'sort': 0,\nE         -                        'status': 1,\nE         -                        'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap'}],\nE         -           'search_count': True,\nE         -           'size': 3,\nE         -           'total': 3},\nE           }\n\ntest_cases\\quest_app\\test_quest_app.py:32: AssertionError",
+    "steps" : [ {
+      "name" : "请求地址: http://dev-bms.k7.cn/quest/app",
+      "time" : {
+        "start" : 1690529285034,
+        "stop" : 1690529285034,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求方法: GET",
+      "time" : {
+        "start" : 1690529285034,
+        "stop" : 1690529285034,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1690529285034,
+        "stop" : 1690529285035,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "13c1c9c4322b7541",
+        "name" : "请求头",
+        "source" : "13c1c9c4322b7541.json",
+        "type" : "application/json",
+        "size" : 314
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1690529285036,
+        "stop" : 1690529285037,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c3e470d007c1261",
+        "name" : "请求数据",
+        "source" : "c3e470d007c1261.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "接口响应码: 500",
+      "time" : {
+        "start" : 1690529285037,
+        "stop" : 1690529285037,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(ms): 22",
+      "time" : {
+        "start" : 1690529285037,
+        "stop" : 1690529285037,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应数据",
+      "time" : {
+        "start" : 1690529285037,
+        "stop" : 1690529285038,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5bbc0b19dc0a0eb8",
+        "name" : "响应数据",
+        "source" : "5bbc0b19dc0a0eb8.json",
+        "type" : "application/json",
+        "size" : 116
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "断言: {'timestamp': '2023-07-28 15:28:04', 'status': 81005, 'error': 'Http Status 81005', 'message': ''} == {'code': 200, 'data': {'records': [{'app_id': 60035, 'game_id': 615, 'quest_id': 48, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '胜利五局郑州麻将金蛋游戏', 'status': 1}, {'app_id': 60035, 'game_id': 615, 'quest_id': 47, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '完成一局双升游戏', 'status': 1}, {'app_id': 60035, 'game_id': 615, 'quest_id': 46, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '胜利一局郑州麻将金蛋游戏', 'status': 1}], 'total': 3, 'size': 3, 'current': 3, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 1}}",
+      "time" : {
+        "start" : 1690529285041,
+        "stop" : 1690529285043,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "935e8eea4628b4c3",
+        "name" : "输入结果",
+        "source" : "935e8eea4628b4c3.attach",
+        "type" : "text/plain",
+        "size" : 98
+      }, {
+        "uid" : "c20a987a4a6aa2fa",
+        "name" : "判断条件",
+        "source" : "c20a987a4a6aa2fa.attach",
+        "type" : "text/plain",
+        "size" : 2
+      }, {
+        "uid" : "b63894f9f3febd6d",
+        "name" : "预期结果",
+        "source" : "b63894f9f3febd6d.attach",
+        "type" : "text/plain",
+        "size" : 1631
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "collection::0",
+    "time" : {
+      "start" : 1690529285055,
+      "stop" : 1690529285055,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "core::0",
+    "time" : {
+      "start" : 1690529285054,
+      "stop" : 1690529285054,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "任务配置模块"
+  }, {
+    "name" : "tag",
+    "value" : "datafile('test_data/quest_app/test_quest_app.yml')"
+  }, {
+    "name" : "tag",
+    "value" : "quest_app"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_cases.quest_app"
+  }, {
+    "name" : "suite",
+    "value" : "test_quest_app"
+  }, {
+    "name" : "host",
+    "value" : "WIN-3FAJT9PVT5A"
+  }, {
+    "name" : "thread",
+    "value" : "9300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.quest_app.test_quest_app"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'应用关联列表'"
+  }, {
+    "name" : "env",
+    "value" : "('http://dev-bms.k7.cn/quest/app', 'GET')"
+  }, {
+    "name" : "expectation",
+    "value" : "{'code': 200, 'data': {'records': [{'app_id': 60035, 'game_id': 615, 'quest_id': 48, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '胜利五局郑州麻将金蛋游戏', 'status': 1}, {'app_id': 60035, 'game_id': 615, 'quest_id': 47, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '完成一局双升游戏', 'status': 1}, {'app_id': 60035, 'game_id': 615, 'quest_id': 46, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '胜利一局郑州麻将金蛋游戏', 'status': 1}], 'total': 3, 'size': 3, 'current': 3, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 1}}"
+  }, {
+    "name" : "inputs",
+    "value" : "{'params': {'app_id': 60035, 'channel_name': 'release', 'page_index': 1, 'page_size': 50, 'sort': 'quest_id'}, 'json': {}, 'headers': {'Content-Type': 'application/json;charset=UTF-8,', 'action': 'relation'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'equal'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "quest_app", "datafile('test_data/quest_app/test_quest_app.yml')" ]
+  },
+  "source" : "66ada4677b06a044.json",
+  "parameterValues" : [ "'应用关联列表'", "('http://dev-bms.k7.cn/quest/app', 'GET')", "{'code': 200, 'data': {'records': [{'app_id': 60035, 'game_id': 615, 'quest_id': 48, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '胜利五局郑州麻将金蛋游戏', 'status': 1}, {'app_id': 60035, 'game_id': 615, 'quest_id': 47, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '完成一局双升游戏', 'status': 1}, {'app_id': 60035, 'game_id': 615, 'quest_id': 46, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '胜利一局郑州麻将金蛋游戏', 'status': 1}], 'total': 3, 'size': 3, 'current': 3, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 1}}", "{'params': {'app_id': 60035, 'channel_name': 'release', 'page_index': 1, 'page_size': 50, 'sort': 'quest_id'}, 'json': {}, 'headers': {'Content-Type': 'application/json;charset=UTF-8,', 'action': 'relation'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'equal'}" ]
+}

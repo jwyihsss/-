@@ -1,0 +1,72 @@
+common_inputs:
+  method: GET
+  path: /quest/app
+
+tests:
+  - case: 应用关联列表
+    inputs:
+      params: {"app_id":60035,"channel_name":"release","page_index":1,"page_size":50,"sort":"quest_id"}
+      json: {}
+      headers:
+        Content-Type: application/json;charset=UTF-8,
+        action: relation
+      file:
+      sql:
+      assert_key: $..success
+      assert_way: equal
+    expectation:
+        code: 200
+        data: {
+        records: [
+            {
+              "app_id": 60035,
+              "game_id": 615,
+              "quest_id": 48,
+              "app_quest_category_id": 3,
+              "sort": 0,
+              "white_channels": "release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap",
+              "begin_time": "2023-07-28 00:00:00",
+              "app_name": "果冻怪兽",
+              "game_name": "果冻怪兽",
+              "category_name": "普通任务2",
+              "quest_name": "胜利五局郑州麻将金蛋游戏",
+              "status": 1
+            },
+            {
+              "app_id": 60035,
+              "game_id": 615,
+              "quest_id": 47,
+              "app_quest_category_id": 3,
+              "sort": 0,
+              "white_channels": "release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap",
+              "begin_time": "2023-07-28 00:00:00",
+              "app_name": "果冻怪兽",
+              "game_name": "果冻怪兽",
+              "category_name": "普通任务2",
+              "quest_name": "完成一局双升游戏",
+              "status": 1
+            },
+            {
+              "app_id": 60035,
+              "game_id": 615,
+              "quest_id": 46,
+              "app_quest_category_id": 3,
+              "sort": 0,
+              "white_channels": "release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap",
+              "begin_time": "2023-07-28 00:00:00",
+              "app_name": "果冻怪兽",
+              "game_name": "果冻怪兽",
+              "category_name": "普通任务2",
+              "quest_name": "胜利一局郑州麻将金蛋游戏",
+              "status": 1
+            }
+          ],
+          "total": 3,
+          "size": 3,
+          "current": 3,
+          "optimize_count_sql": true,
+          "hit_count": false,
+          "search_count": true,
+          "pages": 1
+        }
+

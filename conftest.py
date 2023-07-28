@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time : 2023/3/24 13:08
-# @Author : 谈林海
+# @Author :
 import re
 import allure
 import pytest

@@ -1,0 +1,356 @@
+{
+  "uid" : "b10bdf184ee2c998",
+  "name" : "登录接口",
+  "fullName" : "test_cases.login.test_login#test_tianqi",
+  "historyId" : "a8a7cef51f571c424a0d0d7c9f421ce7",
+  "time" : {
+    "start" : 1690529283064,
+    "stop" : 1690529284893,
+    "duration" : 1829
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'} == {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\n  Common items:\n  {'code': 200}\n  Differing items:\n  {'data': '9e197bc40aad45999d31d29529c1e8e2'} != {'data': '4017b2449073417b9d5318a5e8743a16'}\n  Full diff:\n  - {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\n  + {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'}",
+  "statusTrace" : "core = <conftest.collection.<locals>.Core object at 0x000002423117D810>\nenv = ('http://dev-bms.k7.cn/login', 'PUT'), case = '正确账号、密码登录'\ninputs = {'assert_key': '$..success', 'assert_way': 'unequal', 'data': {'admin_name': 'jiang', 'password': 'c33367701511b4f6020ec61ded352059'}, 'file': None, ...}\nexpectation = {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\n\n    @allure.feature('登录模块')\n    @allure.title('登录接口')\n    @pytest.mark.login\n    @allure.feature('login')\n    @pytest.mark.datafile('test_data/login/test_login.yml')\n    def test_tianqi(core, env, case, inputs, expectation):\n        # 添加时间戳到请求头\n        timestamp = int(time.time()*1000)\n        core.headers['x-k7-timestamp'] = str(timestamp)\n        core.headers['Content-Type']='application/json;charset=UTF-8'\n    \n        res = core.requests.request(env, data=json.dumps(inputs['data']), headers=core.headers).json()\n        core.cache.add_cache('test_login', res)\n>       assert res == expectation\nE       AssertionError: assert {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'} == {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\nE         Common items:\nE         {'code': 200}\nE         Differing items:\nE         {'data': '9e197bc40aad45999d31d29529c1e8e2'} != {'data': '4017b2449073417b9d5318a5e8743a16'}\nE         Full diff:\nE         - {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\nE         + {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'}\n\ntest_cases\\login\\test_login.py:23: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1690529281935,
+      "stop" : 1690529282066,
+      "duration" : 131
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "core",
+    "time" : {
+      "start" : 1690529283064,
+      "stop" : 1690529283064,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "collection",
+    "time" : {
+      "start" : 1690529283063,
+      "stop" : 1690529283063,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "alert_common_inputs",
+    "time" : {
+      "start" : 1690529283062,
+      "stop" : 1690529283063,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "alert_inputs",
+    "time" : {
+      "start" : 1690529283063,
+      "stop" : 1690529283063,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'} == {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\n  Common items:\n  {'code': 200}\n  Differing items:\n  {'data': '9e197bc40aad45999d31d29529c1e8e2'} != {'data': '4017b2449073417b9d5318a5e8743a16'}\n  Full diff:\n  - {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\n  + {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'}",
+    "statusTrace" : "core = <conftest.collection.<locals>.Core object at 0x000002423117D810>\nenv = ('http://dev-bms.k7.cn/login', 'PUT'), case = '正确账号、密码登录'\ninputs = {'assert_key': '$..success', 'assert_way': 'unequal', 'data': {'admin_name': 'jiang', 'password': 'c33367701511b4f6020ec61ded352059'}, 'file': None, ...}\nexpectation = {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\n\n    @allure.feature('登录模块')\n    @allure.title('登录接口')\n    @pytest.mark.login\n    @allure.feature('login')\n    @pytest.mark.datafile('test_data/login/test_login.yml')\n    def test_tianqi(core, env, case, inputs, expectation):\n        # 添加时间戳到请求头\n        timestamp = int(time.time()*1000)\n        core.headers['x-k7-timestamp'] = str(timestamp)\n        core.headers['Content-Type']='application/json;charset=UTF-8'\n    \n        res = core.requests.request(env, data=json.dumps(inputs['data']), headers=core.headers).json()\n        core.cache.add_cache('test_login', res)\n>       assert res == expectation\nE       AssertionError: assert {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'} == {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\nE         Common items:\nE         {'code': 200}\nE         Differing items:\nE         {'data': '9e197bc40aad45999d31d29529c1e8e2'} != {'data': '4017b2449073417b9d5318a5e8743a16'}\nE         Full diff:\nE         - {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}\nE         + {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'}\n\ntest_cases\\login\\test_login.py:23: AssertionError",
+    "steps" : [ {
+      "name" : "请求地址: http://dev-bms.k7.cn/login",
+      "time" : {
+        "start" : 1690529284881,
+        "stop" : 1690529284881,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求方法: PUT",
+      "time" : {
+        "start" : 1690529284881,
+        "stop" : 1690529284881,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1690529284881,
+        "stop" : 1690529284882,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "b2bdd58f0d1d8483",
+        "name" : "请求头",
+        "source" : "b2bdd58f0d1d8483.json",
+        "type" : "application/json",
+        "size" : 234
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1690529284882,
+        "stop" : 1690529284883,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "8f3ef1f01311b049",
+        "name" : "请求数据",
+        "source" : "8f3ef1f01311b049.json",
+        "type" : "application/json",
+        "size" : 81
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "接口响应码: 200",
+      "time" : {
+        "start" : 1690529284883,
+        "stop" : 1690529284883,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(ms): 1816",
+      "time" : {
+        "start" : 1690529284883,
+        "stop" : 1690529284883,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应数据",
+      "time" : {
+        "start" : 1690529284883,
+        "stop" : 1690529284883,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "5ba1cda98531d49e",
+        "name" : "响应数据",
+        "source" : "5ba1cda98531d49e.json",
+        "type" : "application/json",
+        "size" : 67
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "断言: {'code': 200, 'data': '9e197bc40aad45999d31d29529c1e8e2'} == {'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}",
+      "time" : {
+        "start" : 1690529284891,
+        "stop" : 1690529284893,
+        "duration" : 2
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a0ad230ceaa0354c",
+        "name" : "输入结果",
+        "source" : "a0ad230ceaa0354c.attach",
+        "type" : "text/plain",
+        "size" : 57
+      }, {
+        "uid" : "44b4b3c8d75ad929",
+        "name" : "判断条件",
+        "source" : "44b4b3c8d75ad929.attach",
+        "type" : "text/plain",
+        "size" : 2
+      }, {
+        "uid" : "77ae1fa20c7491ce",
+        "name" : "预期结果",
+        "source" : "77ae1fa20c7491ce.attach",
+        "type" : "text/plain",
+        "size" : 57
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 3,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 8,
+    "hasContent" : true,
+    "attachmentsCount" : 6,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "core::0",
+    "time" : {
+      "start" : 1690529284903,
+      "stop" : 1690529284903,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "collection::0",
+    "time" : {
+      "start" : 1690529284905,
+      "stop" : 1690529284905,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "feature",
+    "value" : "login"
+  }, {
+    "name" : "tag",
+    "value" : "datafile('test_data/login/test_login.yml')"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_cases.login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "WIN-3FAJT9PVT5A"
+  }, {
+    "name" : "thread",
+    "value" : "9300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.login.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'正确账号、密码登录'"
+  }, {
+    "name" : "env",
+    "value" : "('http://dev-bms.k7.cn/login', 'PUT')"
+  }, {
+    "name" : "expectation",
+    "value" : "{'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}"
+  }, {
+    "name" : "inputs",
+    "value" : "{'params': {}, 'data': {'admin_name': 'jiang', 'password': 'c33367701511b4f6020ec61ded352059'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "datafile('test_data/login/test_login.yml')", "login" ]
+  },
+  "source" : "b10bdf184ee2c998.json",
+  "parameterValues" : [ "'正确账号、密码登录'", "('http://dev-bms.k7.cn/login', 'PUT')", "{'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}", "{'params': {}, 'data': {'admin_name': 'jiang', 'password': 'c33367701511b4f6020ec61ded352059'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+}

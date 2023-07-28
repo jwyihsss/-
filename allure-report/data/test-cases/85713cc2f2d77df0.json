@@ -1,0 +1,320 @@
+{
+  "uid" : "85713cc2f2d77df0",
+  "name" : "商城项目查询接口",
+  "fullName" : "test_cases.Mallinstance.test_Mall_instance#test_mallinstance",
+  "historyId" : "afdf531effd3995828efc366d4d4f9f9",
+  "time" : {
+    "start" : 1690529282282,
+    "stop" : 1690529282584,
+    "duration" : 302
+  },
+  "status" : "broken",
+  "statusMessage" : "TypeError: unhashable type: 'dict'",
+  "statusTrace" : "core = <conftest.collection.<locals>.Core object at 0x000002423114F8D0>\nenv = ('http://dev-bms.k7.cn/mall/instance', 'GET'), case = '商城实例列表'\ninputs = {'assert_key': '$..success', 'assert_way': 'in', 'file': None, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, ...}\nexpectation = {'code': 200, 'data': {'current': 1, 'hit_count': False, 'optimize_count_sql': True, 'pages': 3, ...}}\n\n    @allure.feature('商城模块')\n    @allure.title('商城项目查询接口')\n    @pytest.mark.datafile('test_data/Mallinstance/test_Mall_instance.yml')\n    def test_mallinstance(core, env, case, inputs, expectation):\n        filepath=r'C:\\Users\\Administrator\\PycharmProjects\\t2-api-autotest\\test_cases\\login\\token.yaml'\n        with open(filepath,'r',encoding='utf-8') as f:\n            token=yaml.safe_load(f)[\"x-k7-token\"]\n        timestamp = int(time.time() * 1000)\n        core.headers['x-k7-timestamp'] = str(timestamp)\n        core.headers['Content-Type'] = 'application/json;charset=UTF-8'\n        core.headers['x-k7-token']=token\n    \n        # core.requests: 返回请求方法对象\n        # core.headers: 返回全局请求头\n        # core.sql: 返回查询方法\n        # core.cache: 返回缓存处理方法对象\n        res = core.requests.request(env, data=inputs['json'], headers=core.headers).json()\n>       assert res in expectation\nE       TypeError: unhashable type: 'dict'\n\ntest_cases\\Mallinstance\\test_Mall_instance.py:29: TypeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1690529281935,
+      "stop" : 1690529282066,
+      "duration" : 131
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "core",
+    "time" : {
+      "start" : 1690529282277,
+      "stop" : 1690529282277,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "collection",
+    "time" : {
+      "start" : 1690529282069,
+      "stop" : 1690529282277,
+      "duration" : 208
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "alert_inputs",
+    "time" : {
+      "start" : 1690529282068,
+      "stop" : 1690529282069,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "alert_common_inputs",
+    "time" : {
+      "start" : 1690529282067,
+      "stop" : 1690529282068,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "TypeError: unhashable type: 'dict'",
+    "statusTrace" : "core = <conftest.collection.<locals>.Core object at 0x000002423114F8D0>\nenv = ('http://dev-bms.k7.cn/mall/instance', 'GET'), case = '商城实例列表'\ninputs = {'assert_key': '$..success', 'assert_way': 'in', 'file': None, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, ...}\nexpectation = {'code': 200, 'data': {'current': 1, 'hit_count': False, 'optimize_count_sql': True, 'pages': 3, ...}}\n\n    @allure.feature('商城模块')\n    @allure.title('商城项目查询接口')\n    @pytest.mark.datafile('test_data/Mallinstance/test_Mall_instance.yml')\n    def test_mallinstance(core, env, case, inputs, expectation):\n        filepath=r'C:\\Users\\Administrator\\PycharmProjects\\t2-api-autotest\\test_cases\\login\\token.yaml'\n        with open(filepath,'r',encoding='utf-8') as f:\n            token=yaml.safe_load(f)[\"x-k7-token\"]\n        timestamp = int(time.time() * 1000)\n        core.headers['x-k7-timestamp'] = str(timestamp)\n        core.headers['Content-Type'] = 'application/json;charset=UTF-8'\n        core.headers['x-k7-token']=token\n    \n        # core.requests: 返回请求方法对象\n        # core.headers: 返回全局请求头\n        # core.sql: 返回查询方法\n        # core.cache: 返回缓存处理方法对象\n        res = core.requests.request(env, data=inputs['json'], headers=core.headers).json()\n>       assert res in expectation\nE       TypeError: unhashable type: 'dict'\n\ntest_cases\\Mallinstance\\test_Mall_instance.py:29: TypeError",
+    "steps" : [ {
+      "name" : "请求地址: http://dev-bms.k7.cn/mall/instance",
+      "time" : {
+        "start" : 1690529282581,
+        "stop" : 1690529282581,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求方法: GET",
+      "time" : {
+        "start" : 1690529282581,
+        "stop" : 1690529282581,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1690529282581,
+        "stop" : 1690529282582,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "79af8d52bfc631ab",
+        "name" : "请求头",
+        "source" : "79af8d52bfc631ab.json",
+        "type" : "application/json",
+        "size" : 288
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1690529282582,
+        "stop" : 1690529282582,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6b24eec0685fae73",
+        "name" : "请求数据",
+        "source" : "6b24eec0685fae73.json",
+        "type" : "application/json",
+        "size" : 4
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "接口响应码: 200",
+      "time" : {
+        "start" : 1690529282582,
+        "stop" : 1690529282582,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(ms): 292",
+      "time" : {
+        "start" : 1690529282582,
+        "stop" : 1690529282582,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应数据",
+      "time" : {
+        "start" : 1690529282583,
+        "stop" : 1690529282584,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "24fa80558e65d8df",
+        "name" : "响应数据",
+        "source" : "24fa80558e65d8df.json",
+        "type" : "application/json",
+        "size" : 14856
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "core::0",
+    "time" : {
+      "start" : 1690529283057,
+      "stop" : 1690529283057,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "collection::0",
+    "time" : {
+      "start" : 1690529283057,
+      "stop" : 1690529283057,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "商城模块"
+  }, {
+    "name" : "tag",
+    "value" : "datafile('test_data/Mallinstance/test_Mall_instance.yml')"
+  }, {
+    "name" : "tag",
+    "value" : "Mallinstance"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_cases.Mallinstance"
+  }, {
+    "name" : "suite",
+    "value" : "test_Mall_instance"
+  }, {
+    "name" : "host",
+    "value" : "WIN-3FAJT9PVT5A"
+  }, {
+    "name" : "thread",
+    "value" : "9300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.Mallinstance.test_Mall_instance"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'商城实例列表'"
+  }, {
+    "name" : "env",
+    "value" : "('http://dev-bms.k7.cn/mall/instance', 'GET')"
+  }, {
+    "name" : "expectation",
+    "value" : "{'code': 200, 'data': {'records': [{'mall_inst_id': 42303145, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 1}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-03-14 00:00:00', 'end_time': '2023-04-13 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}, {'mall_inst_id': 60065, 'begin_time': '2020-08-11 00:00:00', 'end_time': '2022-08-11 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '更多大厅商城首次购买双倍实例', 'status': 1, 'coupon_scheme_id': 8}, {'mall_inst_id': 60064, 'begin_time': '2020-08-01 00:00:00', 'end_time': '2022-09-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '优惠券测试', 'status': 1, 'coupon_scheme_id': 30004}], 'total': 113, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}"
+  }, {
+    "name" : "inputs",
+    "value" : "{'params': {}, 'json': {}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'in'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "datafile('test_data/Mallinstance/test_Mall_instance.yml')", "Mallinstance" ]
+  },
+  "source" : "85713cc2f2d77df0.json",
+  "parameterValues" : [ "'商城实例列表'", "('http://dev-bms.k7.cn/mall/instance', 'GET')", "{'code': 200, 'data': {'records': [{'mall_inst_id': 42303145, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 1}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-03-14 00:00:00', 'end_time': '2023-04-13 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}, {'mall_inst_id': 60065, 'begin_time': '2020-08-11 00:00:00', 'end_time': '2022-08-11 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '更多大厅商城首次购买双倍实例', 'status': 1, 'coupon_scheme_id': 8}, {'mall_inst_id': 60064, 'begin_time': '2020-08-01 00:00:00', 'end_time': '2022-09-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '优惠券测试', 'status': 1, 'coupon_scheme_id': 30004}], 'total': 113, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}", "{'params': {}, 'json': {}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'in'}" ]
+}
