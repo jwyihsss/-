@@ -3,22 +3,21 @@ env: 测试环境
 tester_name:
 
 # 测试域名
-host: https://open.xwdsp.com
-
+host: http://dev-bms.k7.cn
 # 登录用户信息
-account:
-password:
+admin_name: jie
+password: e10adc3949ba59abbe56e057f20f883e
 
-# jenkins相关配置
+ #jenkins相关配置
 jenkins:
   # 本地服务
-  url: http://127.0.0.1:8080
+  url: http://yellow-jenkins.kaiqitech.com/
   # 如果有映射网址，可以填在这里
   mapping_url:
   # jenkins账号
-  user:
+  user: jie.jiang
   # jenkins密码
-  pwd:
+  pwd: jiang123456
   # 要推送的项目名
   project:
 
@@ -38,7 +37,7 @@ mysql_db:
 # 邮箱相关配置
 email:
   # 邮箱服务类型
-  smtp_server: smtp.163.com
+  smtp_server:
   # 发送人邮箱
   sender_email:
   # 发送人密码

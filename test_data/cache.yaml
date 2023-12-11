@@ -1,2 +1,5 @@
 cache:
   test_import: '123'
+  test_login:
+    code: 100002
+    msg: 账号或密码错误

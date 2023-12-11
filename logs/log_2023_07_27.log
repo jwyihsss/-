@@ -1,0 +1,768 @@
+2023-07-27 15:12:20.999 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:12:23.520 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:12:23.554 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: None
+响应数据: {'timestamp': '2023-07-27 15:12:23', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 27.0
+接口响应码: 500
+
+2023-07-27 15:12:23.978 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: None
+响应数据: {'timestamp': '2023-07-27 15:12:24', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 14.0
+接口响应码: 500
+
+2023-07-27 15:17:54.865 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:19:23.304 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:20:04.117 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:21:33.325 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:21:48.679 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:23:03.916 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:24:06.114 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:24:48.478 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:25:33.229 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:25:35.699 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:25:35.745 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: None
+响应数据: {'timestamp': '2023-07-27 15:25:35', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 38.0
+接口响应码: 500
+
+2023-07-27 15:25:36.157 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: None
+响应数据: {'timestamp': '2023-07-27 15:25:36', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 15.0
+接口响应码: 500
+
+2023-07-27 15:52:57.321 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:52:59.847 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:52:59.886 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'Timestamp': '1690444379'}
+请求数据: None
+响应数据: {'timestamp': '2023-07-27 15:52:59', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 32.0
+接口响应码: 500
+
+2023-07-27 15:53:00.259 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'Timestamp': '1690444380'}
+请求数据: None
+响应数据: {'timestamp': '2023-07-27 15:53:00', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 11.0
+接口响应码: 500
+
+2023-07-27 15:53:27.009 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:53:29.515 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:53:29.559 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'Timestamp': '1690444409521'}
+请求数据: None
+响应数据: {'timestamp': '2023-07-27 15:53:29', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 35.0
+接口响应码: 500
+
+2023-07-27 15:53:30.104 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'Timestamp': '1690444410092'}
+请求数据: None
+响应数据: {'timestamp': '2023-07-27 15:53:30', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 11.0
+接口响应码: 500
+
+2023-07-27 15:54:08.881 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:54:11.397 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:54:11.466 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444451404'}
+请求数据: None
+响应数据: {'code': 2104, 'msg': 'param error [body is missing]'}
+响应耗时(ms): 60.0
+接口响应码: 200
+
+2023-07-27 15:54:11.889 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444451835'}
+请求数据: None
+响应数据: {'code': 2104, 'msg': 'param error [body is missing]'}
+响应耗时(ms): 52.0
+接口响应码: 200
+
+2023-07-27 15:54:46.285 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:54:48.804 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:54:48.971 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444488811'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2122, 'msg': "Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported"}
+响应耗时(ms): 159.0
+接口响应码: 200
+
+2023-07-27 15:55:13.747 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:55:16.233 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:55:16.288 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444516239'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2122, 'msg': "Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported"}
+响应耗时(ms): 47.0
+接口响应码: 200
+
+2023-07-27 15:56:38.499 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:56:41.060 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:56:41.116 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444601065'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2122, 'msg': "Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported"}
+响应耗时(ms): 51.0
+接口响应码: 200
+
+2023-07-27 15:56:57.700 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:57:00.243 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:57:00.337 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444620249'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2122, 'msg': "Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported"}
+响应耗时(ms): 86.0
+接口响应码: 200
+
+2023-07-27 15:57:19.155 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:57:21.661 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:57:21.733 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444641668'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2122, 'msg': "Content type 'application/x-www-form-urlencoded;charset=UTF-8' not supported"}
+响应耗时(ms): 64.0
+接口响应码: 200
+
+2023-07-27 15:58:38.465 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 15:58:41.001 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 15:58:41.066 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444721008', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 57.0
+接口响应码: 200
+
+2023-07-27 16:00:31.639 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:00:34.200 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:00:34.264 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444834205', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 56.0
+接口响应码: 200
+
+2023-07-27 16:01:18.329 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:01:20.843 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:01:20.937 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690444880849', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 87.0
+接口响应码: 200
+
+2023-07-27 16:04:07.245 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:04:09.736 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:04:09.842 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445049743', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 97.0
+接口响应码: 200
+
+2023-07-27 16:06:16.478 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:06:18.962 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:06:19.019 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445178967', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 50.0
+接口响应码: 200
+
+2023-07-27 16:07:22.848 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:07:25.369 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:07:25.439 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445245375', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 62.0
+接口响应码: 200
+
+2023-07-27 16:09:29.902 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:09:32.421 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:10:38.714 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:10:41.204 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:10:41.273 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445441210', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 60.0
+接口响应码: 200
+
+2023-07-27 16:11:21.787 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:11:24.289 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:11:24.331 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445484296', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 34.0
+接口响应码: 200
+
+2023-07-27 16:11:24.755 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445484725', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {'admin_name': 'jie', 'password': 'e10adc3949ba59abbe56e057f20f883e5'}
+响应数据: {'code': 2105, 'msg': 'json parse error [Unexpected character]'}
+响应耗时(ms): 29.0
+接口响应码: 200
+
+2023-07-27 16:15:25.403 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:15:27.854 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:15:28.551 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445727857', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '8feb82ea95ae4c8098baf1141636e9ea'}
+响应耗时(ms): 693.0
+接口响应码: 200
+
+2023-07-27 16:15:28.920 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445728886', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 33.0
+接口响应码: 200
+
+2023-07-27 16:16:23.172 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:16:25.679 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:16:26.597 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445785686', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '8942280db10f4aef9371983aa06e51d1'}
+响应耗时(ms): 910.0
+接口响应码: 200
+
+2023-07-27 16:16:27.050 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445786977', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 72.0
+接口响应码: 200
+
+2023-07-27 16:17:31.272 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:17:33.763 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:17:34.019 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445853767', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '665e1e8e438f4e2583cdae383d7b0040'}
+响应耗时(ms): 250.0
+接口响应码: 200
+
+2023-07-27 16:17:34.576 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445854409', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 167.0
+接口响应码: 200
+
+2023-07-27 16:18:55.473 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:18:57.937 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:18:58.227 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445937940', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '24ed733804f440a186aad1c0edd071e8'}
+响应耗时(ms): 286.0
+接口响应码: 200
+
+2023-07-27 16:18:58.683 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445938619', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 64.0
+接口响应码: 200
+
+2023-07-27 16:19:41.279 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:19:43.762 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:19:44.088 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445983769', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '3a783c5e7cd94414b1e93553ee8f4229'}
+响应耗时(ms): 317.0
+接口响应码: 200
+
+2023-07-27 16:19:44.579 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690445984513', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 64.0
+接口响应码: 200
+
+2023-07-27 16:20:23.718 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:20:26.191 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:20:26.826 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690446026197', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '79fa90d98b454890b409ed18cf4ef386'}
+响应耗时(ms): 627.0
+接口响应码: 200
+
+2023-07-27 16:20:27.315 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690446027217', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 98.0
+接口响应码: 200
+
+2023-07-27 16:22:24.672 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:22:27.253 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:22:27.505 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690446147259', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': 'd79e601ca8564a6ab657ea905a4fe598'}
+响应耗时(ms): 244.0
+接口响应码: 200
+
+2023-07-27 16:22:27.970 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690446147925', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 44.0
+接口响应码: 200
+
+2023-07-27 16:24:44.491 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:24:46.988 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:24:47.308 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690446286995', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '97d2e3e92c594d9e9929828438e00221'}
+响应耗时(ms): 311.0
+接口响应码: 200
+
+2023-07-27 16:24:47.835 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690446287696', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 138.0
+接口响应码: 200
+
+2023-07-27 16:25:12.799 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 16:25:15.315 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 16:25:15.555 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690446315321', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '82e8b075529543c2a2cbbcb415708590'}
+响应耗时(ms): 232.0
+接口响应码: 200
+
+2023-07-27 16:25:16.146 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690446315988', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 157.0
+接口响应码: 200
+
+2023-07-27 17:17:30.634 | INFO     | __main__:run:16 - 
+
+               开始执行项目...
+               
+2023-07-27 17:17:31.373 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:17:33.968 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:17:34.680 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690449453976', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '30c2f1b01c2342a89ad47bd9fca072c4'}
+响应耗时(ms): 701.0
+接口响应码: 200
+
+2023-07-27 17:17:35.217 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690449455087', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 129.0
+接口响应码: 200
+
+2023-07-27 17:17:35.265 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/phegda/advrest
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '5', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'timestamp': '2023-07-27 17:17:35', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 20.0
+接口响应码: 500
+
+2023-07-27 17:30:17.004 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:30:19.524 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:31:10.835 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690450250219', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 20616.0
+接口响应码: 200
+
+2023-07-27 17:31:11.098 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690450250219', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 258.0
+接口响应码: 200
+
+2023-07-27 17:31:13.834 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:31:16.367 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:31:17.319 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690450276373', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '16d41daa4b334ebf96a6849ce826fe7a'}
+响应耗时(ms): 944.0
+接口响应码: 200
+
+2023-07-27 17:31:17.993 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690450277732', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 261.0
+接口响应码: 200
+
+2023-07-27 17:36:28.382 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:37:25.044 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:37:27.651 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:38:13.744 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:38:16.317 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:38:59.371 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:39:01.971 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:39:43.968 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:39:46.495 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:39:47.368 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690450786503', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '3', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 862.0
+接口响应码: 200
+
+2023-07-27 17:41:19.477 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:41:22.013 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:41:22.458 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690450882021', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '3', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 434.0
+接口响应码: 200
+
+2023-07-27 17:42:39.987 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:42:42.532 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:42:43.421 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690450962540', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: None
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 878.0
+接口响应码: 200
+
+2023-07-27 17:44:38.652 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:44:41.191 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:44:41.869 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451081198', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: None
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 667.0
+接口响应码: 200
+
+2023-07-27 17:46:43.194 | INFO     | __main__:run:16 - 
+
+               开始执行项目...
+               
+2023-07-27 17:46:43.926 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:46:46.571 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:46:46.619 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {}
+响应数据: {'timestamp': '2023-07-27 17:46:46', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 39.0
+接口响应码: 500
+
+2023-07-27 17:46:47.468 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451207039', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: None
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 426.0
+接口响应码: 200
+
+2023-07-27 17:46:48.307 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451207564', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '8fee3dfda8b94459b5ffdd655181b50c'}
+响应耗时(ms): 742.0
+接口响应码: 200
+
+2023-07-27 17:46:48.491 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451208350', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 140.0
+接口响应码: 200
+
+2023-07-27 17:46:48.543 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/phegda/advrest
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '5', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'timestamp': '2023-07-27 17:46:48', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 20.0
+接口响应码: 500
+
+2023-07-27 17:50:36.264 | INFO     | __main__:run:16 - 
+
+               开始执行项目...
+               
+2023-07-27 17:50:37.084 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:50:39.731 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:50:39.779 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {}
+响应数据: {'timestamp': '2023-07-27 17:50:39', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 43.0
+接口响应码: 500
+
+2023-07-27 17:50:40.772 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451440205', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: None
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 564.0
+接口响应码: 200
+
+2023-07-27 17:50:41.515 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451440866', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': 'cc25c269e0b44061b8a6c871d0e07cd2'}
+响应耗时(ms): 649.0
+接口响应码: 200
+
+2023-07-27 17:50:41.707 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451441559', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 147.0
+接口响应码: 200
+
+2023-07-27 17:50:41.754 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/phegda/advrest
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '3', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'timestamp': '2023-07-27 17:50:41', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 17.0
+接口响应码: 500
+
+2023-07-27 17:52:39.017 | INFO     | __main__:run:16 - 
+
+               开始执行项目...
+               
+2023-07-27 17:52:39.745 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:55:15.679 | INFO     | __main__:run:16 - 
+
+               开始执行项目...
+               
+2023-07-27 17:55:16.354 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:55:18.933 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:55:19.558 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451718942', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: None
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 614.0
+接口响应码: 200
+
+2023-07-27 17:55:20.803 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451720045', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': '4c258df3f2804cf7907a4a0016ec31e3'}
+响应耗时(ms): 757.0
+接口响应码: 200
+
+2023-07-27 17:55:21.008 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451720853', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 154.0
+接口响应码: 200
+
+2023-07-27 17:55:21.063 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/phegda/advrest
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '3', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'timestamp': '2023-07-27 17:55:21', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 16.0
+接口响应码: 500
+
+2023-07-27 17:59:43.646 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 17:59:46.138 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 17:59:46.772 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690451986146', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: None
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 623.0
+接口响应码: 200
+
+2023-07-27 18:01:11.505 | INFO     | __main__:run:16 - 
+
+               开始执行项目...
+               
+2023-07-27 18:01:12.149 | WARNING  | conftest:<module>:99 - 当前配置库未配置或配置有误
+2023-07-27 18:01:14.788 | WARNING  | utils.requests_process.requests_control:cookie_token:32 - 未获取到登录认证信息，请检查: [Errno 11001] getaddrinfo failed
+2023-07-27 18:01:15.877 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/mall/instance
+请求方法: GET
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690452074792', 'Content-Type': 'application/json;charset=UTF-8', 'x-k7-token': 'a1f8e9b5cdc941128238c64c7938c81e'}
+请求数据: None
+响应数据: {'code': 200, 'data': {'records': [{'mall_inst_id': 453027, 'begin_time': '2023-06-27 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '单独', 'status': 1}, {'mall_inst_id': 453026, 'begin_time': '2023-05-11 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '实例复制', 'status': 1}, {'mall_inst_id': 423031, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 0}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-05-17 00:00:00', 'end_time': '2023-06-16 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}], 'total': 115, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}
+响应耗时(ms): 1083.0
+接口响应码: 200
+
+2023-07-27 18:01:17.658 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690452076313', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e"}
+响应数据: {'code': 200, 'data': 'c287da6d48654ed884513a7633c3d300'}
+响应耗时(ms): 1344.0
+接口响应码: 200
+
+2023-07-27 18:01:18.005 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/login
+请求方法: PUT
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36', 'x-k7-timestamp': '1690452077693', 'Content-Type': 'application/json;charset=UTF-8'}
+请求数据: {"admin_name": "jie", "password": "e10adc3949ba59abbe56e057f20f883e5"}
+响应数据: {'code': 100002, 'msg': '账号或密码错误'}
+响应耗时(ms): 310.0
+接口响应码: 200
+
+2023-07-27 18:01:18.042 | INFO     | utils.requests_process.requests_control:wrapper:72 - 
+请求地址: http://dev-bms.k7.cn/phegda/advrest
+请求方法: POST
+请求头: {'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/107.0.0.0 Safari/537.36'}
+请求数据: {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '2', 'styleId': [1004]}], 'requestId': '16805156922345810'}
+响应数据: {'timestamp': '2023-07-27 18:01:18', 'status': 81002, 'error': 'Http Status 81002', 'message': ''}
+响应耗时(ms): 18.0
+接口响应码: 500
+

@@ -1,11 +1,41 @@
 [ {
-  "uid" : "5dade482e7fe5d6",
-  "name" : "天气查询接口",
+  "uid" : "66ada4677b06a044",
+  "name" : "任务关联查询接口",
   "time" : {
-    "start" : 1689060271873,
-    "stop" : 1689060272209,
-    "duration" : 336
+    "start" : 1690529285010,
+    "stop" : 1690529285047,
+    "duration" : 37
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "b10bdf184ee2c998",
+  "name" : "登录接口",
+  "time" : {
+    "start" : 1690529283064,
+    "stop" : 1690529284893,
+    "duration" : 1829
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "d31b988ac0c5f82d",
+  "name" : "登录接口",
+  "time" : {
+    "start" : 1690529284915,
+    "stop" : 1690529285000,
+    "duration" : 85
   },
   "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "85713cc2f2d77df0",
+  "name" : "商城项目查询接口",
+  "time" : {
+    "start" : 1690529282282,
+    "stop" : 1690529282584,
+    "duration" : 302
+  },
+  "status" : "broken",
   "severity" : "normal"
 } ]

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 # @Time : 2023/4/24 15:59
-# @Author : 谈林海
+# @Author :
 from pathlib import Path
 from typing import List, Dict, Any
 import asyncio

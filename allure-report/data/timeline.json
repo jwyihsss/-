@@ -1,26 +1,65 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
-  "name" : "timeline",
   "children" : [ {
-    "name" : "tanlinhaideMacBook-Pro.local",
+    "name" : "WIN-3FAJT9PVT5A",
     "children" : [ {
-      "name" : "65033-MainThread",
+      "name" : "9300-MainThread",
       "children" : [ {
-        "name" : "天气查询接口",
-        "uid" : "5dade482e7fe5d6",
-        "parentUid" : "f9c0db802200412498e6cb11a0bb6577",
-        "status" : "passed",
+        "name" : "任务关联查询接口",
+        "uid" : "66ada4677b06a044",
+        "parentUid" : "50344c249fe1bc8921105a7e71f67c8d",
+        "status" : "failed",
         "time" : {
-          "start" : 1689060271873,
-          "stop" : 1689060272209,
-          "duration" : 336
+          "start" : 1690529285010,
+          "stop" : 1690529285047,
+          "duration" : 37
         },
         "flaky" : false,
         "newFailed" : false,
-        "parameters" : [ "'查询上海天气'", "('https://open.xwdsp.com/phegda/advrest', 'POST')", "{'response': False}", "{'params': {}, 'json': {'terminal': 'PC', 'apiVersion': '1.0.1', 'site': {'Siteid': 1015, 'siteName': 'waibu', 'qid': '04478', 'pageType': 'null', 'pageUrl': 'https://www.tianqi.com/shanghai/', 'newsType': 'null', 'keywords': '上海天气,上海天气预报,上海天气预报查询,上海今日天气,上海周末天气,上海一周天气预报,上海天气预报一周,天气预报查询一周,上海天气预报10天,上海天气预报查询15天,上海未来一周的天气预报,上海天气情况,上海40日天气预报,天气预报40天,上海30日天气预报,天气预报30天'}, 'device': {'userAgent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/111.0.0.0 Safari/537.36', 'geo': {'country': '', 'city': ''}, 'dnt': 0, 'deviceType': 'PC', 'os': 'MACOS', 'osVersion': 'X', 'height': 1080, 'width': 1920}, 'user': {'userId': '16805156868205498'}, 'imp': [{'slotId': 102298, 'pageNum': '1', 'styleId': [1004]}], 'requestId': '16805156922345810'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+        "parameters" : [ "'应用关联列表'", "('http://dev-bms.k7.cn/quest/app', 'GET')", "{'code': 200, 'data': {'records': [{'app_id': 60035, 'game_id': 615, 'quest_id': 48, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '胜利五局郑州麻将金蛋游戏', 'status': 1}, {'app_id': 60035, 'game_id': 615, 'quest_id': 47, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '完成一局双升游戏', 'status': 1}, {'app_id': 60035, 'game_id': 615, 'quest_id': 46, 'app_quest_category_id': 3, 'sort': 0, 'white_channels': 'release,Coolpad,Samsung,ShunWang,SouGou,douyinmini,feiyu,baidu,YingYongBao,Vivo,XiaoMi,huawei,Qh360,MeiZu,ALi,Oppo,lenovo,nubia,Weixin,oppomini,qq,huaweimini,zhifubao,appstore,qqgame,taptap', 'begin_time': '2023-07-28 00:00:00', 'app_name': '果冻怪兽', 'game_name': '果冻怪兽', 'category_name': '普通任务2', 'quest_name': '胜利一局郑州麻将金蛋游戏', 'status': 1}], 'total': 3, 'size': 3, 'current': 3, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 1}}", "{'params': {'app_id': 60035, 'channel_name': 'release', 'page_index': 1, 'page_size': 50, 'sort': 'quest_id'}, 'json': {}, 'headers': {'Content-Type': 'application/json;charset=UTF-8,', 'action': 'relation'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'equal'}" ]
+      }, {
+        "name" : "登录接口",
+        "uid" : "b10bdf184ee2c998",
+        "parentUid" : "50344c249fe1bc8921105a7e71f67c8d",
+        "status" : "failed",
+        "time" : {
+          "start" : 1690529283064,
+          "stop" : 1690529284893,
+          "duration" : 1829
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'正确账号、密码登录'", "('http://dev-bms.k7.cn/login', 'PUT')", "{'code': 200, 'data': '4017b2449073417b9d5318a5e8743a16'}", "{'params': {}, 'data': {'admin_name': 'jiang', 'password': 'c33367701511b4f6020ec61ded352059'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      }, {
+        "name" : "登录接口",
+        "uid" : "d31b988ac0c5f82d",
+        "parentUid" : "50344c249fe1bc8921105a7e71f67c8d",
+        "status" : "passed",
+        "time" : {
+          "start" : 1690529284915,
+          "stop" : 1690529285000,
+          "duration" : 85
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'错误账号、密码登录'", "('http://dev-bms.k7.cn/login', 'PUT')", "{'code': 100002, 'msg': '账号或密码错误'}", "{'params': {}, 'data': {'admin_name': 'jiang', 'password': 'c33367701511b4f6020ec61ded3520592'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+      }, {
+        "name" : "商城项目查询接口",
+        "uid" : "85713cc2f2d77df0",
+        "parentUid" : "50344c249fe1bc8921105a7e71f67c8d",
+        "status" : "broken",
+        "time" : {
+          "start" : 1690529282282,
+          "stop" : 1690529282584,
+          "duration" : 302
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "'商城实例列表'", "('http://dev-bms.k7.cn/mall/instance', 'GET')", "{'code': 200, 'data': {'records': [{'mall_inst_id': 42303145, 'begin_time': '2023-04-13 08:00:00', 'end_time': '2023-06-10 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '哈哈哈哈哈', 'status': 0}, {'mall_inst_id': 423030, 'begin_time': '2023-04-07 16:12:48', 'end_time': '2029-12-22 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城', 'status': 1}, {'mall_inst_id': 423029, 'begin_time': '2023-04-06 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测测测测测测测测测', 'status': 1}, {'mall_inst_id': 423028, 'begin_time': '2023-04-06 00:00:00', 'end_time': '2023-04-06 23:00:00', 'refresh_items_method': 0, 'mall_inst_name': '测试实例创建同步', 'status': 0}, {'mall_inst_id': 423027, 'begin_time': '2023-03-14 15:23:06', 'refresh_items_method': 2, 'mall_inst_name': '测试实例同步', 'status': 1}, {'mall_inst_id': 423026, 'begin_time': '2023-03-14 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '批量关联测试', 'status': 1}, {'mall_inst_id': 393030, 'begin_time': '2023-02-16 15:23:50', 'end_time': '2029-03-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '物品商城', 'status': 1}, {'mall_inst_id': 393029, 'begin_time': '2023-02-15 16:44:01', 'end_time': '2029-11-29 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '装扮商城', 'status': 1}, {'mall_inst_id': 393028, 'begin_time': '2023-02-09 15:30:13', 'refresh_items_method': 0, 'mall_inst_name': '你咋这么搞笑', 'status': 1}, {'mall_inst_id': 393027, 'begin_time': '2023-02-08 17:32:11', 'refresh_items_method': 2, 'mall_inst_name': 'hhhj', 'status': 1}, {'mall_inst_id': 393026, 'begin_time': '2023-02-08 09:04:16', 'refresh_items_method': 0, 'mall_inst_name': '春风不度玉门关', 'status': 1}, {'mall_inst_id': 363030, 'begin_time': '2023-01-09 18:53:55', 'end_time': '2025-02-07 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'fym', 'status': 1}, {'mall_inst_id': 363029, 'begin_time': '2023-01-09 18:24:06', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将破产商城实例', 'status': 1}, {'mall_inst_id': 363028, 'begin_time': '2023-01-08 14:51:21', 'refresh_items_method': 2, 'mall_inst_name': '旮张四川麻将商城实例', 'status': 1}, {'mall_inst_id': 363027, 'begin_time': '2022-10-30 18:32:36', 'end_time': '2029-04-13 08:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋活动商城', 'status': 1}, {'mall_inst_id': 363026, 'begin_time': '2022-10-28 17:20:57', 'refresh_items_method': 0, 'mall_inst_name': '测试股', 'status': 0}, {'mall_inst_id': 333030, 'begin_time': '2022-08-04 19:17:08', 'refresh_items_method': 0, 'mall_inst_name': '小江测试01', 'status': 0}, {'mall_inst_id': 333029, 'begin_time': '2022-07-27 13:41:36', 'refresh_items_method': 2, 'mall_inst_name': '小江测试', 'status': 1, 'coupon_scheme_id': 20273010}, {'mall_inst_id': 333028, 'begin_time': '2022-07-26 16:02:52', 'refresh_items_method': 1, 'mall_inst_name': 'test2', 'status': 0}, {'mall_inst_id': 333027, 'begin_time': '2022-07-05 14:21:46', 'end_time': '2024-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城实例', 'status': 1}, {'mall_inst_id': 333026, 'begin_time': '2022-06-29 00:00:00', 'end_time': '2023-08-24 17:32:22', 'refresh_items_method': 2, 'mall_inst_name': '分批次储蓄罐', 'status': 1}, {'mall_inst_id': 183035, 'begin_time': '2022-03-07 14:53:43', 'end_time': '2023-04-08 18:00:00', 'refresh_items_method': 2, 'mall_inst_name': '优惠券test', 'status': 1, 'coupon_scheme_id': 20303002}, {'mall_inst_id': 183034, 'begin_time': '2022-03-01 16:31:11', 'end_time': '2024-03-31 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'app商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183033, 'begin_time': '2022-02-17 00:00:00', 'end_time': '2023-02-20 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 183032, 'begin_time': '2022-02-11 00:00:00', 'end_time': '2024-02-03 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '双扣小游戏', 'status': 1}, {'mall_inst_id': 183031, 'begin_time': '2022-01-16 14:07:53', 'end_time': '2032-01-29 00:00:00', 'refresh_items_time': '0 0/100 * * * ?', 'refresh_items_method': 2, 'mall_inst_name': '测试木子', 'status': 1}, {'mall_inst_id': 183030, 'begin_time': '2021-12-26 13:02:50', 'end_time': '2021-12-30 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '提现实例测试', 'status': 1}, {'mall_inst_id': 183029, 'begin_time': '2021-12-05 00:00:00', 'end_time': '2026-04-17 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '掼蛋商城实例', 'status': 1, 'coupon_scheme_id': 20333002}, {'mall_inst_id': 183028, 'begin_time': '2021-10-07 15:10:32', 'end_time': '2023-11-24 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼礼券商城兑换实例', 'status': 1}, {'mall_inst_id': 183027, 'begin_time': '2021-11-12 10:08:12', 'end_time': '2021-11-19 00:00:00', 'refresh_items_method': 0, 'mall_inst_name': '新月卡二', 'status': 1}, {'mall_inst_id': 183026, 'begin_time': '2021-11-02 00:00:00', 'end_time': '2022-11-02 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': '小游戏商城实例（长风组）', 'status': 1}, {'mall_inst_id': 123029, 'begin_time': '2021-05-04 00:00:00', 'end_time': '2022-07-15 00:00:00', 'refresh_items_method': 2, 'mall_inst_name': 'testseckill-instance', 'status': 1, 'coupon_scheme_id': 20241004}, {'mall_inst_id': 123028, 'begin_time': '2021-05-08 14:11:32', 'end_time': '2021-07-31 15:24:07', 'refresh_items_method': 2, 'mall_inst_name': '新势力', 'status': 1}, {'mall_inst_id': 123027, 'begin_time': '2021-04-01 00:00:00', 'end_time': '2023-08-04 16:34:07', 'refresh_items_time': '0 0 0/2 * * ?', 'refresh_items_method': 1, 'mall_inst_name': '升级神秘商店实例', 'status': 1}, {'mall_inst_id': 123026, 'begin_time': '2021-03-01 00:00:00', 'end_time': '2023-04-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '微服务', 'status': 1, 'coupon_scheme_id': 30005}, {'mall_inst_id': 92026, 'begin_time': '2021-01-22 00:00:00', 'end_time': '2023-02-09 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼老用户召回', 'status': 1}, {'mall_inst_id': 91029, 'begin_time': '2021-01-14 00:00:00', 'end_time': '2022-02-28 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼商城', 'status': 1}, {'mall_inst_id': 91028, 'begin_time': '2020-12-28 00:00:00', 'end_time': '2028-04-14 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '运营支撑测试1', 'status': 1, 'coupon_scheme_id': 30004}, {'mall_inst_id': 91027, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-25 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '订阅实例', 'status': 1}, {'mall_inst_id': 91026, 'begin_time': '2020-12-25 00:00:00', 'end_time': '2021-01-31 23:59:59', 'refresh_items_method': 0, 'mall_inst_name': 'INST', 'status': 1}, {'mall_inst_id': 90026, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '升级商城实例2', 'status': 1}, {'mall_inst_id': 60072, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2022-12-31 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'demo商城', 'status': 1}, {'mall_inst_id': 60071, 'begin_time': '2020-11-01 00:00:00', 'end_time': '2023-03-02 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '捕鱼月卡', 'status': 1}, {'mall_inst_id': 60070, 'begin_time': '2020-11-13 00:00:00', 'end_time': '2020-11-26 23:59:59', 'refresh_items_method': 1, 'mall_inst_name': 'wa23', 'status': 1, 'coupon_scheme_id': 16}, {'mall_inst_id': 60069, 'begin_time': '2020-10-26 00:00:00', 'end_time': '2022-11-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '黑7超值月卡', 'status': 1}, {'mall_inst_id': 60068, 'begin_time': '2020-10-01 00:00:00', 'end_time': '2022-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'Dummy商城', 'status': 1}, {'mall_inst_id': 60067, 'begin_time': '2020-09-01 00:00:00', 'end_time': '2024-10-01 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': 'pc商城实例', 'status': 1}, {'mall_inst_id': 60066, 'begin_time': '2023-03-14 00:00:00', 'end_time': '2023-04-13 00:00:00', 'refresh_items_method': 1, 'mall_inst_name': '微服务', 'status': 1}, {'mall_inst_id': 60065, 'begin_time': '2020-08-11 00:00:00', 'end_time': '2022-08-11 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '更多大厅商城首次购买双倍实例', 'status': 1, 'coupon_scheme_id': 8}, {'mall_inst_id': 60064, 'begin_time': '2020-08-01 00:00:00', 'end_time': '2022-09-30 23:59:59', 'refresh_items_method': 2, 'mall_inst_name': '优惠券测试', 'status': 1, 'coupon_scheme_id': 30004}], 'total': 113, 'size': 50, 'current': 1, 'optimize_count_sql': True, 'hit_count': False, 'search_count': True, 'pages': 3}}", "{'params': {}, 'json': {}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'in'}" ]
       } ],
-      "uid" : "f9c0db802200412498e6cb11a0bb6577"
+      "uid" : "50344c249fe1bc8921105a7e71f67c8d"
     } ],
-    "uid" : "6c858be5dd5360d91c6e05818d36daac"
-  } ]
+    "uid" : "572a84681757fc400d4a761442ce9c2a"
+  } ],
+  "name" : "timeline"
 }

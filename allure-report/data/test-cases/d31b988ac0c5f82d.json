@@ -1,0 +1,315 @@
+{
+  "uid" : "d31b988ac0c5f82d",
+  "name" : "登录接口",
+  "fullName" : "test_cases.login.test_login#test_tianqi",
+  "historyId" : "45017f218af2cc32028423e3cf6d6559",
+  "time" : {
+    "start" : 1690529284915,
+    "stop" : 1690529285000,
+    "duration" : 85
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "_session_faker",
+    "time" : {
+      "start" : 1690529281935,
+      "stop" : 1690529282066,
+      "duration" : 131
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "core",
+    "time" : {
+      "start" : 1690529284914,
+      "stop" : 1690529284914,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "alert_inputs",
+    "time" : {
+      "start" : 1690529284913,
+      "stop" : 1690529284914,
+      "duration" : 1
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "alert_common_inputs",
+    "time" : {
+      "start" : 1690529284911,
+      "stop" : 1690529284913,
+      "duration" : 2
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "collection",
+    "time" : {
+      "start" : 1690529284914,
+      "stop" : 1690529284914,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "请求地址: http://dev-bms.k7.cn/login",
+      "time" : {
+        "start" : 1690529284993,
+        "stop" : 1690529284993,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求方法: PUT",
+      "time" : {
+        "start" : 1690529284993,
+        "stop" : 1690529284993,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求头",
+      "time" : {
+        "start" : 1690529284993,
+        "stop" : 1690529284994,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7b9897bd47dd891e",
+        "name" : "请求头",
+        "source" : "7b9897bd47dd891e.json",
+        "type" : "application/json",
+        "size" : 234
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "请求数据",
+      "time" : {
+        "start" : 1690529284994,
+        "stop" : 1690529284995,
+        "duration" : 1
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7a9a5b03484a7141",
+        "name" : "请求数据",
+        "source" : "7a9a5b03484a7141.json",
+        "type" : "application/json",
+        "size" : 82
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "接口响应码: 200",
+      "time" : {
+        "start" : 1690529284995,
+        "stop" : 1690529284995,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应耗时(ms): 77",
+      "time" : {
+        "start" : 1690529284995,
+        "stop" : 1690529284995,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "响应数据",
+      "time" : {
+        "start" : 1690529284995,
+        "stop" : 1690529284998,
+        "duration" : 3
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "408645da9ec6671a",
+        "name" : "响应数据",
+        "source" : "408645da9ec6671a.json",
+        "type" : "application/json",
+        "size" : 58
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 7,
+    "hasContent" : true,
+    "attachmentsCount" : 3,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "core::0",
+    "time" : {
+      "start" : 1690529285002,
+      "stop" : 1690529285002,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  }, {
+    "name" : "collection::0",
+    "time" : {
+      "start" : 1690529285002,
+      "stop" : 1690529285002,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "feature",
+    "value" : "登录模块"
+  }, {
+    "name" : "feature",
+    "value" : "login"
+  }, {
+    "name" : "tag",
+    "value" : "datafile('test_data/login/test_login.yml')"
+  }, {
+    "name" : "tag",
+    "value" : "login"
+  }, {
+    "name" : "parentSuite",
+    "value" : "test_cases.login"
+  }, {
+    "name" : "suite",
+    "value" : "test_login"
+  }, {
+    "name" : "host",
+    "value" : "WIN-3FAJT9PVT5A"
+  }, {
+    "name" : "thread",
+    "value" : "9300-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_cases.login.test_login"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "case",
+    "value" : "'错误账号、密码登录'"
+  }, {
+    "name" : "env",
+    "value" : "('http://dev-bms.k7.cn/login', 'PUT')"
+  }, {
+    "name" : "expectation",
+    "value" : "{'code': 100002, 'msg': '账号或密码错误'}"
+  }, {
+    "name" : "inputs",
+    "value" : "{'params': {}, 'data': {'admin_name': 'jiang', 'password': 'c33367701511b4f6020ec61ded3520592'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "datafile('test_data/login/test_login.yml')", "login" ]
+  },
+  "source" : "d31b988ac0c5f82d.json",
+  "parameterValues" : [ "'错误账号、密码登录'", "('http://dev-bms.k7.cn/login', 'PUT')", "{'code': 100002, 'msg': '账号或密码错误'}", "{'params': {}, 'data': {'admin_name': 'jiang', 'password': 'c33367701511b4f6020ec61ded3520592'}, 'headers': {'Content-Type': 'application/json;charset=UTF-8'}, 'file': None, 'sql': None, 'assert_key': '$..success', 'assert_way': 'unequal'}" ]
+}
